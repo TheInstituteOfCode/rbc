@@ -2,8 +2,4 @@ collections:
   posts:
     output: true
     permalink: /:title
-  treatments:
-    output: true
-  benefits:
-    output: true
 
