@@ -502,33 +502,13 @@ _structures:
         value:
           _id: slider
           block-content-html: <h2> Slider heading </h2><h3>  with subheading  </h3>
-          text-alignment: right
-          text-box-max-width: 500px
-          img_aspect: Square
-          video_aspect: Testimonials        
-          slider_column_count: 3
           slider_col_color_scheme: leaf-500
           slider:
-            - block-content-html: <h3> lorem </h3><h2>  experiences  </h2>
-              youtube_embed:
-              youtube_placeholder:
-              image: 
+            - image: 
+              video_path: /uploads/screenshot-2024-09-30-at-4-12-25-pm.png
+              video_type: mp4
               link:
-            - block-content-html: <h3> lorem </h3><h2>  experiences  </h2>
-              youtube_embed:              
-              youtube_placeholder: 
-              image: 
-              link:
-            - block-content-html: <h3> lorem </h3><h2>  experiences  </h2>
-              youtube_embed:
-              youtube_placeholder:
-              image: 
-              link:
-            - block-content-html: <h3> lorem </h3><h2>  experiences  </h2>
-              youtube_embed:
-              youtube_placeholder:
-              image: 
-              link:
+            
           color-scheme: leaf-500
       - label: Grid
         picker_preview:
