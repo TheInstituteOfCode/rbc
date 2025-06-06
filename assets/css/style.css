@@ -643,6 +643,9 @@ video {
 .gap-small {
   gap: var(--small-padding);
 }
+.gap-\[9px\] {
+  gap: 9px;
+}
 .gap-x-8 {
   -moz-column-gap: 2rem;
        column-gap: 2rem;
@@ -736,6 +739,9 @@ video {
 }
 .p-small {
   padding: var(--small-padding);
+}
+.p-2 {
+  padding: 0.5rem;
 }
 .px-0 {
   padding-left: 0px;

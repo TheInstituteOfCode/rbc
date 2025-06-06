@@ -719,6 +719,7 @@ _structures:
         value:
           _id: text-block-top-overlap
           block-content-html:
+          overlay-color-scheme: highlight
           content-max-width:
           text-alignment: center
           color-scheme: base

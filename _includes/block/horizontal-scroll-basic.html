@@ -15,16 +15,16 @@
           </div>
       </div>
     </div>
-    <div class="gap-4 flex flex-nowrap overflow-scroll no-scrollbar scroll-container" {% if block.max-width %} style="max-width:  {{block.max-width}} 500px"{% endif %}>
+    <div class="gap-[9px] flex flex-nowrap overflow-scroll no-scrollbar scroll-container scheme-{{block.scroll-items-color-scheme}}" {% if block.max-width %} style="max-width:  {{block.max-width}} 500px"{% endif %}>
 
 
       {% for col in block.scroll-items %}
-        <div class="shrink-0 scroll-item {% if forloop.first  %} ml-full-side {% endif %} {% if forloop.last  %} mr-full-side {% endif %}" style="width: min( {{block.image-width}} , 500px );">
+        <div class="shrink-0 scroll-item color-set {% if forloop.first  %} ml-full-side {% endif %} {% if forloop.last  %} mr-full-side {% endif %}" style="width: min( {{block.image-width}} , 500px );">
           {% if col.link %}<a href="{{col.link}}">{% endif%}
             <div class="image-sizer relative mb-small">
-              <img class="w-full" src="{{col.image}}" alt=""loading="lazy">
+              <img class="w-full h-full object-cover inset-0 absolute" src="{{col.image}}" alt=""loading="lazy">
             </div>
-            <div>
+            <div class="p-4">
               {{col.block-content-html}}
             </div>
           {% if col.link %}</a>{% endif%}
