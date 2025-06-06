@@ -179,9 +179,11 @@
         {% endif %}
         {% if block._id == 'slider-blog-loop' %}
         {% assign hasSlider = true %}
-      {% endif %}
+        {% endif %}
+        {% if block._id == 'horizontal-scroll-basic' %}
+          {% assign hasCSSSlider = true %}
+        {% endif %}
     {% endfor %}
-
 
   {% else %}
     <section>
@@ -221,6 +223,12 @@ addEventListener("load", (event) => {
 </script>
 
 {% endif %}
+
+
+
+
+
+
 
 {% if hasSlider == true  %}
 <!-- slick css -->
@@ -290,6 +298,40 @@ burgerButton.addEventListener('click', toggleBurger)
   )
 
   {% endif %}
+
+  {% if hasCSSSlider == true  %}
+  const cssSliders = document.querySelectorAll('.cssSlider');
+  console.log(cssSliders)
+  cssSliders.forEach(slider => {
+    let scrollContainer = slider.querySelector('.scroll-container');
+    let scrollItems = slider.querySelectorAll('.scroll-item');
+    let scrollLeftButton = slider.querySelector('.scroll-left');
+    let scrollRightButton = slider.querySelector('.scroll-right');
+    console.log('look here',scrollContainer, scrollItems, scrollLeftButton, scrollRightButton)
+
+    function scrollLeft() {
+      console.log(scrollItems[0].clientWidth, "going left")
+      scrollContainer.scrollBy({
+        left: -scrollItems[0].clientWidth,
+        behavior: 'smooth'
+      });
+    }
+
+    function scrollRight() {
+      console.log(scrollContainer.clientWidth, "going right")
+
+      scrollContainer.scrollBy({
+        left: scrollItems[0].clientWidth,
+        behavior: 'smooth'
+      });
+    }
+
+    scrollLeftButton.addEventListener('click', scrollLeft);
+    scrollRightButton.addEventListener('click', scrollRight);
+  });
+
+  {% endif %}
+
   {% if hasTicketBanner == true %}
   const tickerBanners = document.querySelectorAll('.tickerBanner');
 
