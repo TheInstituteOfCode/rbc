@@ -644,6 +644,10 @@ video {
 .gap-small {
   gap: var(--small-padding);
 }
+.gap-x-8 {
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}
 .self-start {
   align-self: flex-start;
 }
@@ -713,6 +717,9 @@ video {
   -o-object-position: center;
      object-position: center;
 }
+.p-0 {
+  padding: 0px;
+}
 .p-4 {
   padding: 1rem;
 }
@@ -767,6 +774,10 @@ video {
 .py-small {
   padding-top: var(--small-padding);
   padding-bottom: var(--small-padding);
+}
+.py-vert {
+  padding-top: var(--vert-gap);
+  padding-bottom: var(--vert-gap);
 }
 .pb-0 {
   padding-bottom: 0px;
@@ -1466,6 +1477,9 @@ float: right
   }
   .md\:pl-full-side {
     padding-left: var(--max-width-side-padding);
+  }
+  .md\:pl-0 {
+    padding-left: 0px;
   }
   .md\:text-center {
     text-align: center;

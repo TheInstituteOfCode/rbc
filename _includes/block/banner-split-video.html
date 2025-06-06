@@ -1,21 +1,21 @@
 
-<section class=" " >
-  <div class="max-width mx-auto">
-  <div class="grid md:grid-cols-2 overflow-hidden" style="gap: {{site.data.style.split_banner_gap}}">
+<section class="p-0" >
+  <div class="">
+  <div class="grid md:grid-cols-2 overflow-hidden gap-x-8">
 
-    <div class="picture relative">
+    <div class="picture relative mb-vert md:mb-0">
       <picture >
         <source srcset="{{block.background-desktop-image}}" media="(min-width: 750px)" />
         <img class="{% unless block.img_aspect == 'Original' %} absolute inset-0 h-full w-full object-cover object-center {% endunless %}" src="{{block.background-mobile-image}}" alt="{{block.background-alt}}"loading="lazy" />
       </picture>
-          <video class="absolute inset-0 h-full w-full object-cover object-center lazy-vid" {% if block.controls == true %} controls {% endif %} {% if block.autoplay == true %}autoplay="" muted {% endif %} loop>
+          <video class="absolute inset-0 h-full w-full object-cover object-center lazy-vid" autoplay="" muted loop>
       {% for video in block.videos %}
       <source data-src="{{video.video_path}}" type="video/{{video.video_type}}">
       {% endfor %}
     </video>
       
     </div>
-    <div class="text-block">       
+    <div class="text-block px-full-side md:pl-0 py-vert">       
       {% if noH1 == true %}
       {{block.block-content-html | replace: 'h2','h1'}}
       {% else %}
@@ -60,28 +60,11 @@
       {% endunless %}
       align-self:center;
       order:2;
-      {% if block.desktop-collapse-bg-padding == false %}
-         {% if block.desktop-image-position == 'left' %}
-          /* margin-left: var(--max-width-side-padding); */
-          {% else %}
-          /* margin-right: var(--max-width-side-padding); */
-         {% endif %}
-      {% endif %}
     }
 
     @media  (min-width: 750px) {
       
 
-      #section-{{forloop.index}} section{
-        {% if block.collapse-top-space == true %}
-          padding-top: 0;
-        {% endif %}
-      
-        {% if block.collapse-bottom-space == true %}
-            padding-bottom: 0%;
-        {% endif %}
-      
-      }
     }
 
     @media (max-width: 750px) {
@@ -99,13 +82,8 @@
       }
       
       #section-{{forloop.index}} .picture{
-
-        {% if block.mobile-collapse-bg-padding == false %}
-        width: calc(100vw - calc( var(--side-gap) * 2));
-        /* margin-left: var(--side-gap); */
-        {% else %}
         width: 100vw;
-       {% endif %} 
+
       }
 
     }
