@@ -48,12 +48,26 @@
     </script>
 
 <style>
+
+  @font-face {
+      font-family: 'Canela-heading'; 
+      src: url('/fonts/Canela-Family/Canela-Light-Trial.otf') format('opentype');
+  }
+
+  @font-face {
+      font-family: 'Canela-text'; 
+      src: url('/fonts/Canela-Text-Family/CanelaText-Light-Trial.otf') format('opentype');
+  }
+
     :root{
         --max-width: {{site.data.style.max-width}}px;
         --side-gap: {{site.data.style.horizontal-padding}};
         --vert-gap: {{site.data.style.vertical-padding}};
         --animation-speed: {{site.data.style.animation-speed}};
         --small-padding: {{site.data.style.small-padding}};
+        --heading-font-serif-family: 'Canela-heading', serif;
+        --heading-font-sans-family: 'Canela', sans-serif;
+        --body-font-family: 'Canela-text', sans-serif;
     }
 
     body{

@@ -1,7 +1,7 @@
 
 <section class="p-0" >
   <div class="">
-  <div class="grid md:grid-cols-2 overflow-hidden gap-x-8">
+  <div class="grid md:grid-cols-2 overflow-hidden gap-x-8 justify-stretch">
 
     <div class="picture relative mb-vert md:mb-0">
       <picture >
@@ -53,9 +53,8 @@
     }
 
     #section-{{forloop.index}} .picture{
-      {% unless block.img_aspect == 'Original' %}
-      aspect-ratio: {% include logic/aspect-logic.html aspect = block.img_aspect %};
-      {% endunless %}
+      padding-bottom: min(120%, 80vh);
+      min-height: 100%;
       align-self:center;
       order:2;
       max-height: {{block.max-height}};

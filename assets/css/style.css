@@ -631,6 +631,9 @@ video {
 .justify-between {
   justify-content: space-between;
 }
+.justify-stretch {
+  justify-content: stretch;
+}
 .gap-4 {
   gap: 1rem;
 }
@@ -850,19 +853,6 @@ video {
 
 
 
-:root{
-        --heading-font-serif-family: 'Canela', serif;
-        --heading-font-sans-family: 'Canela', sans-serif;
-        --body-font-family: Mulish, sans-serif;
-    }
-
-
-    @font-face {
-      font-family: 'Canela'; /* Name of your font */
-      src: url('/fonts/Canela-Text-Family/CanelaText-Medium-Trial.otf') format('otf');
-      font-weight: normal; /* Or bold, italic, etc. */
-      font-style: normal; /* Or italic */
-    }
 
 
 * {
