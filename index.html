@@ -45,14 +45,14 @@ blocks:
                 video_path: /uploads/WEBSITE-BANNER.mp4
                 video_type: mp4
         background-alt:
-        desktop-image-position: left
+        desktop-image-position: right
         text-alignment: left
         vert-alignment: bottom
         mobile-image-position: bottom
         img_aspect: Portrait
         collapse-top-space: false
         collapse-bottom-space: false
-        color-scheme: base
+        color-scheme: dark
     -
         _id: horizontal-scroll-basic
         block-content-html: >-
@@ -153,7 +153,7 @@ blocks:
                     Facebook, Google, Pinterest), and analytics as well as any
                     other verification you might need. </p>
                 link:
-        color-scheme: leaf-300
+        color-scheme: base
     -
         _id: accordion
         block-content-html: <h2 class="heading-lg"> FREQUENTLY ASKED QUESTIONS </h2>
@@ -191,13 +191,13 @@ blocks:
         vert-alignment: middle
         overlay-opacity: 0.5op
         min-height: 80vh
-        color-scheme: leaf-100
+        color-scheme: base
     -
         _id: text-block
         block-content-html: "<h2>It would be our pleasure to work together on the new Regent Bali Canggu website.</h2><p></p><p>Our team combines high-end visual design with robust, future-focused development—delivering a digital experience that’s as elegant and intuitive as the property itself.<br /><br />We specialize in creating flexible, content-driven designs that showcase luxury spaces in their best light, capturing the essence of your property through elegant visuals, adaptive layouts, and a seamless user experience. Every element will be crafted to support your brand, engage your audience, and provide your team with intuitive tools for easy updates and future growth.<br />\L- Sincerely, Kelapa Creative Team.</p><p><a class=\"button-featured\" href=\"/temp.pdf\">DOWNLOAD PROPOSAL</a></p>"
         content-max-width:
         text-alignment: center
-        color-scheme: leaf-100
+        color-scheme: base
         min-height: 50vh
     -
         _id: banner-split-video
@@ -218,42 +218,30 @@ blocks:
         img_aspect: Square
         collapse-top-space: false
         collapse-bottom-space: false
-        color-scheme: leaf-500
+        color-scheme: dark
     -
         _id: slider
-        block-content-html: <h2> Slider heading </h2><h3>  with subheading  </h3>
-        text-alignment: right
-        text-box-max-width: 500px
-        img_aspect: Original
-        video_aspect: Testimonials
-        slider_column_count: 3
-        slider_col_color_scheme: leaf-500
+        block-content-html: <h2> Spaces to explore</h2><p>Where most websites confine your content to rigid aspect ratios, we design with freedom in mind. Our designs support felexible layouts that adapt seamlessly to your unique imagery —whether it's panoramic, vertical, or cinematic—to tell your story in its most powerful form.</p>
+        text-alignment: center
+        text-box-max-width: 350px
         slider:
-            -
-                block-content-html: <h3> lorem </h3><h2>  experiences  </h2>
-                youtube_embed:
-                youtube_placeholder:
-                image:
-                link:
-            -
-                block-content-html: <h3> lorem </h3><h2>  experiences  </h2>
-                youtube_embed:
-                youtube_placeholder:
-                image:
-                link:
-            -
-                block-content-html: <h3> lorem </h3><h2>  experiences  </h2>
-                youtube_embed:
-                youtube_placeholder:
-                image:
-                link:
-            -
-                block-content-html: <h3> lorem </h3><h2>  experiences  </h2>
-                youtube_embed:
-                youtube_placeholder:
-                image:
-                link:
-        color-scheme: leaf-500
+            - image: https://picsum.photos/id/1025/600/400
+              video_path: 
+              video_type:
+              video_aspect_ratio:
+              link:
+            - image: /uploads/screenshot-2024-09-30-at-4-12-25-pm.png
+              video_path: /uploads/WEBSITE-BANNER.mp4
+              video_type: mp4
+              video_aspect_ratio: 2
+              link:
+            - image: https://picsum.photos/id/1025/600/800
+              video_path: 
+              video_type:
+              video_aspect_ratio:
+              link:
+            
+        color-scheme: dark
 seo:
     title: Reagent
     description: Experience life-changing health transformation
@@ -262,3 +250,5 @@ seo:
     index: true
 permalink:
 ---
+
+\

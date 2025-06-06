@@ -1,12 +1,17 @@
 schemes:
   - scheme_name: base
+    bg-color: '#fff'
+    text-color: '#003B49'
+    colored-button-bg-color: '#003B49'
+    colored-button-text-color: '#ffffff'
+  - scheme_name: highlight
     bg-color: '#D5E3DD'
     text-color: '#003B49'
     colored-button-bg-color: '#003B49'
     colored-button-text-color: '#ffffff'
   - scheme_name: dark
-    bg-color: '#f3f3f0'
-    text-color: '#3e3e3e'
+    bg-color: '#003B49'
+    text-color: '#D5E3DD'
     colored-button-bg-color:
     colored-button-text-color:
   - scheme_name: header

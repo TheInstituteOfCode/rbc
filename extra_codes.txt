@@ -22,7 +22,7 @@
           img_aspect: Square
           collapse-top-space: false
           collapse-bottom-space: false
-          color-scheme: leaf-500
+          color-scheme: dark
 
 
 
@@ -39,7 +39,7 @@
             was here</p>
           block-content-width: 1
           vert-alignment: middle
-          color-scheme: leaf-100
+          color-scheme: base
 
 
 icon grid layout
@@ -63,7 +63,7 @@ icon grid layout
                 vert-alignment:
                 icon-path: /uploads/1.jpeg
                 icon-alt:
-                color-scheme: leaf-300
+                color-scheme: base
                 col-width: 1
                 col-height: 1
                 hide-on-mobile: false
@@ -75,7 +75,7 @@ icon grid layout
                 vert-alignment:
                 icon-path: /uploads/1.jpeg
                 icon-alt:
-                color-scheme: leaf-300
+                color-scheme: base
                 col-width: 1
                 col-height: 1
                 hide-on-mobile: false
@@ -87,7 +87,7 @@ icon grid layout
                 vert-alignment:
                 icon-path: /uploads/1.jpeg
                 icon-alt:
-                color-scheme: leaf-300
+                color-scheme: base
                 col-width: 1
                 col-height: 1
                 hide-on-mobile: false
@@ -99,7 +99,7 @@ icon grid layout
                 vert-alignment:
                 icon-path: /uploads/1.jpeg
                 icon-alt:
-                color-scheme: leaf-300
+                color-scheme: base
                 col-width: 1
                 col-height: 1
                 hide-on-mobile: false
@@ -111,7 +111,7 @@ icon grid layout
                 vert-alignment:
                 icon-path: /uploads/1.jpeg
                 icon-alt:
-                color-scheme: leaf-300
+                color-scheme: base
                 col-width: 1
                 col-height: 1
                 hide-on-mobile: false
@@ -123,7 +123,7 @@ icon grid layout
                 vert-alignment:
                 icon-path: /uploads/1.jpeg
                 icon-alt:
-                color-scheme: leaf-300
+                color-scheme: base
                 col-width: 1
                 col-height: 1
                 hide-on-mobile: false
@@ -135,7 +135,7 @@ icon grid layout
                 vert-alignment:
                 icon-path: /uploads/1.jpeg
                 icon-alt:
-                color-scheme: leaf-300
+                color-scheme: base
                 col-width: 1
                 col-height: 1
                 hide-on-mobile: false
@@ -147,12 +147,12 @@ icon grid layout
                 vert-alignment:
                 icon-path: /uploads/1.jpeg
                 icon-alt:
-                color-scheme: leaf-300
+                color-scheme: base
                 col-width: 1
                 col-height: 1
                 hide-on-mobile: false
                 mobile-first: false
-        color-scheme: leaf-300
+        color-scheme: base
 
 
 temp

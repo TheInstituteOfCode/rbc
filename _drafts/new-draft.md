@@ -6,7 +6,7 @@ blocks:
     -
         _id: blog-content-block
         content-max-width: 640px
-        color-scheme: leaf-100
+        color-scheme: base
 seo:
     title: 10 Signs Your Liver is Sluggish and Tips to Help Detoxify
     description: >-
