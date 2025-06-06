@@ -15,7 +15,7 @@
     </video>
       
     </div>
-    <div class="text-block px-full-side md:pl-0 py-vert">       
+    <div class="text-block px-full-side {% if block.desktop-image-position == 'right' %} md:pr-0 {% else %} md:pr-0 {% endif %} py-vert">       
       {% if noH1 == true %}
       {{block.block-content-html | replace: 'h2','h1'}}
       {% else %}
@@ -47,9 +47,7 @@
         self-end
         {% endcase %};
       {% if block.desktop-image-position == 'right' %}
-          padding-left: var(--max-width-side-padding);
         {% else %}
-          padding-right: var(--max-width-side-padding);
           order:3;
       {% endif %}
     }
@@ -60,12 +58,9 @@
       {% endunless %}
       align-self:center;
       order:2;
+      max-height: {{block.max-height}};
     }
 
-    @media  (min-width: 750px) {
-      
-
-    }
 
     @media (max-width: 750px) {
       /* #section-{{forloop.index}} section{

@@ -10,7 +10,7 @@
 
 
 :root{
-        --heading-font-serif-family: 'Canela', sans-serif;
+        --heading-font-serif-family: 'Canela', serif;
         --heading-font-sans-family: 'Canela', sans-serif;
         --body-font-family: Mulish, sans-serif;
     }
@@ -24,7 +24,7 @@
     }
 
 
-*{
+* {
     padding: 0%;
     margin: 0;
     box-sizing: 0;
@@ -48,26 +48,31 @@ body.locked{
   overflow-Y:hidden;
 }
 
-h3,h4,h5,h6 {
+
+
+h3,h4,h5,h6,.small-heading {
+  font-size: 1rem;
+  text-transform: uppercase;
   font-family: var(--heading-font-sans-family);
   font-optical-sizing: auto;
+  letter-spacing: 0.15em ;
 }
 
 
-h1, h2 {
+h1, h2, .large-heading {
   font-family: var(--heading-font-serif-family);
+  font-size: 2rem;
   font-weight: 300;
   line-height: 1.2;
 }
 
 h2 {
-  font-size: 2.5rem;
   letter-spacing: -0.01em;
 }
 
-h3 {
+h3, .small-heading {
 font-family: "Engravers Gothic FS";
-font-size: 0.385rem;
+font-size: 1rem;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
@@ -88,7 +93,7 @@ p:not(:last-child):not(.mb-0) {
 
 
 p,li {
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 150%;
   font-weight:350;
 }
@@ -171,6 +176,11 @@ header a:hover, header .unlinked:hover {
 
 #header{
   z-index: 1000;
+
+}
+
+header {
+    background-color: transparent;
 }
 
 footer * {
@@ -240,13 +250,14 @@ letter-spacing: 0.54px;
 
 /* extra for editor */
 
-a.button, span.button {
+
+[class*='button']{
   font-family: var(--body-font-family);
   font-weight: 400;
   text-transform: uppercase;
   font-size: 0.8rem;
-  letter-spacing: 0.15em;
-  padding: 0.8em 1em;
+  letter-spacing: 0.1em;
+  padding: 1.5em 4em;
   text-decoration: none;
   color: inherit;
   border: 1px solid;
@@ -254,6 +265,7 @@ a.button, span.button {
   opacity: 1;
   margin-top: 0.5rem;
 }
+
 
 a.button:hover {
   opacity:0.5;
@@ -566,10 +578,10 @@ float: right
     width: 50px;
   }
   body .slick-prev {
-  left: var(--small-padding);
+  left: var(--max-width-side-padding);
   }
   body .slick-next {
-  right: var(--small-padding);
+  right: var(--max-width-side-padding);
   }
 
   body .slick-next::before, body .slick-prev::before{
