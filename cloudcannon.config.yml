@@ -299,7 +299,7 @@ _structures:
           color-scheme: leaf-100
       - label: Text & video grid
         picker_preview:
-          text: Text and grid
+          text: Text and video grid
           subtext:
           icon:
           icon_color:
@@ -332,7 +332,7 @@ _structures:
           color-scheme: leaf-500
       - label: Text & image grid
         picker_preview:
-          text: Text and grid
+          text: Text and image grid
           subtext:
           icon:
           icon_color:
