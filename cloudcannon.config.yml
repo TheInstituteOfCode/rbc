@@ -312,7 +312,7 @@ _structures:
             fit:
         tags:
         value:
-          _id: banner-video-split
+          _id: banner-split-video
           block-content-html:
           background-desktop-image: /uploads/screenshot-2024-09-30-at-4-12-25-pm.png
           background-mobile-image: /uploads/screenshot-2024-09-30-at-4-12-25-pm.png
