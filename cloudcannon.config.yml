@@ -591,37 +591,33 @@ _structures:
           image-width: max(25%, 8rem)
           img_aspect: Square
           scroll-items:
-            - heading: first
-              image: /uploads/bp4a8582-hdr.jpg
-              description: >-
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+            - image: /uploads/bp4a8582-hdr.jpg
+              block-content-html: >-
+                <h3>Lorem ipsum dolor</h3> <p> sit amet consectetur adipisicing elit. Ab
                 corporis obcaecati doloremque optio! Unde accusantium, esse
                 consectetur asperiores voluptates obcaecati nobis libero
-                necessitatibus vero labore quod eaque. Illum, tenetur alias!
+                necessitatibus vero labore quod eaque. Illum, tenetur alias!</p>
               link:
-            - heading: second
-              image: /uploads/bp4a8582-hdr.jpg
-              description: >-
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+            - image: /uploads/bp4a8582-hdr.jpg
+              block-content-html: >-
+                <h3>Lorem ipsum dolor</h3> <p> sit amet consectetur adipisicing elit. Ab
                 corporis obcaecati doloremque optio! Unde accusantium, esse
                 consectetur asperiores voluptates obcaecati nobis libero
-                necessitatibus vero labore quod eaque. Illum, tenetur alias!
+                necessitatibus vero labore quod eaque. Illum, tenetur alias!</p>
               link:
-            - heading: third
-              image: /uploads/bp4a8582-hdr.jpg
-              description: >-
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+            - image: /uploads/bp4a8582-hdr.jpg
+              block-content-html: >-
+                <h3>Lorem ipsum dolor</h3> <p> sit amet consectetur adipisicing elit. Ab
                 corporis obcaecati doloremque optio! Unde accusantium, esse
                 consectetur asperiores voluptates obcaecati nobis libero
-                necessitatibus vero labore quod eaque. Illum, tenetur alias!
+                necessitatibus vero labore quod eaque. Illum, tenetur alias!</p>
               link:
-            - heading: fourth
-              image: /uploads/bp4a8582-hdr.jpg
-              description: >-
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+            - image: /uploads/bp4a8582-hdr.jpg
+              block-content-html: >-
+                <h3>Lorem ipsum dolor</h3> <p> sit amet consectetur adipisicing elit. Ab
                 corporis obcaecati doloremque optio! Unde accusantium, esse
                 consectetur asperiores voluptates obcaecati nobis libero
-                necessitatibus vero labore quod eaque. Illum, tenetur alias!
+                necessitatibus vero labore quod eaque. Illum, tenetur alias!</p>
               link:
           color-scheme: leaf-100
       - label: Scrolling grid - benefits
@@ -665,37 +661,33 @@ _structures:
           image-width: max(25%, 8rem)
           img_aspect: Square
           scroll-items:
-            - heading: first
-              image: /uploads/bp4a8582-hdr.jpg
-              description: >-
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+            - image: /uploads/bp4a8582-hdr.jpg
+              block-content-html: >-
+                <h3>Lorem ipsum dolor</h3> <p> sit amet consectetur adipisicing elit. Ab
                 corporis obcaecati doloremque optio! Unde accusantium, esse
                 consectetur asperiores voluptates obcaecati nobis libero
-                necessitatibus vero labore quod eaque. Illum, tenetur alias!
+                necessitatibus vero labore quod eaque. Illum, tenetur alias!</p>
               link:
-            - heading: second
-              image: /uploads/bp4a8582-hdr.jpg
-              description: >-
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+            - image: /uploads/bp4a8582-hdr.jpg
+              block-content-html: >-
+                <h3>Lorem ipsum dolor</h3> <p> sit amet consectetur adipisicing elit. Ab
                 corporis obcaecati doloremque optio! Unde accusantium, esse
                 consectetur asperiores voluptates obcaecati nobis libero
-                necessitatibus vero labore quod eaque. Illum, tenetur alias!
+                necessitatibus vero labore quod eaque. Illum, tenetur alias!</p>
               link:
-            - heading: third
-              image: /uploads/bp4a8582-hdr.jpg
-              description: >-
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+            - image: /uploads/bp4a8582-hdr.jpg
+              block-content-html: >-
+                <h3>Lorem ipsum dolor</h3> <p> sit amet consectetur adipisicing elit. Ab
                 corporis obcaecati doloremque optio! Unde accusantium, esse
                 consectetur asperiores voluptates obcaecati nobis libero
-                necessitatibus vero labore quod eaque. Illum, tenetur alias!
+                necessitatibus vero labore quod eaque. Illum, tenetur alias!</p>
               link:
-            - heading: fourth
-              image: /uploads/bp4a8582-hdr.jpg
-              description: >-
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+            - image: /uploads/bp4a8582-hdr.jpg
+              block-content-html: >-
+                <h3>Lorem ipsum dolor</h3> <p> sit amet consectetur adipisicing elit. Ab
                 corporis obcaecati doloremque optio! Unde accusantium, esse
                 consectetur asperiores voluptates obcaecati nobis libero
-                necessitatibus vero labore quod eaque. Illum, tenetur alias!
+                necessitatibus vero labore quod eaque. Illum, tenetur alias!</p>
               link:
           color-scheme: leaf-100
       - label: Accordion
