@@ -1,0 +1,72 @@
+
+
+  /* duplicated in base style for none h2 uses */
+  h2.heading-lg {
+    font-size: 2.5rem;
+    letter-spacing: -0.01em;
+  }
+
+  /* duplicated in base style for none h2 uses */
+  h2.heading-md {
+    font-size: 1.8rem;
+  }
+
+  h2.banner-heading{
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 3.48px;
+    text-transform: uppercase;
+  }
+
+  h3.sub-heading {
+    font-family: var(--body-font-family);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.15em;
+    margin-bottom: 1em;
+  }
+
+
+  a.button {
+    border: 1px solid;
+  }
+
+  a.button-featured {
+    font-family: var(--body-font-family);
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.15em;
+    padding: 0.8em 1em;
+    text-decoration: none;
+    color: var(--colored-button-text);
+    background-color: var(--colored-button-bg);
+    border: 1px solid var(--colored-button-bg);
+    display:inline-block;
+    opacity: 1;
+    margin-top: 0.5rem;
+  }
+  
+  a.simple_link{
+    text-decoration: underline;
+  }
+
+  p.p-subtle {
+    opacity: 0.8;
+    font-size: 0.8rem;
+  }
+
+
+p.float-images-right{
+    color: inherit;
+    min-height: 15px;
+}
+
+p.float-images-left{
+    color: inherit;
+    min-height: 15px;
+}
