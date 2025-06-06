@@ -640,11 +640,11 @@ video {
 .gap-8 {
   gap: 2rem;
 }
-.gap-small {
-  gap: var(--small-padding);
-}
 .gap-\[9px\] {
   gap: 9px;
+}
+.gap-small {
+  gap: var(--small-padding);
 }
 .gap-x-8 {
   -moz-column-gap: 2rem;
@@ -739,9 +739,6 @@ video {
 }
 .p-small {
   padding: var(--small-padding);
-}
-.p-2 {
-  padding: 0.5rem;
 }
 .px-0 {
   padding-left: 0px;
@@ -845,6 +842,22 @@ video {
 
 
 
+
+:root{
+        --heading-font-serif-family: 'Canela', sans-serif;
+        --heading-font-sans-family: 'Canela', sans-serif;
+        --body-font-family: Mulish, sans-serif;
+    }
+
+
+    @font-face {
+      font-family: 'Canela'; /* Name of your font */
+      src: url('/fonts/Canela-Text-Family/CanelaText-Medium-Trial.otf') format('otf');
+      font-weight: normal; /* Or bold, italic, etc. */
+      font-style: normal; /* Or italic */
+    }
+
+
 *{
     padding: 0%;
     margin: 0;
@@ -869,14 +882,14 @@ body.locked{
   overflow-Y:hidden;
 }
 
-h1,h2,h3,h4,h5,h6 {
-  font-family: var(--heading-font-family);
+h3,h4,h5,h6 {
+  font-family: var(--heading-font-sans-family);
   font-optical-sizing: auto;
 }
 
 
-h1, h2, h3 {
-  font-family: var(--heading-font-family);
+h1, h2 {
+  font-family: var(--heading-font-serif-family);
   font-weight: 300;
   line-height: 1.2;
 }
@@ -884,6 +897,16 @@ h1, h2, h3 {
 h2 {
   font-size: 2.5rem;
   letter-spacing: -0.01em;
+}
+
+h3 {
+font-family: "Engravers Gothic FS";
+font-size: 0.385rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing: 0.03656rem;
+text-transform: uppercase;
 }
 
 h1:not(:last-child),
