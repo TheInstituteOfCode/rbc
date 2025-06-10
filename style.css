@@ -582,7 +582,7 @@ float: right
     content: '';
   }
 
-.slick .slick-dots li button::before {
+.slider .slick-dots li button::before {
   background-color: transparent;
   border: 1px solid #fff;
   border-radius: 20%;
