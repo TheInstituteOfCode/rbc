@@ -582,6 +582,19 @@ float: right
     content: '';
   }
 
+.slick-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  position: relative;
+}
+
+  .slick-dots {
+    order: 2;
+    margin: 0 auto;
+  }
+
 .slider .slick-dots li button::before {
   background-color: transparent;
   border: 1px solid #fff;
