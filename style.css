@@ -32,7 +32,7 @@ body{
 }
 
 body.locked{
-  overflow-Y:hidden;
+  overflow-y:hidden;
 }
 
 
@@ -530,7 +530,7 @@ float: right
 .tickerBanner{
     --bannerBlockLength: 280px;
     --bannerBlockTime: 2s;
-  overflow-X: hidden;
+  overflow-x: hidden;
   display: flex;
   flex-direction: row-reverse;
   text-align: center;
