@@ -413,7 +413,7 @@ tickerBanners.forEach(banner => {
           {% if block._id == 'slider-blog-loop' %}
     
          $('#section-{{forloop.index}} .slider').slick({
-           dots: false,
+           dots: true,
            arrows: true,
            slidesToShow: {{block.slider_column_count}},
            slidesToScroll: 1,
