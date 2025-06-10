@@ -590,6 +590,14 @@ float: right
   position: relative;
 }
 
+  .slick-nav .slick-prev, .slick-nav .slick-next {
+    top: unset;
+    bottom: unset;
+    z-index: 99;
+    height: 15px;
+    width: 15px;
+  }
+
   .slick-dots {
     order: 2;
     margin: 0 auto;
