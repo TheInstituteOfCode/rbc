@@ -419,11 +419,11 @@ float: right
   }
   
   .burger-top{
-    top: -02px;
+    top: -2px;
   }
   
   .burger-bottom{
-    bottom: -02px;
+    bottom: -2px;
   }
   /* make sure this has the same top as the burger button has padding*/
   .burger-button.active .burger-top{
