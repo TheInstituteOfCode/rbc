@@ -599,12 +599,12 @@ float: right
     width: 15px;
   }
 
-  .slick-dots {
+  .slick-nav .slick-dots {
     order: 2;
     margin: 0 auto;
   }
 
-.slider .slick-dots li button::before {
+.slick-nav .slick-dots li button::before {
   background-color: transparent;
   border: 1px solid #fff;
   border-radius: 20%;
