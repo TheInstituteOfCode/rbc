@@ -239,18 +239,19 @@ letter-spacing: 0.54px;
 
 
 [class*='button']{
-  font-family: var(--body-font-family);
+  font-family: "Engravers Gothic FS";
   font-weight: 400;
   text-transform: uppercase;
   font-size: 0.8rem;
   letter-spacing: 0.1em;
-  padding: 1.5em 4em;
+  padding: 1em 4em;
   text-decoration: none;
   color: inherit;
   border: 1px solid;
   display:inline-block;
   opacity: 1;
   margin-top: 0.5rem;
+  line-height: 0.8;
 }
 
 
