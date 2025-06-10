@@ -582,6 +582,17 @@ float: right
     content: '';
   }
 
+.slick-nav-wrap .slick-dots li button::before {
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 20%;
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
 
   @media (max-width: 768px ) {
   body .slick-prev, body .slick-next {
