@@ -3,7 +3,7 @@
   <div class="">
   <div class="grid md:grid-cols-2 overflow-hidden justify-stretch">
 
-    <div class="picture relative mb-vert md:mb-0">
+    <div class="picture relative mb-0">
       <picture >
         <source srcset="{{block.background-desktop-image}}" media="(min-width: 750px)" />
         <img class="{% unless block.img_aspect == 'Original' %} absolute inset-0 h-full w-full object-cover object-center {% endunless %}" src="{{block.background-mobile-image}}" alt="{{block.background-alt}}"loading="lazy" />
@@ -15,7 +15,7 @@
     </video>
       
     </div>
-    <div class="text-block px-full-side py-vert">       
+    <div class="text-block px-side py-vert">       
       {% if noH1 == true %}
       {{block.block-content-html | replace: 'h2','h1'}}
       {% else %}
@@ -54,7 +54,7 @@
 
     #section-{{forloop.index}} .picture{
       padding-bottom: min(120%, 80vh);
-      min-height: 100%;
+      /* min-height: 100%; */
       align-self:center;
       order:2;
       max-height: {{block.max-height}};

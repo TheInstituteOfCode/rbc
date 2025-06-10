@@ -3,10 +3,11 @@ layout: default
 blocks:
     -
         _id: banner-video
-        block-content-html: ''
+        block-content-html: >-
+            <img src="/uploads/bali-canggu.svg" class="w-4/5 sm:w-1/2 mx-auto">
         videos:
             -
-                video_path: /uploads/WEBSITE-BANNER.mp4
+                video_path: /uploads/test-50k-kbs-wave-hb.mp4
                 video_type: mp4
         placeholder_image: /uploads/rectangle-1.png
         controls: false
@@ -14,11 +15,12 @@ blocks:
         text-alignment: center
         vert-alignment: middle
         overlay-opacity: 0.2
-        min-height: 80vh
+        min-height: 90vh
         color-scheme: dark
     -
         _id: text-block-top-overlap
-        block-content-html: "<h3>REGENT BALI CANGGU</h3><h2 class=\"heading-lg\">A coastal haven where Bali's spirit unravels</h2><p>On Canggu Beach, surfers are silhouetted in the morning sun, boards  under arms ready to take on Bali's famous reef breaks. Watching the  waves, listening to the call of the Indian Ocean, you might catch the  scent of incense or the melody of the gamelan emitting from Pura Batu  Mejan, a centuries old sea temple set on rock as black as jet. A blessed way to begin each day.</p><div style=\"max-width:25rem; margin:auto; margin-bottom:2rem;\"><h3>A METICULOUSLY CURATED RESORT DESERVES AN INTENTIONALLY CRAFTED WEBSITE. LET US BUILD ONE FOR YOU.</h3></div> <a href=\"\" class=\"button-featured\">DOWNLOAD PROPOSAL</a>"
+        block-content-html: >-
+            <h3>REGENT BALI CANGGU</h3><h2 class="heading-lg">A coastal haven where Bali's spirit unravels</h2><p>On Canggu Beach, surfers are silhouetted in the morning sun, boards  under arms ready to take on Bali's famous reef breaks. Watching the  waves, listening to the call of the Indian Ocean, you might catch the  scent of incense or the melody of the gamelan emitting from Pura Batu  Mejan, a centuries old sea temple set on rock as black as jet. A blessed way to begin each day.</p><div style="max-width:25rem; margin:auto; margin-bottom:2rem;"><h3 class="mt-8">A METICULOUSLY CURATED RESORT DESERVES AN INTENTIONALLY CRAFTED WEBSITE. LET US BUILD ONE FOR YOU.</h3></div> <a href="#" class="button-featured">DOWNLOAD PROPOSAL</a>
         overlay-color-scheme: highlight
         content-max-width: 35rem
         text-alignment: center
@@ -27,23 +29,15 @@ blocks:
     -
         _id: banner-split-video
         block-content-html: >-
-            <h3 class="sub-heading">LUXURY wellness</h3><h2
-            class="heading-md">Your Health Transformation</h2><p>Sukhavati is a
-            world-class, boutique retreat designed to help you achieve profound,
-            life-changing health transformation in a serene, natural
-            environment. Nestled in a quiet Balinese village, our luxurious
-            sanctuary provides a peaceful escape from the demands of modern
-            life. With personalized wellness and rejuvenating treatments,
-            Sukhavati allows you to deeply relax, rejuvenate, heal, and begin to
-            integrate a lifestyle of balance and vitality for your best long
-            term well-being.</p><p><a class="button"
+            <h3 class="sub-heading">High Impact Visuals</h3><h2
+            class="heading-lg">Designed to captivate & enchant</h2><p>With a strong understanding of both the Regent brand & the resort itself, we bring a depth of knowledge that allows us to thoughtfully create a digital experience that captivates and enchants. That brings the magic of the Regent brand to live on the screen and leverages all of the high-impact visuals we’ve created for you to a modern new website. Rich visual experiences, intentional storytelling and subtle animations & interactions give an experience that brings joy (and increases direct bookings). </p><p><a class="button"
             href="https://bookings.sukhavatibali.com/en/product/panchakarma">Book
             Now</a></p>
         background-desktop-image: /uploads/KC-Regent-Arch-1.jpg
         background-mobile-image: /uploads/KC-Regent-Arch-1.jpg
         videos:
             -
-                video_path: /uploads/WEBSITE-BANNER.mp4
+                video_path: /uploads/test-50k-kbs-hb.mp4
                 video_type: mp4
         background-alt:
         desktop-image-position: right
@@ -57,13 +51,14 @@ blocks:
     -
         _id: horizontal-scroll-basic
         block-content-html: >-
-            <h3 class="lg-heading">WORKING WITH US</h3><h2
-            class="">Extraordinary tailored digital
+            <h3>WORKING WITH US</h3><h2
+            class="heading-lg">Extraordinary digital
             presence</h2><p>With over a decade of experience in web development,
             and a dedication best-practices we’ll build you a website that’s not
             only beautiful but that also optimised for speed, performance,
             mobile-friendliness and SEO.</p>
-        image-width: max(25%,  8rem)
+        block-content-max-width: 40rem
+        image-width: max(25%,  15rem)
         img_aspect: Square
         scroll-items-color-scheme: highlight
         scroll-items:
@@ -159,13 +154,13 @@ blocks:
     -
         _id: slider
         block-content-html: >-
-            <h2> Spaces to explore</h2><p>Where most websites confine your
+            <h2 class="heading-lg"> Spaces to explore</h2><p>Where most websites confine your
             content to rigid aspect ratios, we design with freedom in mind. Our
             designs support flexible layouts that adapt seamlessly to your
             unique imagery —whether it's panoramic, vertical, or cinematic—to
             tell your story in its most powerful form.</p>
         text-alignment: center
-        text-box-max-width: 350px
+        text-box-max-width: 35rem
         slider:
             -
                 image: /uploads/KC-Regent-Arch-12.jpg
@@ -186,6 +181,7 @@ blocks:
                 video_aspect_ratio:
                 link:
         color-scheme: dark
+        slider-col-padding: 0.5rem
     -
         _id: accordion
         block-content-html: <h3> FREQUENTLY ASKED QUESTIONS </h3>
@@ -215,22 +211,22 @@ blocks:
         color-scheme: highlight
     -
         _id: banner-bg-fixed
-        block-content-html: <h2>Every view, one to covet. <br /> Every moment, one to savour. <br /> Every stay, another story to tell. <br /> this is the place <br/> <br/> This is Regent </h2>
+        block-content-html: <h2 class="text-sm md:text-xl leading-normal">Every view, one to covet. <br /> Every moment, one to savour. <br /> Every stay, another story to tell. <br /> this is the place <br/> <br/> This is Regent </h2>
         content-max-width:
         background-desktop-image: /uploads/regent-illustration.avif
         background-mobile-image:
         text-alignment: center
         vert-alignment: middle
         overlay-opacity: 0
-        min-height: 80vh
+        min-height: 50vh
         color-scheme: highlight
     -
         _id: text-block
         block-content-html: "<h2>It would be our pleasure to work together on the new Regent Bali Canggu website.</h2><p></p><p>Our team combines high-end visual design with robust, future-focused development—delivering a digital experience that’s as elegant and intuitive as the property itself.<br /><br />We specialize in creating flexible, content-driven designs that showcase luxury spaces in their best light, capturing the essence of your property through elegant visuals, adaptive layouts, and a seamless user experience. Every element will be crafted to support your brand, engage your audience, and provide your team with intuitive tools for easy updates and future growth.<br />\L- Sincerely, Kelapa Creative Team.</p><p><a class=\"button-featured\" href=\"/temp.pdf\">DOWNLOAD PROPOSAL</a></p>"
-        content-max-width:
+        max-width: 45rem
         text-alignment: center
-        color-scheme: dark
-        min-height: 50vh
+        color-scheme: footer
+        min-height: 80vh
 seo:
     title: Regent Website Proposal | Kelapa Creative
     description: Website Proposal by Kelapa Creative

@@ -1,6 +1,6 @@
 schemes:
   - scheme_name: base
-    bg-color: '#fff'
+    bg-color: '#f0f0f0'
     text-color: '#003B49'
     colored-button-bg-color: '#003B49'
     colored-button-text-color: '#ffffff'
@@ -20,10 +20,10 @@ schemes:
     colored-button-bg-color: '#61625a'
     colored-button-text-color: '#f3f3f0'
   - scheme_name: footer
-    bg-color: '#F5F0EA'
-    text-color: '#87897D'
-    colored-button-bg-color: '#ffffff'
-    colored-button-text-color:
+    bg-color: '#212529'
+    text-color: '#F0F0F0'
+    colored-button-bg-color: '#D5E3DD'
+    colored-button-text-color: '#212529'
 max-width: 1280
 animation-speed: .4s
 small-padding: 1rem

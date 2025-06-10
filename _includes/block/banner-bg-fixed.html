@@ -1,5 +1,5 @@
 
-<section class="py-0 md:bg-fixed" style="text-align: {{block.text-alignment}}
+<section class="md:bg-fixed" style="text-align: {{block.text-alignment}}
 ">
       <div class="max-width {% if block.overlay-opacity != 0p %}relative z-10{% endif %}
         flex         
@@ -22,7 +22,7 @@
         {% endcase %}
         ">
           <div class="color-set p-4" style="{% if block.content-max-width %}max-width: {{block.content-max-width}} {% endif %}">
-            <div class="border-4 p-32" style="border-color:var(--colored-button-bg)">
+            <div class=" border-2 lg:border-4 p-4 lg:p-32" style="border-color:var(--colored-button-bg)">
 
               {% if noH1 == true %}
               {{block.block-content-html | replace: 'h2','h1'}}

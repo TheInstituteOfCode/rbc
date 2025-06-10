@@ -81,6 +81,7 @@ _inputs:
       allow_empty: false
       values:
         - base
+        - featured
         - dark
     cascade: true
   slider_col_color_scheme:
@@ -89,6 +90,7 @@ _inputs:
       allow_empty: false
       values:
         - base
+        - featured
         - dark
     cascade: true
   heading-style:

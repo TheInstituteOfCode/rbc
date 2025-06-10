@@ -6,10 +6,7 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-
-
+@source inline("slick-dots, slick-nav, .slick-next, .slick-prev, .slick-slide, .slick-list, .slick-track, .slick-active, .slick-initialized, .slick-arrow");
 
 * {
     padding: 0%;
@@ -29,6 +26,7 @@ body{
   overflow-X: hidden;
   /* Set padding equal to height of fixed header */
   scroll-padding-top: 107px;
+  background-color: #f0f0f0;
 }
 
 body.locked{
@@ -42,7 +40,7 @@ h3,h4,h5,h6,.small-heading {
   text-transform: uppercase;
   font-family: var(--heading-font-sans-family);
   font-optical-sizing: auto;
-  letter-spacing: 0.15em ;
+  text-wrap: balance;
 }
 
 .large-heading {
@@ -53,16 +51,16 @@ h1, h2  {
   font-family: var(--heading-font-serif-family);
   font-weight: 300;
   line-height: 1.2;
+  text-wrap: balance;
 }
 
 h2 {
   font-size: 1.5rem;
-  letter-spacing: -0.01em;
 }
 
 h3, .small-heading {
 font-family: "Engravers Gothic FS";
-font-size: 1rem;
+font-size: 0.9rem;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
@@ -70,22 +68,29 @@ letter-spacing: 0.03656rem;
 text-transform: uppercase;
 }
 
-h1:not(:last-child),
-h2:not(:last-child),
-h3:not(:last-child){
+h1,
+h2,
+h3{
+  margin-top:0.5em;
   margin-bottom:0.5em;
 }
 
-p:not(:last-child):not(.mb-0) {
+p {
   margin-bottom: 1rem;
 }
 
+h1:last-child,
+h2:last-child,
+h3:last-child,
+p:last-child{
+  margin-bottom:0;
+}
 
 
 p,li {
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 150%;
-  font-weight:350;
+  font-weight:300;
 }
 
 body ul{
@@ -124,12 +129,15 @@ textarea:focus, textarea:focus-within{
 /* editor styles for none content uses */
 
 .heading-md {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 .heading-lg {
-  font-size: 2.5rem;
-  letter-spacing: -0.01em;
+  font-size: 2.0rem;
+}
+
+.heading-sm {
+  font-size: 1.2rem;
 }
 
 hr {
@@ -138,16 +146,12 @@ hr {
   margin: 2rem 0;
 }
 
-
-
-
 section,header,footer{
     padding: var(--vert-gap) var(--side-gap);
     background-size: cover;
     background-position: center;
     color: var(--text-color);
     background-color: var(--bg-color);
-    
 }
 header{
     padding: 0 var(--side-gap)
@@ -375,9 +379,21 @@ float: right
     .mob-col-w-5{grid-column:span 5;}
     .mob-col-w-6{grid-column:span 6;}
 
-    h2.heading-lg {
-      font-size: 1.8rem;
+    .heading-md {
+      font-size: 1.3rem;
+}
+
+    .heading-lg {
+      font-size: 1.6rem;
     }
+    p {
+      font-size: 0.9rem;
+    }
+    section {
+      padding: 10%;
+    }
+
+
   }
 
 .col-h-2{grid-row: span 2 ;}
@@ -481,6 +497,9 @@ float: right
   
 
 /* accordian */
+.accordion-parent p{
+   font-size: 0.9rem;
+}
 .drop-sec{
     overflow: hidden;
     height: calc(var(--true-height) + var(--small-padding));
@@ -585,15 +604,19 @@ float: right
 .slick-nav {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-top: 2rem;
+  align-items: flex-end;
+  margin-top: 3rem;
   position: relative;
+  gap:1rem;
 }
 
   .slick-nav .slick-prev,
   .slick-nav .slick-next {
     top: unset;
     bottom: unset;
+    left: unset;
+    right: unset;
+    position: relative;
     z-index: 99;
     height: 15px;
     width: 15px;
@@ -601,18 +624,37 @@ float: right
 
   .slick-nav .slick-dots {
     order: 2;
-    margin: 0 auto;
+    margin: 0;
+    position: relative;
+    bottom:unset;
+    width: auto;
+  }
+    .slick-nav .slick-dots li {
+    width: 15px;
+    height: 15px;
+    top: -2px;
+  }
+
+  .slick-nav .slick-next {
+    order: 3;
+    margin-left: -7px;
   }
 
 .slick-nav .slick-dots li button::before {
+  color: transparent;
   background-color: transparent;
   border: 1px solid #fff;
   border-radius: 20%;
   display: inline-block;
-  height: 12px;
-  width: 12px;
+  height: 10px;
+  width: 10px;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+.slick-nav .slick-dots li.slick-active button::before {
+  color: transparent;
+  background-color: white;
 }
 
 
