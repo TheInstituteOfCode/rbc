@@ -59,6 +59,11 @@
       src: url('/fonts/Canela-Text-Family/CanelaText-Light-Trial.otf') format('opentype');
   }
 
+  @font-face {
+      font-family: 'Engravers-gothic'; 
+      src: url('/fonts/engravers-gothic-regular.otf') format('opentype');
+  }
+
     :root{
         --max-width: {{site.data.style.max-width}}px;
         --side-gap: {{site.data.style.horizontal-padding}};
@@ -66,7 +71,7 @@
         --animation-speed: {{site.data.style.animation-speed}};
         --small-padding: {{site.data.style.small-padding}};
         --heading-font-serif-family: 'Canela-heading', serif;
-        --heading-font-sans-family: 'Canela', sans-serif;
+        --heading-font-sans-family: 'Engravers-gothic', sans-serif;
         --body-font-family: 'Canela-text', sans-serif;
     }
 
@@ -463,6 +468,79 @@ tickerBanners.forEach(banner => {
 });
 
 </script>
+
+<!--
+TYPING ANIMATION  -- for the id animated-text
+
+    We .split() the original HTML by any <br/> tag, so we can treat breaks specially.
+
+    For each non-<br/> segment, we loop its characters, wrap each in a <span>, and bump delay by letterDelay.
+
+    When we hit a <br/>, we insert a real <br> node and bump delay by brPause (so there’s a longer pause at line breaks).
+
+    The CSS animation simply fades each <span> in when its animation-delay is reached.
+
+Adjust letterDelay and brPause at the top of the script to fine-tune speed.
+-->
+
+<!-- the script -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const initialDelay = 1;    // sec wait after scroll-into-view
+  const letterDelay  = 0.05; // sec between letters
+  const brPause      = 0.5;  // extra sec pause at each <br/>
+  const fadeDur      = 0.3;  // must match your CSS fadeIn duration
+  const cyclePause = 2; // seconds to pause before repeating the animation
+
+  const container = document.getElementById('animated-text');
+  if (!container) return;
+
+  // 1) Split original HTML into text chunks and <br/> tokens
+  const parts = container.innerHTML.split(/(<br\s*\/?>)/i);
+  container.innerHTML = '';  // clear it out
+
+  // 2) Wrap every character in a span.char, record maxDelay
+  let delay = 0;
+  let maxDelay = 0;
+  parts.forEach(part => {
+    if (/^<br/i.test(part)) {
+      container.appendChild(document.createElement('br'));
+      delay += brPause;
+    } else {
+      part.split('').forEach(ch => {
+        const span = document.createElement('span');
+        span.textContent = ch;
+        span.classList.add('char');
+        span.style.setProperty('--delay', delay + 's');
+        container.appendChild(span);
+        maxDelay = Math.max(maxDelay, delay);
+        delay += letterDelay;
+      });
+    }
+  });
+
+  // 3) Define a reusable cycle function
+  function runCycle() {
+    container.classList.remove('animate');   // reset all opacity→0
+    void container.offsetWidth;              // force reflow
+    container.classList.add('animate');      // kick off fade-in
+    // schedule next repeat
+    const totalMs = (maxDelay + fadeDur + cyclePause) * 1000;
+    setTimeout(runCycle, totalMs);
+  }
+
+  // 4) Wait for scroll-into-view, then start the loop after initialDelay
+  const observer = new IntersectionObserver((entries, obs) => {
+    if (entries[0].isIntersecting) {
+      setTimeout(runCycle, initialDelay * 1000);
+      obs.disconnect();
+    }
+  }, { threshold: 0.1 });
+
+  observer.observe(container);
+});
+</script>
+
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16977095101">

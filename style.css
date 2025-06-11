@@ -59,8 +59,8 @@ h2 {
 }
 
 h3, .small-heading {
-font-family: "Engravers Gothic FS";
-font-size: 0.9rem;
+font-family: var(--heading-font-sans-family);
+font-size: 1rem;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
@@ -97,6 +97,22 @@ body ul{
   list-style: disc;
   margin-left: 1rem;
 }
+
+  #animated-text {
+    display: inline-block;
+    white-space: pre-wrap;
+  }
+  #animated-text .char {
+    opacity: 0;
+    display: inline-block;
+  }
+  #animated-text.animate .char {
+    animation: fadeIn 0.3s ease forwards;
+    animation-delay: var(--delay);
+  }
+  @keyframes fadeIn {
+    to { opacity: 1; }
+  }
 
 
 /* form */
@@ -246,7 +262,7 @@ letter-spacing: 0.54px;
 
 
 [class*='button']{
-  font-family: "Engravers Gothic FS";
+  font-family: var(--heading-font-sans-family);
   font-weight: 400;
   text-transform: uppercase;
   font-size: 0.8rem;

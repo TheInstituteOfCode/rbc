@@ -22,8 +22,8 @@
         {% endcase %}
         ">
           <div class="color-set p-4" style="{% if block.content-max-width %}max-width: {{block.content-max-width}} {% endif %}">
-            <div class=" border-2 lg:border-4 p-4 lg:p-32" style="border-color:var(--colored-button-bg)">
-
+            <div class=" border-2 lg:border-4 p-4 sm:p-12 lg:p-32" style="border-color:var(--colored-button-bg)">
+              
               {% if noH1 == true %}
               {{block.block-content-html | replace: 'h2','h1'}}
               {% else %}
@@ -33,6 +33,8 @@
               {% if block.block-content-html contains "h2" %}
               {% assign noH1 = false %}
               {% endif %}
+
+              </span>
             </div>
           </div>
     </section>

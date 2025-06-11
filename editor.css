@@ -17,14 +17,14 @@
 
   a.button {
     border: 1px solid;
-    font-family: "Engravers Gothic FS";
+    font-family: var(--heading-font-sans-family);
   }
 
   a.button-featured {
     color: var(--colored-button-text);
     background-color: var(--colored-button-bg);
     border: 1px solid var(--colored-button-bg);
-    font-family: "Engravers Gothic FS";
+    font-family: var(--heading-font-sans-family);
   }
   
   a.simple_link{
