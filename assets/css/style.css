@@ -618,6 +618,9 @@ video {
 .h-full {
   height: 100%;
 }
+.h-\[50vh\] {
+  height: 50vh;
+}
 .min-h-full {
   min-height: 100%;
 }
