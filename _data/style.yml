@@ -12,8 +12,8 @@ schemes:
   - scheme_name: dark
     bg-color: '#003B49'
     text-color: '#D5E3DD'
-    colored-button-bg-color:
-    colored-button-text-color:
+    colored-button-bg-color: '#D5E3DD'
+    colored-button-text-color: '#003B49'
   - scheme_name: header
     bg-color: '#f3f3f0'
     text-color: '#fff'

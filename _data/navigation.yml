@@ -60,19 +60,45 @@ header_links:
         link: /Videos-and-Article
   - text: Contact
     link: /contact 
-footer-logo-image: /uploads/logo-footer.png
+footer-logo-image: /uploads/kc-logo.png
 footer-logo-size: 450px
 footer_nav_bar:
-  - text: Our Program
-    link: /ayurvedic-wellness-retreat 
-  - text: Your Journey
-    link: /your-journey
-  - text: Retreat Experience
-    link: /your-retreat-experience 
-  - text: Wellness Goals
-    link: /explore-benefits 
-  - text: About Ayurveda
-    link: /about-ayurveda
+  - heading: ABOUT RESORT
+    links:
+    - text: Our Program
+      link: /ayurvedic-wellness-retreat 
+    - text: Your Journey
+      link: /your-journey
+    - text: Retreat Experience
+      link: /your-retreat-experience 
+    - text: Wellness Goals
+      link: /explore-benefits 
+    - text: About Ayurveda
+      link: /about-ayurveda  
+  - heading: DETAILS
+    links:
+    - text: Our Program
+      link: /ayurvedic-wellness-retreat 
+    - text: Your Journey
+      link: /your-journey
+    - text: Retreat Experience
+      link: /your-retreat-experience 
+    - text: Wellness Goals
+      link: /explore-benefits 
+    - text: About Ayurveda
+      link: /about-ayurveda  
+  - heading: ABOUT RESORT
+    links:
+    - text: Our Program
+      link: /ayurvedic-wellness-retreat 
+    - text: Your Journey
+      link: /your-journey
+    - text: Retreat Experience
+      link: /your-retreat-experience 
+    - text: Wellness Goals
+      link: /explore-benefits 
+    - text: About Ayurveda
+      link: /about-ayurveda
 footer-location-html: >-
   <p>Br Bebengan Tangeb Abianbase</p> <p>Mengwi Badung 80351</p>
   <p>Bali,Indonesia</p>

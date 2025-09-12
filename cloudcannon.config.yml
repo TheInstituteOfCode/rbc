@@ -454,6 +454,86 @@ _structures:
           _id: blog-content-block
           content-max-width: 640px
           color-scheme: base
+      - label: offset grid
+        picker_preview:
+          text: offset grid
+          subtext:
+          icon:
+          icon_color:
+          image:
+          metadata:
+          gallery:
+            image: /uploads/blog-preview.png
+            icon:
+            icon_color:
+            fit:
+        tags:
+        value:
+          _id: offset-grid
+          content-1: 
+              subHeading: 
+              heading: "SENSE OF HARMONY"
+              p-text: <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua.</p>
+              button:
+              text: "Discover More"
+              url: "#"
+              open-in-new-tab: false
+          image-1: 
+              src: "/uploads/videos/beach-cover.jpg"
+              title: "Regent Bali Canggu Pool View"
+          content-2: 
+              subHeading:
+              heading: "WELLNESS"
+              p-text: <p>On Canggu Beach, surfers are silhouetted in the morning sun, boards  under arms ready to take on Bali's famous reef breaks.</p>
+              button:
+              text: "Discover More"
+              url: "#"
+              open-in-new-tab: false
+          image-2: 
+              src: "/uploads/videos/beach-cover.jpg"
+              title: "Regent Bali Canggu Pool View"
+          scheme:
+              scheme-color: base
+              scheme-padding: small-padding
+              scheme-max-width: l
+      - label: split banner slider
+        picker_preview:
+          text: split banner slider
+          subtext:
+          icon:
+          icon_color:
+          image:
+          metadata:
+          gallery:
+            image: /uploads/contact-preview.png
+            icon:
+            icon_color:
+            fit:
+        tags:
+        value:    
+          _id: split-banner-slider
+          content: 
+              subHeading: "TARU"
+              heading: "TARU"
+              p-text: <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea  commodo consequat.</p><p>Open 8am - 9pm everyday.</p>
+          carousel:
+              dots: true
+              slides:
+                  - img: /uploads/KC-Regent-slider-11.jpg
+                    alt: "Regent Bali Canggu"
+                  - img: /uploads/KC-Regent-slider-10.jpg
+                    alt: "Regent Bali Canggu"
+                  - img: /uploads/KC-Regent-slider-9.jpg
+                    alt: "Regent Bali Canggu"
+                  - img: /uploads/KC-Regent-slider-8.jpg
+                    alt: "Regent Bali Canggu"
+                  - img: /uploads/KC-Regent-slider-7.jpg
+                    alt: "Regent Bali Canggu"
+                  - img: /uploads/KC-Regent-slider-6.jpg
+                    alt: "Regent Bali Canggu"
+          color-scheme: base
+          scheme-padding: small-padding
+          scheme-max-width: l
       - label: Contact form
         picker_preview:
           text: Contact form

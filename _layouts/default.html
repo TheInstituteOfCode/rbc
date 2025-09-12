@@ -95,12 +95,14 @@
 <body>
   <div class="scheme-header absolute w-full top-0 z-50" id="header">
   <header>
-    <div class="max-width flex justify-center items-center py-4">
+    <div class="max-width flex justify-center items-center py-4 relative">
       <div class="text-center pt-8">
           <h1 class="mb-0 leading-none text-4xl">REGENT</h1>
           <h3 class="text-sm mt-0">BALI CANGGU</h3>
       </div>
-      <!-- <nav class="text-right hidden right-0 top-0 lg:block shrink-0">
+      <a href="https://bookings.sukhavatibali.com/en/product/panchakarma" class="absolute top-16 right-0 button ml-[15px]">Book Now</a>
+    </div>
+      <nav class="max-width justify-between hidden lg:flex right-0 top-0 shrink-0">
 
         {% assign noH1 = true %}
         {% for link in site.data.navigation.header_links %}
@@ -131,7 +133,7 @@
             {% endif %}
         </span>
         {% endfor %}
-        <a href="https://bookings.sukhavatibali.com/en/product/panchakarma" class="button ml-[15px]">Book Now</a>
+
         </nav>
       <div class="lg:hidden">
         <div class="burger-button">
@@ -161,7 +163,7 @@
 
       </div>
       </div>
-    </div> -->
+    </div>
   </header>
 </div>
 
@@ -210,17 +212,7 @@
   {% endif %}
 
   <!-- footer -->
-  <footer class="scheme-footer">
-      <div class="md:flex justify-between items-center py-4">
-        <div class="text-left">
-          <img src="/uploads/kc-logo.png" width="120px">
-        </div>
-        <div class="text-left">
-          <div class="text-left">
-          <h3 class="mb-4"> Get in touch </h3>
-          <p class="text-sm mb-1"> hello@kelapacreative.com</p>
-          <p class="text-sm"> +62 812-3888-8888</p>
-        </div>
+{% include footer.html %}
 
 
 {% if hasVideo == true  %}
@@ -466,6 +458,52 @@ tickerBanners.forEach(banner => {
           {% endif %}
     {% endfor %}
 });
+
+
+// offset grid script
+
+  const splitBannerSlider = document.querySelectorAll('.split-banner-slider');
+
+  splitBannerSlider.forEach(slider => {
+    let slides = slider.querySelectorAll('.slide');
+    let slideCount = slides.length;
+    let dots = slider.querySelectorAll('span[data-number]');
+    let currentIndex = 0;
+
+
+    dots.forEach(dot => {
+      dot.addEventListener('click', () => {
+        let index = parseInt(dot.getAttribute('data-number'));
+        currentIndex = index;
+        slide(currentIndex);
+        updateDots();
+      });
+    });
+
+    function updateDots() {
+      dots.forEach(dot => {
+        dot.classList.remove('filledIn');
+        // console.log(dot, currentIndex, dot.classList);
+        if (dots[currentIndex] === dot) {
+          dot.classList.add('filledIn');
+        }
+      });
+    }
+
+    function slide(x) {
+      slides.forEach(slide => {
+        slide.classList.remove('active');
+        // console.log(dot, currentIndex, dot.classList);
+        if (slides[currentIndex] === slide) {
+          slide.classList.add('active');
+        }
+      });
+
+    };
+
+
+
+    })
 
 </script>
 

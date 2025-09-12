@@ -1,0 +1,37 @@
+
+<section class="
+{{block.scheme.text-section-style}}
+">
+
+
+   <div class="max-width grid md:grid-cols-2 gap-8">
+     <div class="flex flex-col justify-end p-8 md:min-h-[25vw] md:max-h-[50vh] md:order-2">
+       <div>
+         {% if block.content-1.subHeading %}<h3>{{block.content-1.subHeading}}</h3>{% endif %}
+         {% if block.content-1.heading %}<h2 class="heading-lg">{{block.content-1.heading}}</h2>{% endif %}
+         {{block.content-1.p-text}}
+        </div>
+      </div>
+      <div class="relative aspect-square row-span-2 md:order-1">
+        <img class="inset-0 h-full w-full" src="{{block.image-1.src}}" alt="{{block.image-1.title}}">
+      </div>
+      <div class="flex flex-col justify-start p-8 md:min-h-[25vw] md:max-h-[50vh] md:order-4">
+        <div>
+          {% if block.content-1.subHeading %}<h3>{{block.content-1.subHeading}}</h3>{% endif %}
+          {% if block.content-1.heading %}<h2 class="heading-lg">{{block.content-1.heading}}</h2>{% endif %}
+          {{block.content-1.p-text}}
+        </div>
+      </div>
+        <div class="relative aspect-square row-span-2 md:order-3">
+          <img class="inset-0 h-full w-full" src="{{block.image-2.src}}" alt="{{block.image-2.title}}">
+        </div>
+      </div>  
+    </section>
+
+
+<style>
+       #section-{{forloop.index}} section{
+        min-height: {{block.min-height}};
+      }
+</style>
+

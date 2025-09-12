@@ -98,6 +98,11 @@ body ul{
   margin-left: 1rem;
 }
 
+.bg-base{
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
   #animated-text {
     display: inline-block;
     white-space: pre-wrap;
@@ -203,6 +208,9 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
 text-transform: uppercase;
+}
+footer h3{
+  font-size: 1.3rem;
 }
 
 
