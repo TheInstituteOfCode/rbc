@@ -7,7 +7,7 @@
             <h2 class="shrink-0">{{style.heading}}</h2>
             <div class="shrink-0 flex justify-end flex-wrap max-w-full">
               {% for room in style.rooms %}
-              <span class="button bg-base" data-filter="{{forloop.index0}}">{{room.name}}</span>
+              <span class="button bg-base filter-button {% if forloop.first %} active {% endif %}" data-filter="{{forloop.index0}}">{{room.name}}</span>
               {% endfor %}
             </div>
           </div>
@@ -53,6 +53,15 @@
         min-height: {{block.min-height}};
       }
 
+.filter-button {
+transition: all .5s;
+}
+
+.filter-button:not(.active) {
+  background-color: #D5E3DD;
+  /* color: var(--colored-button-text); */
+}
+
       .filter-target{
         display: none;
       }
@@ -83,6 +92,10 @@ styles.forEach(style => {
     let target = button.dataset.filter
     console.log(target)
     button.addEventListener('click', () => {
+      filterButtons.forEach(eachButton => {
+        eachButton.classList.remove('active')
+      })
+      button.classList.add('active')
       updateSlide(target)
       console.log('something happened')
 

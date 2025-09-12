@@ -517,6 +517,7 @@ _structures:
               heading: "TARU"
               p-text: <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea  commodo consequat.</p><p>Open 8am - 9pm everyday.</p>
           carousel:
+              desktop-image-position: left
               dots: true
               slides:
                   - img: /uploads/KC-Regent-slider-11.jpg

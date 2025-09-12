@@ -1,0 +1,39 @@
+
+<section class="flex justify-center items-center">
+      <div class="max-width">
+          <div class="" {% if block.content-max-width %} style="max-width: {{block.content-max-width}} "{% endif %}>
+            {% if noH1 == true %}
+            {{block.block-content-html | replace: 'h2','h1'}}
+            {% else %}
+            {{block.block-content-html}}
+            {% endif %}
+      
+            {% if block.block-content-html contains "h2" %}
+              {% assign noH1 = false %}
+            {% endif %}
+          </div>
+          <div class="grid md:grid-cols-3 gap-8 mt-8">
+            {% for cell in block.grid %}
+            <div class="{% cycle '','mt-8' %}">
+              <div class="relative" style="aspect-ratio: 127/139;">
+                <img src="{{cell.image}}" alt="">
+              </div>
+              <h3>{{cell.heading}}</h3>
+              <p>
+                {{cell.description}}
+              </p>
+              <p class="text-right">
+                <a href="{{cell.button.link}}" class="inline-block button uppercase">{{cell.button.text}}</a>
+              </p>
+            </div>
+            {% endfor %}
+          </div>
+      </div>
+    </section>
+
+
+<style>
+       #section-{{forloop.index}} section{
+        min-height: {{block.min-height}};
+      }
+</style>

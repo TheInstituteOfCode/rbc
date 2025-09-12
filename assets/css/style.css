@@ -517,6 +517,9 @@ video {
 .-order-1 {
   order: -1;
 }
+.order-3 {
+  order: 3;
+}
 .col-span-4 {
   grid-column: span 4 / span 4;
 }
@@ -952,6 +955,9 @@ video {
 .text-sm {
   font-size: 0.875rem;;
   line-height: 1.2;
+}
+.uppercase {
+  text-transform: uppercase;
 }
 .italic {
   font-style: italic;
@@ -1772,6 +1778,9 @@ float: right
   }
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
   .md\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));

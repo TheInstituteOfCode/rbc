@@ -1,11 +1,11 @@
-<section class="split-banner-slider relative
+<section class="split-banner-slider {{block.carousel.desktop-image-position}} relative
 {{block.scheme.text-section-style}}
 ">
 
 
       <div class="max-width bg-base relative z-10 grid gap-8 justify-center items-center grid-cols-10">
 
-      <div class=" gallery col-span-6 p-8">
+      <div class=" gallery col-span-6 p-8 {% if block.carousel.desktop-image-position == 'right' %} order-3 {% endif %}">
         <div class="aspect-square relative">
           
           {% for slide in block.carousel.slides %}
@@ -18,7 +18,7 @@
           {% assign initialDots = block.carousel.desktop-columns %}
             {% for dots in block.carousel.slides %}
             <span class="mx-1 dots {% if forloop.first%} filledIn {% endif %}" data-number="{{forloop.index0}}"> 
-              <svg width="32" height="32" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2.82837" y="0.353553" width="3.5" height="3.5" rx="0.75" transform="rotate(45 2.82837 0.353553)" stroke="#003B49" stroke-width="0.5"/></svg>
+              <svg width="14" height="14" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2.82837" y="0.353553" width="3.5" height="3.5" rx="0.75" transform="rotate(45 2.82837 0.353553)" stroke="#003B49" stroke-width="0.5"/></svg>
             </span>
             {% endfor %}
           </div>
@@ -31,14 +31,28 @@
       </div>
     <style>
      
-     .split-banner-slider .slide {
+     .split-banner-slider.left .slide {
           width: 80%;
           height: 80%;
           top: 10%;
           left: -90%;transition: all 0.5s ease;
       }
 
-      .split-banner-slider .slide.active {
+      .split-banner-slider.left .slide.active {
+          left: 0;
+          top:0;
+          width: 100%;
+          height: 100%;
+      }
+        .split-banner-slider.right .slide {
+          width: 80%;
+          height: 80%;
+          top: 10%;
+          left: 110%;
+          transition: all 0.5s ease;
+      }
+
+      .split-banner-slider.right .slide.active {
           left: 0;
           top:0;
           width: 100%;
