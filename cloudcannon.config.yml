@@ -786,7 +786,7 @@ _structures:
             form-max-width: 900px
       - label: text block with top overlap
         picker_preview:
-          text: text block
+          text: text block with overlap
           subtext:
           icon:
           icon_color:
