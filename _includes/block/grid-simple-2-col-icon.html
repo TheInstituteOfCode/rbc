@@ -10,7 +10,7 @@
       {% endcase %}"
        {% if block.content-max-width %} style="max-width: {{block.content-max-width}} "{% endif %}>
           <div class="">
-            <h2 class="text-center mb-8">
+            <h2 class="text-center mb-16 heading-lg">
               {{block.heading}}
             </h2>
             <div class="grid grid-cols-2 gap-12">
@@ -20,7 +20,7 @@
                     <img class="w-full" src="{{item.icon}}" alt="">
                   </div>
                   <div class="ml-8">
-                    <h3>{{item.heading}}</h3>
+                    <h3 class="sub-heading">{{item.heading}}</h3>
                     <p>{{item.description}}</p>
                   </div>
                 </div>

@@ -166,6 +166,7 @@ textarea:focus, textarea:focus-within{
 .contact-form input, .contact-form textarea {
   border: 2px solid var(--text-color);
   padding: 2rem 1rem;
+  margin-bottom: 0;
 }
 
 /* editor styles for none content uses */
