@@ -1,0 +1,34 @@
+
+<section class="flex justify-center items-center">
+      <div class="max-width
+      {% case block.text-alignment %}
+      {% when 'right' %}
+          text-right
+      {% when 'center' %}
+          text-center
+      {% else %}
+      {% endcase %}"
+       {% if block.content-max-width %} style="max-width: {{block.content-max-width}} "{% endif %}>
+          <div class="">
+            <div class="grid grid-cols-2 gap-12">
+              <div class="scheme-{{block.left-column.color-scheme}}">
+                <div class="bg-base p-8">
+                  {{block.left-column.block-content-html}}
+                </div>
+              </div>
+               <div class="scheme-{{block.right-column.color-scheme}}">
+                <div class="bg-base p-8">
+                  {{block.right-column.block-content-html}}
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+
+<style>
+       #section-{{forloop.index}} section{
+        min-height: {{block.min-height}};
+      }
+</style>

@@ -481,6 +481,9 @@ video {
 .inset-0 {
   inset: 0px;
 }
+.bottom-0 {
+  bottom: 0px;
+}
 .bottom-8 {
   bottom: 2rem;
 }
@@ -514,11 +517,20 @@ video {
 .z-50 {
   z-index: 50;
 }
+.z-\[999\] {
+  z-index: 999;
+}
 .-order-1 {
   order: -1;
 }
+.order-2 {
+  order: 2;
+}
 .order-3 {
   order: 3;
+}
+.col-span-2 {
+  grid-column: span 2 / span 2;
 }
 .col-span-4 {
   grid-column: span 4 / span 4;
@@ -580,6 +592,9 @@ video {
 .mb-vert {
   margin-bottom: var(--vert-gap);
 }
+.ml-8 {
+  margin-left: 2rem;
+}
 .ml-\[15px\] {
   margin-left: 15px;
 }
@@ -588,9 +603,6 @@ video {
 }
 .ml-full-side {
   margin-left: var(--max-width-side-padding);
-}
-.ml-small {
-  margin-left: var(--small-padding);
 }
 .mr-2 {
   margin-right: 0.5rem;
@@ -649,11 +661,17 @@ video {
 .min-h-full {
   min-height: 100%;
 }
+.w-16 {
+  width: 4rem;
+}
 .w-32 {
   width: 8rem;
 }
 .w-4\/5 {
   width: 80%;
+}
+.w-\[120\%\] {
+  width: 120%;
 }
 .w-\[initial\] {
   width: initial;
@@ -674,6 +692,9 @@ video {
 }
 .max-w-4xl {
   max-width: 56rem;
+}
+.max-w-\[120\%\] {
+  max-width: 120%;
 }
 .max-w-\[40rem\] {
   max-width: 40rem;
@@ -967,6 +988,10 @@ video {
 }
 .leading-none {
   line-height: 1;
+}
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 .underline {
   text-decoration-line: underline;
@@ -1425,11 +1450,12 @@ float: right
 /* this is where you style the button if you want to add more space between the spans than add padding to this div but make sure you also add it to the top and bottom active classes on there top/bottom or else your cross wont line up*/
 
 .burger-button {
-  position: relative;
-  top: 0vh;
-  right: 0;
+  position: absolute;
+  top: 4rem;
+  left: var(--side-gap);
   z-index: 901;
   padding: 8px;
+  border: 0px;
   }
   /*this is where you can change the color of the buttons*/
   .burger-button span{
@@ -1480,7 +1506,7 @@ float: right
   
   .burger-menu {
     position: fixed;
-    top: 0vh;
+    top: 5rem;
     padding:6rem 5% 5%;
     left:100vw;
     right: -100vw;
@@ -1490,7 +1516,10 @@ float: right
     transition:1s;
     overflow: scroll;
   }
-  .burger-menu.active{
+  .burger-menu .sub-menu{
+    transition: all .5s;
+  }
+  .burger-menu.active,.burger-menu .sub-menu.active{
     left:0;
     right:0;
   }
@@ -1498,7 +1527,27 @@ float: right
   .burger-menu .main-link{
   text-transform: uppercase;
   font-weight: 600;
-  margin-top: 0.5rem; 
+  margin-top: 0.5rem;
+  padding: 0% 1rem;
+  display: flex;
+  gap: 1rem;
+  }
+
+  .burger-menu .main-link svg, .burger-menu .go-back svg{
+    display: inline-block;
+  }
+
+  .burger-menu .go-back{
+    display: flex;
+    gap:1rem;
+  }
+
+  .burger-menu .sub-menu{
+    position: fixed;
+    top: 5rem;
+    padding:6rem 5% 5%;
+    left:100vw;
+    right: -100vw;
   }
 
   .burger-menu a {
@@ -1806,11 +1855,17 @@ float: right
   .lg\:flex {
     display: flex;
   }
+  .lg\:\!hidden {
+    display: none !important;
+  }
   .lg\:hidden {
     display: none;
   }
   .lg\:border-4 {
     border-width: 4px;
+  }
+  .lg\:\!bg-transparent {
+    background-color: transparent !important;
   }
   .lg\:p-32 {
     padding: 8rem;

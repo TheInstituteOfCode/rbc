@@ -1,0 +1,38 @@
+
+<section class="flex justify-center items-center">
+      <div class="max-width
+      {% case block.text-alignment %}
+      {% when 'right' %}
+          text-right
+      {% when 'center' %}
+          text-center
+      {% else %}
+      {% endcase %}"
+       {% if block.content-max-width %} style="max-width: {{block.content-max-width}} "{% endif %}>
+          <div class="">
+            <h2 class="text-center mb-8">
+              {{block.heading}}
+            </h2>
+            <div class="grid grid-cols-2 gap-12">
+              {% for item in block.grid %}
+                <div class="flex">
+                  <div class="w-16 pt1">
+                    <img class="w-full" src="{{item.icon}}" alt="">
+                  </div>
+                  <div class="ml-8">
+                    <h3>{{item.heading}}</h3>
+                    <p>{{item.description}}</p>
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+      </div>
+    </section>
+
+
+<style>
+       #section-{{forloop.index}} section{
+        min-height: {{block.min-height}};
+      }
+</style>

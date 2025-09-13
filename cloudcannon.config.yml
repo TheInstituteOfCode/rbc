@@ -418,6 +418,35 @@ _structures:
           text-alignment: center
           color-scheme: base
           min-height: 50vh
+      - label: simple icon grid
+        value:
+          _id: grid-simple-2-col-icon
+          heading: Unique Regent Amenities
+          grid:
+              - heading: Gourmet dinning
+                icon: /uploads/bicycle.svg
+                description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae saepe nam accusamus aliquid architecto aut ex laborum soluta
+              - heading: Gourmet dinning
+                icon: /uploads/bicycle.svg
+                description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae saepe nam accusamus aliquid architecto aut ex laborum soluta
+              - heading: Gourmet dinning
+                icon: /uploads/bicycle.svg
+                description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae saepe nam accusamus aliquid architecto aut ex laborum soluta
+              - heading: Gourmet dinning
+                icon: /uploads/bicycle.svg
+                description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae saepe nam accusamus aliquid architecto aut ex laborum soluta
+          color-scheme: base
+      - label:  
+        value:
+            _id: grid-simple-2-col-text
+            heading: Unique Regent Amenities
+            left-column:
+                block-content-html: <h2>heading</h2><h3>subheading</h3><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto iure, facere nemo veritatis sapiente, nobis quam eaque itaque nisi mollitia repellendus officia sint repudiandae explicabo quis. Dignissimos omnis sunt asperiores.</p>
+                color-scheme: base
+            right-column:
+                block-content-html: <h2>heading</h2><h3>subheading</h3><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto iure, facere nemo veritatis sapiente, nobis quam eaque itaque nisi mollitia repellendus officia sint repudiandae explicabo quis. Dignissimos omnis sunt asperiores.</p>
+                color-scheme: dark
+            color-scheme: base
       - label: pricing block
         picker_preview:
           text: pricing block
