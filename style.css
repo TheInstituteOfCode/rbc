@@ -147,6 +147,19 @@ textarea:focus, textarea:focus-within{
   outline: none;
 }
 
+.contact-form label {
+  display: inline-block;
+  margin-bottom: .5rem;
+  font-weight: 800;
+  font-family:   var(--heading-font-sans-family);
+  letter-spacing: 3px;
+}
+
+.contact-form input, .contact-form textarea {
+  border: 2px solid var(--text-color);
+  padding: 2rem 1rem;
+}
+
 /* editor styles for none content uses */
 
 .heading-md {

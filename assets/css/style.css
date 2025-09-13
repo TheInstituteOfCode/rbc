@@ -574,6 +574,9 @@ video {
 .mb-0 {
   margin-bottom: 0px;
 }
+.mb-12 {
+  margin-bottom: 3rem;
+}
 .mb-16 {
   margin-bottom: 4rem;
 }
@@ -676,8 +679,11 @@ video {
 .w-4\/5 {
   width: 80%;
 }
-.w-\[90\%\] {
-  width: 90%;
+.w-\[80\%\] {
+  width: 80%;
+}
+.w-\[calc\(100vw_-_20vw_-_var\(--side-gap\)\)\] {
+  width: calc(100vw - 20vw - var(--side-gap));
 }
 .w-\[initial\] {
   width: initial;
@@ -694,12 +700,6 @@ video {
 }
 .w-screen {
   width: 100vw;
-}
-.w-\[calc\(100vw_-_20vw_-_var\(--side-gap\)\)\] {
-  width: calc(100vw - 20vw - var(--side-gap));
-}
-.w-\[80\%\] {
-  width: 80%;
 }
 .min-w-min {
   min-width: -moz-min-content;
@@ -791,6 +791,9 @@ video {
 }
 .gap-4 {
   gap: 1rem;
+}
+.gap-6 {
+  gap: 1.5rem;
 }
 .gap-8 {
   gap: 2rem;
@@ -1170,6 +1173,19 @@ input[type="submit"]{
 input:focus, input:focus-within,
 textarea:focus, textarea:focus-within{
   outline: none;
+}
+
+.contact-form label {
+  display: inline-block;
+  margin-bottom: .5rem;
+  font-weight: 800;
+  font-family:   var(--heading-font-sans-family);
+  letter-spacing: 3px;
+}
+
+.contact-form input, .contact-form textarea {
+  border: 2px solid var(--text-color);
+  padding: 2rem 1rem;
 }
 
 /* editor styles for none content uses */

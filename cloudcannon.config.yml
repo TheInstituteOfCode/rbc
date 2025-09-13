@@ -699,6 +699,8 @@ _structures:
           _id: horizontal-scroll-basic
           block-content-html: <h3> lorem </h3> <h2>  experiences  </h2>
           image-width: max(25%, 8rem)
+          mobile-image-width: 80%
+
           img_aspect: Square
           scroll-items:
             - image: /uploads/screenshot-2024-09-30-at-4-12-25-pm.png
@@ -878,6 +880,35 @@ _structures:
                           content: Positioned within lush tropical landscapes, the Studio Suite draws  upon the artistry of Indonesian design, inviting quiet indulgence. Step  onto the balcony to absorb Bali’s verdant beauty and vibrant blooms,  gaze over the Indian ocean in an Ocean View, or step from your terrace  directly into the turquoise pool with the Lagoon Access. A king bed  offers serene comfort, while unlimited laundry, all‑day breakfast, and  assistance from a Regent Experience Agent elevate your stay. 
             color-scheme: highlight
             min-height: 50vh
+      - label: experience grid
+        value:
+              -   _id: experience-grid
+                  grid:
+                      - heading: Sea experience
+                        description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo labore tenetur maxime quos error harum odit laudantium beatae, itaque culpa fugiat sed magnam modi. Incidunt error accusantium culpa quod officia.
+                        image: /uploads/videos/ocean-cover.jpg
+                        image-alt: ocean cover
+                        button:
+                              text: view more
+                              link: '#'
+                              external-Link: false
+                      - heading: Sea experience
+                        description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo labore tenetur maxime quos error harum odit laudantium beatae, itaque culpa fugiat sed magnam modi. Incidunt error accusantium culpa quod officia.
+                        image: /uploads/videos/ocean-cover.jpg
+                        image-alt: ocean cover
+                        button:
+                              text: view more
+                              link: '#'
+                              external-Link: false
+                      - heading: Sea experience
+                        description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo labore tenetur maxime quos error harum odit laudantium beatae, itaque culpa fugiat sed magnam modi. Incidunt error accusantium culpa quod officia.
+                        image: /uploads/videos/ocean-cover.jpg
+                        image-alt: ocean cover
+                        button:
+                              text: view more
+                              link: '#'
+                              external-Link: false
+                  color-scheme: base
   columns:
     style: modal
     values:
