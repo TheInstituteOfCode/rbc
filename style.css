@@ -47,14 +47,22 @@ h3,h4,h5,h6,.small-heading {
   font-size: 2rem;
 }
 
-h1, h2  {
+.sub-heading {
+font-family: var(--heading-font-sans-family);
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 0.12em; 
+  text-transform: uppercase;
+}
+
+h1, h2,.heading  {
   font-family: var(--heading-font-serif-family);
   font-weight: 300;
   line-height: 1.2;
   text-wrap: balance;
 }
 
-h2 {
+h2,.heading {
   font-size: 1.5rem;
 }
 

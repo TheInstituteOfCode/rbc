@@ -14,16 +14,16 @@
           </div>
           <div class="grid md:grid-cols-3 gap-8 mt-8">
             {% for cell in block.grid %}
-            <div class="{% cycle '','mt-8' %}">
+            <div class="{% cycle '','mt-16' %}">
               <div class="relative" style="aspect-ratio: 127/139;">
                 <img src="{{cell.image}}" alt="">
               </div>
-              <h3>{{cell.heading}}</h3>
+              <h3 class="heading">{{cell.heading}}</h3>
               <p>
                 {{cell.description}}
               </p>
               <p class="text-right">
-                <a href="{{cell.button.link}}" class="inline-block button uppercase">{{cell.button.text}}</a>
+                <a href="{{cell.button.link}}" class="inline-block button uppercase " style="background-color: #D5E3DD; border-color: #D5E3DD;">{{cell.button.text}}</a>
               </p>
             </div>
             {% endfor %}

@@ -5,7 +5,7 @@
 
       <div class="max-width bg-base relative z-10 grid gap-8 justify-center items-center md:grid-cols-10">
 
-      <div class=" gallery col-span-6 p-8 {% if block.carousel.desktop-image-position == 'right' %} order-3 {% endif %}">
+      <div class=" gallery col-span-6 p-8 {% if block.carousel.desktop-image-position == 'right' %} md:order-3 {% endif %}">
         <div class="aspect-square relative">
           
           {% for slide in block.carousel.slides %}
