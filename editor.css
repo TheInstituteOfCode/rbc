@@ -5,6 +5,8 @@
 `
   }
 
+
+  h2.large-heading {}
   /* duplicated in base style for none h2 uses */
   h2.heading-md {
 

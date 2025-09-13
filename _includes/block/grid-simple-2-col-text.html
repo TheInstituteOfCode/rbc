@@ -10,14 +10,17 @@
       {% endcase %}"
        {% if block.content-max-width %} style="max-width: {{block.content-max-width}} "{% endif %}>
           <div class="">
-            <div class="grid grid-cols-2 gap-12">
-              <div class="scheme-{{block.left-column.color-scheme}}">
+            <div class="grid grid-cols-8 gap-12">
+              <div class="scheme-{{block.left-column.color-scheme}} col-span-5">
                 <div class="bg-base p-8">
                   {{block.left-column.block-content-html}}
                 </div>
               </div>
-               <div class="scheme-{{block.right-column.color-scheme}}">
-                <div class="bg-base p-8">
+               <div class="scheme-{{block.right-column.color-scheme}} relative col-span-3">
+                <div class="absolute inset-0 w-full h-full bg-base">
+
+                </div>
+                <div class="bg-base p-8 relative z-10">
                   {{block.right-column.block-content-html}}
                 </div>
               </div>
