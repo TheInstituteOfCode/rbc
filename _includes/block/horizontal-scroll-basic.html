@@ -19,7 +19,7 @@
 
 
       {% for col in block.scroll-items %}
-        <div class="shrink-0 scroll-item color-set {% if forloop.first  %} ml-full-side {% endif %} {% if forloop.last  %} mr-full-side {% endif %}" style="width: min( {{block.image-width}} , 500px );">
+        <div class="shrink-0 scroll-item color-set {% if forloop.first  %} ml-full-side {% endif %} {% if forloop.last  %} mr-full-side {% endif %}">
           {% if col.link %}<a href="{{col.link}}">{% endif%}
             <div class="image-sizer relative">
               <img class="w-full h-full object-cover inset-0 absolute" src="{{col.image}}" alt=""loading="lazy">
@@ -47,6 +47,17 @@
 <style>
     #section-{{forloop.index}} .image-sizer {
     aspect-ratio: {% include logic/aspect-logic.html aspect = block.img_aspect %} ;
+  }
+
+
+  #section-{{forloop.index}} .scroll-item {
+    flex-basis: {{block.mobile-image-width}} 
+  }
+  @media (min-width: 768px) {
+    
+    #section-{{forloop.index}} .scroll-item {
+      flex-basis: min( {{block.image-width}} , 500px )
+    }
   }
 </style>
 

@@ -3,7 +3,7 @@
       <div class="max-width w-full">
         {% for style in block.room-style %}
         <div class="scheme-base style-set {% unless forloop.first %} mt-vert {% endunless %}">
-          <div class="flex justify-between flex-wrap mb-8">
+          <div class="flex justify-between flex-wrap">
             <h2 class="shrink-0">{{style.heading}}</h2>
             <div class="shrink-0 flex justify-end flex-wrap max-w-full">
               {% for room in style.rooms %}

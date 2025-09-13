@@ -9,13 +9,13 @@
       {% else %}
       {% endcase %}">
           <div class="">
-            <div class="grid grid-cols-3 gap-12">
-              <div class="col-span-2 {% if block.desktop-image-position == 'right' %} order-2 {% endif %}">
-                <div class="relative mb-16" style="aspect-ratio: 19/10;">
-                  <img class="h-full w-[120%] max-w-[120%] absolute top-0 {% if block.desktop-image-position == 'right' %} right-0 {% else %}  left-0 {% endif %} bottom-0" src="{{block.image}}" alt="{{block.image-alt}}">
+            <div class="grid md:grid-cols-3 gap-12">
+              <div class="col-span-2 {% if block.desktop-image-position == 'right' %} md:order-2 {% endif %}">
+                <div class="relative mb-16 w-screen max-w-full img-holder">
+                  <img class="h-full w-[80%] md:w-[120%] md:max-w-[120%] absolute top-0 {% if block.desktop-image-position == 'right' %} right-side {% else %}  left-side {% endif %} bottom-0" src="{{block.image}}" alt="{{block.image-alt}}">
                 </div>
               </div>
-               <div class="scheme-{{block.text-column.color-scheme}} relative z-10 self-end">
+               <div class="scheme-{{block.text-column.color-scheme}} bottom-ver {% if block.desktop-image-position == 'left' %} right-side left-[20vw] {% else %}  left-side right-20vw {% endif %} absolute w-[calc(100vw_-_20vw_-_var(--side-gap))] md:w-full md:inset-0 md:relative z-10 self-end">
                 <div class="bg-base p-8">
                   {{block.text-column.block-content-html}}
                 </div>
@@ -24,10 +24,19 @@
           </div>
       </div>
     </section>
-dan was here
 
 <style>
        #section-{{forloop.index}} section{
         min-height: {{block.min-height}};
       }
+
+
+     #section-{{forloop.index}} .img-holder {
+        aspect-ratio: 1;
+      }
+@media (min-width: 768px) {
+  #section-{{forloop.index}}    .img-holder {
+        aspect-ratio: 19/10;
+      }
+    }
 </style>
