@@ -2,64 +2,53 @@ logo_image: /uploads/logo-header-darker.png
 logo_alt: Sukhavati Logo
 header_logo_width: 15rem
 header_links:
-  - text: About Sukhavati
-    link:
+  - text: OVERVIEW
+    link: #
     sub_links:
       - text: Our Story
         link: /our-story
-      - text: Our Program
-        link: /ayurvedic-wellness-retreat
       - text: Our Team
         link: /team
-      - text: Our  Treatments
-        link: /treatments
-      - text: Our Villas
-        link: /your-retreat-experience#section-3
-      - text: Other Services
-        link: /other-services
-  - text: Your Journey
-    link: /your-journey 
+  - text: ROOMS & SUITES
+    link: /SUITES-and-VILLAS
+    sub_links: #
+      - text: Room 1
+        link: #
+      - text: Room 2
+        link: #
+  - text: DINNING
+    link: 
     sub_links:
-      - text: Your Stay at Sukhavati
-        link: /your-journey 
-      - text: Your Retreat Experience
-        link: /your-retreat-experience
-      - text: Your Daily Schedule
-        link: /your-retreat-experience#section-6
-      - text: Your Wellness Goals
-        link: /explore-benefits
-      - text: Pricing & Inclusions
-        link: /your-journey#pricing
-  - text: Your Wellness Goals
-    link:
-    sub_links:
-      - text: Detox
-        link: /detox
-      - text: Burnout & Fatigue
-        link: /burnout-fatigue
-      - text: Stress, Anxiety, Insomnia
-        link: /stress-anxiety-insomnia
-      - text: Weight Loss
-        link: /weight-loss
-      - text: Autoimmune Conditions
-        link: /autoimmune-conditions
-      - text: Arthritis & Pain
-        link: /arthritis-pain
-  - text: Ayurveda
-    link:
+      - text: menu
+        link: #
+      - text: location
+        link: #
+  - text: WEDDINGS
+    link: #
     sub_links:
       - text: What is Ayurveda?
-        link: /about-ayurveda
+        link: /locations
       - text: Panchakarma
         link: /panchakarma
-      - text: Benefits
-        link: /explore-benefits
-      - text: Treatments
-        link: /treatments
-      - text: Videos & Articles
-        link: /Videos-and-Article
-  - text: Contact
-    link: /contact 
+  - text: MEETINGS & EVENTS 
+    link: 
+    sub_links:
+      - text: What is MEETINGS?
+        link: /about-ayurveda
+      - text: What events are around
+        link: /panchakarma
+  - text: WELLNESS
+    link: 
+    sub_links:
+      - text: What is WELLNESS?
+  - text: EXPERIENCES 
+    link: 
+    sub_links:
+      - text: What is EXPERIENCES?
+  - text: DISCOVERY 
+    link: #
+  - text: OFFERS
+    link: / 
 footer-logo-image: /uploads/kc-logo.png
 footer-logo-size: 450px
 footer_nav_bar:
