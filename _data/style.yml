@@ -4,8 +4,23 @@ schemes:
     text-color: '#003B49'
     colored-button-bg-color: '#003B49'
     colored-button-text-color: '#ffffff'
-  - scheme_name: highlight
+  - scheme_name: mint-200
+    bg-color: '#E8EFEC'
+    text-color: '#003B49'
+    colored-button-bg-color: '#003B49'
+    colored-button-text-color: '#ffffff'
+  - scheme_name: mint-300
+    bg-color: '#E1EAE5'
+    text-color: '#003B49'
+    colored-button-bg-color: '#003B49'
+    colored-button-text-color: '#ffffff'
+  - scheme_name: mint-400
     bg-color: '#D5E3DD'
+    text-color: '#003B49'
+    colored-button-bg-color: '#003B49'
+    colored-button-text-color: '#ffffff'
+  - scheme_name: mint-500
+    bg-color: '#C6D9D1'
     text-color: '#003B49'
     colored-button-bg-color: '#003B49'
     colored-button-text-color: '#ffffff'

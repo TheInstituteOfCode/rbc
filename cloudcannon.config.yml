@@ -81,7 +81,10 @@ _inputs:
       allow_empty: false
       values:
         - base
-        - featured
+        - mint-200
+        - mint-300
+        - mint-400
+        - mint-500
         - dark
     cascade: true
   slider_col_color_scheme:
@@ -833,7 +836,7 @@ _structures:
         value:
           _id: text-block-top-overlap
           block-content-html:
-          overlay-color-scheme: highlight
+          overlay-color-scheme: mint-base
           content-max-width:
           text-alignment: center
           color-scheme: base
@@ -878,7 +881,7 @@ _structures:
                           bed-size: king bed-size
                           sleeps: 2
                           content: Positioned within lush tropical landscapes, the Studio Suite draws  upon the artistry of Indonesian design, inviting quiet indulgence. Step  onto the balcony to absorb Bali’s verdant beauty and vibrant blooms,  gaze over the Indian ocean in an Ocean View, or step from your terrace  directly into the turquoise pool with the Lagoon Access. A king bed  offers serene comfort, while unlimited laundry, all‑day breakfast, and  assistance from a Regent Experience Agent elevate your stay. 
-            color-scheme: highlight
+            color-scheme: mint-base
             min-height: 50vh
       - label: experience grid
         value:
