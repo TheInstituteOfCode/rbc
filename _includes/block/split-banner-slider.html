@@ -14,10 +14,14 @@
         </div>
           
 
-        <div class="h-16 flex justify-center items-center gap-4 text-center">
+        <div class="h-16 flex justify-center items-center gap-0 text-center">
           {% assign initialDots = block.carousel.desktop-columns %}
             {% for dots in block.carousel.slides %}
-            <span class="mx-1 line {% if forloop.first%} filledIn {% endif %}" data-number="{{forloop.index0}}"> 
+            <span class="px-2 py-4 inline-block" data-number="{{forloop.index0}}">
+              <span class="mx-1 line {% if forloop.first%} filledIn {% endif %}"> 
+
+            </span>
+
             </span>
             {% endfor %}
           </div>

@@ -567,6 +567,25 @@ _structures:
           color-scheme: base
           scheme-padding: small-padding
           scheme-max-width: l
+      - label: newsletter form
+        value:
+          _id: newsletter-form
+          content: 
+              heading: "A coastal haven where Bali's spirit unravels"
+          min-height: 50vh
+          color-scheme: mint-400
+      - label: fixed background section
+        value:
+          _id: banner-bg-fixed
+          block-content-html: <h2 class="text-sm md:text-xl/[1.7] leading-[1.7]">Every view, one to covet. <br /> Every moment, one to savour. <br /> Every stay, another story to tell. <br /> This is the place. <br/> <br/> This is Regent. </h2>
+          content-max-width:
+          background-desktop-image: /uploads/regent-illustration.avif
+          background-mobile-image:
+          text-alignment: center
+          vert-alignment: middle
+          overlay-opacity: 0
+          min-height: 50vh
+          color-scheme: mint-400
       - label: Contact form
         picker_preview:
           text: Contact form

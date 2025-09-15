@@ -685,6 +685,7 @@ float: right
       }
 
       .line {
+        display: block;
         background-color: var(--text-color);
         transition: all 0.4s ease;
         opacity: .3;

@@ -543,10 +543,10 @@ tickerBanners.forEach(banner => {
 
     function updateDots() {
       dots.forEach(dot => {
-        dot.classList.remove('filledIn');
+        dot.querySelector('span').classList.remove('filledIn');
         // console.log(dot, currentIndex, dot.classList);
         if (dots[currentIndex] === dot) {
-          dot.classList.add('filledIn');
+          dot.querySelector('span').classList.add('filledIn');
         }
       });
     }
