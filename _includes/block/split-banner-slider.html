@@ -17,8 +17,7 @@
         <div class="h-16 flex justify-center items-center gap-4 text-center">
           {% assign initialDots = block.carousel.desktop-columns %}
             {% for dots in block.carousel.slides %}
-            <span class="mx-1 dots {% if forloop.first%} filledIn {% endif %}" data-number="{{forloop.index0}}"> 
-              <svg width="14" height="14" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2.82837" y="0.353553" width="3.5" height="3.5" rx="0.75" transform="rotate(45 2.82837 0.353553)" stroke="#003B49" stroke-width="0.5"/></svg>
+            <span class="mx-1 line {% if forloop.first%} filledIn {% endif %}" data-number="{{forloop.index0}}"> 
             </span>
             {% endfor %}
           </div>
@@ -31,47 +30,6 @@
       </div>
     <style>
      
-     .split-banner-slider.left .slide {
-          width: 80%;
-          height: 80%;
-          top: 10%;
-          left: -90%;transition: all 0.5s ease;
-      }
-
-      .split-banner-slider.left .slide.active {
-          left: 0;
-          top:0;
-          width: 100%;
-          height: 100%;
-      }
-        .split-banner-slider.right .slide {
-          width: 80%;
-          height: 80%;
-          top: 10%;
-          left: 110%;
-          transition: all 0.5s ease;
-      }
-
-      .split-banner-slider.right .slide.active {
-          left: 0;
-          top:0;
-          width: 100%;
-          height: 100%;
-      }
-
-
-      .dots {
-        transition: all 0.3s ease;
-      }
-
-      .dots svg rect {
-        stroke: var(--text-color);
-        transition: all 0.4s ease;
-      }
-      .dots.filledIn svg rect {
-        fill: var(--text-color);
-      }
-
 
       @media (max-width: 768px) {
         #section-{{forloop.index}} .slide {

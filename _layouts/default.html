@@ -310,6 +310,8 @@ console.log(burgerButton,burgerMenu,burgerSecondLevelButton,burgerGoBack)
     })
   })
 
+
+
 // universal functions
 
 function passHeightUp(target) {
@@ -504,6 +506,18 @@ tickerBanners.forEach(banner => {
           
           {% endif %}
     {% endfor %}
+
+    const sliders = document.querySelectorAll(['[class*=slider]'])
+    console.log(sliders)
+
+    sliders.forEach(slider => {
+      console.log('here',
+        slider.querySelector('.slick-dots button')
+
+      )
+        slider.querySelector('.slick-dots button').click()
+
+    })
 });
 
 
