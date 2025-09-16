@@ -68,27 +68,25 @@ footer_nav_bar:
         link: ''
   - heading: DETAILS
     links:
-      - text: Our Program
+      - text: ABOUT US
         link: /ayurvedic-wellness-retreat
-      - text: Your Journey
+      - text: MEDIA CENTER
         link: /your-journey
-      - text: Retreat Experience
+      - text: NEED HELP?
         link: /your-retreat-experience
-      - text: Wellness Goals
+      - text: GROUP BOOKINGS
         link: /explore-benefits
-      - text: About Ayurveda
-        link: /about-ayurveda
-  - heading: ABOUT RESORT
+  - heading: CONNECT
     links:
-      - text: Our Program
+      - text: FACEBOOK
         link: /ayurvedic-wellness-retreat
-      - text: Your Journey
+      - text: INSTAGRAM
         link: /your-journey
-      - text: Retreat Experience
+      - text: EMAIL
         link: /your-retreat-experience
-      - text: Wellness Goals
+      - text: CALL
         link: /explore-benefits
-      - text: About Ayurveda
+      - text: CONTACT
         link: /about-ayurveda
 footer-sub-links:
   - text: PRIVACY POLICY
