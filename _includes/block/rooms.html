@@ -30,8 +30,11 @@
                       {{room.bed-size}}
                     </span>
                     <span>
-                      Sleeps {{room.sleeps}}
+                      {{room.sleeps}} Guests
                     </span>
+                    {% for extra-feature in room.extra-feature %}
+                      <span>{{extra-feature}}</span>
+                    {% endfor %}
                   </div>
                   <div>
                     <p>

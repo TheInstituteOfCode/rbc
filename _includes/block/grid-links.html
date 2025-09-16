@@ -1,5 +1,5 @@
 
-<section class="flex justify-center items-center">
+<section class="">
       <div class="max-width
       {% case block.text-alignment %}
       {% when 'right' %}
@@ -9,11 +9,11 @@
       {% else %}
       {% endcase %}"
        {% if block.content-max-width %} style="max-width: {{block.content-max-width}} "{% endif %}>
-          <div class="">
-            <h2>
+          <div class="text-center">
+            <h2 class="large-heading  mb-16">
               {{block.heading}}
             </h2>
-            <div class="grid" style="grid-template-columns: repeat({{block.column-count}}, 1rf);">
+            <div class="grid gap-8 text-center" style="grid-template-columns: repeat({{block.column-count}}, 1fr);">
               {% for link in block.buttons %}
               <div>
                 <a href="{{link.url}}" class="button-featured" {% if link.external-link == true %} target="_blank" {% endif %} {% if link.download == true %} download="" {% endif %}>{{link.text}}</a>
