@@ -1,0 +1,30 @@
+
+<section class="flex justify-center items-center">
+      <div class="max-width
+      {% case block.text-alignment %}
+      {% when 'right' %}
+          text-right
+      {% when 'center' %}
+          text-center
+      {% else %}
+      {% endcase %}"
+       {% if block.content-max-width %} style="max-width: {{block.content-max-width}} "{% endif %}>
+          <div class="">
+            <h2>
+              {{block.heading}}
+            </h2>
+            <div class="grid" style="grid-template-columns: repeat({{block.column-count}});">
+              <div>
+
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+
+<style>
+       #section-{{forloop.index}} section{
+        min-height: {{block.min-height}};
+      }
+</style>

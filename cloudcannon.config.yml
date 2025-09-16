@@ -67,6 +67,26 @@ _inputs:
       styles: /editor.css
     label: Content
     cascade: true
+  p-text:
+    type: html
+    options:
+      allow_resize: true
+      allow_custom_markup: false
+      remove_custom_markup: false
+      initial_height: 320
+      center: text-center
+      format: p
+      bulletedlist: true
+      numberedlist: true
+      horizontalrule: true
+      image: true
+      image_size_attributes: true
+      link: true
+      resize_style: contain
+      snippet: false
+      styles: /editor.css
+    label: Content
+    cascade: true
   pre-heading-style:
     type: select
     options:
