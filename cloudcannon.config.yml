@@ -902,6 +902,72 @@ _structures:
                           content: Positioned within lush tropical landscapes, the Studio Suite draws  upon the artistry of Indonesian design, inviting quiet indulgence. Step  onto the balcony to absorb Bali’s verdant beauty and vibrant blooms,  gaze over the Indian ocean in an Ocean View, or step from your terrace  directly into the turquoise pool with the Lagoon Access. A king bed  offers serene comfort, while unlimited laundry, all‑day breakfast, and  assistance from a Regent Experience Agent elevate your stay. 
             color-scheme: mint-400
             min-height: 50vh
+      - label: wave grid
+        value: 
+            _id: wave-grid
+            block-content-html: >-
+                <h3 class="sub-heading">SUITES &amp; VILLAS</h3><h2
+                class="heading-lg">A coastal haven where Bali's spirit
+                unravels</h2><p>Espouse your preference of the one hundred and fifty
+                oceanside havens, including those with unrivalled sea or garden
+                vistas, direct lagoon-access, as well as a variety of suites,
+                two-bedroom penthouses and expansive villas with private
+                pools.</p>
+            grid:
+                    - heading: Weekend Escape
+                      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua.
+                      image: /uploads/KC-Regent-slider-11.jpg
+                      button:
+                        url: "#"
+                        text: reserve
+                    - heading: Weekend Escape   
+                      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. 
+                      image: /uploads/KC-Regent-slider-11.jpg
+
+                      button:
+                        url: "#"
+                        text: reserve
+                    - heading: Weekend Escape   
+                      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. 
+                      image: /uploads/KC-Regent-slider-11.jpg
+
+                      button:
+                        url: "#"
+                        text: reserve
+            content-max-width: 700px
+            text-alignment: center
+            color-scheme: base
+            min-height: 50vh
+      - label: events grid
+        value: 
+            _id: events-block
+            location: Beach House
+            events:
+                - 
+                    heading: DJ Scott Bruce
+                    sub-heading: Resident DJ
+                    full-description: <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut.</p>
+                    short-description: 'Celebrate the year’s end with exquisite dining and serene moments, embracing the art of graceful celebration.'
+                    featured-image: /uploads/videos/ocean-cover.jpg
+                    button-link:
+                    button-text: book a table
+                - 
+                    heading: DJ Scott Bruce
+                    sub-heading: Resident DJ
+                    full-description: <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut.</p>
+                    short-description: 'Celebrate the year’s end with exquisite dining and serene moments, embracing the art of graceful celebration.'
+                    featured-image: /uploads/videos/ocean-cover.jpg   
+                    button-link:
+                    button-text: discover more
+                - 
+                    heading: DJ Scott Bruce
+                    sub-heading: Resident DJ
+                    full-description: <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut.</p>
+                    short-description: 'Celebrate the year’s end with exquisite dining and serene moments, embracing the art of graceful celebration.'
+                    featured-image: /uploads/videos/ocean-cover.jpg   
+                    button-link:
+                    button-text: discover more
+            color-scheme: mint-200
       - label: experience grid
         value:
               -   _id: experience-grid
