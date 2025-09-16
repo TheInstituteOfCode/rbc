@@ -35,12 +35,23 @@ blocks:
         color-scheme: base
         min-height: 50vh
     -
-        _id: text-block
+        _id: banner-split-video
         block-content-html: ''
-        content-max-width:
-        text-alignment: center
-        color-scheme: base
-        min-height: 50vh
+        background-desktop-image: /uploads/screenshot-2024-09-30-at-4-12-25-pm.png
+        background-mobile-image: /uploads/screenshot-2024-09-30-at-4-12-25-pm.png
+        videos:
+            -
+                video_path: /uploads/WEBSITE-BANNER.mp4
+                video_type: mp4
+        background-alt:
+        desktop-image-position: right
+        text-alignment: left
+        vert-alignment: bottom
+        mobile-image-position: bottom
+        img_aspect: Square
+        collapse-top-space: false
+        collapse-bottom-space: false
+        color-scheme: dark
     -
         _id: horizontal-scroll-basic
         block-content-html: >-
@@ -110,6 +121,13 @@ blocks:
             scheme-color: base
             scheme-padding: small-padding
             scheme-max-width: l
+    -
+        _id: text-block
+        block-content-html: ''
+        content-max-width:
+        text-alignment: center
+        color-scheme: base
+        min-height: 50vh
 seo:
     title: Regent Website Proposal | Kelapa Creative
     description: >-
