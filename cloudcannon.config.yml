@@ -278,7 +278,9 @@ _inputs:
   youtube_placeholder:
     type: image
     cascade: true
-
+  src:
+    type: image
+    label: image
 
 _structures:
   blocks:

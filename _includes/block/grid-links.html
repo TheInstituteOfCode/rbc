@@ -14,9 +14,11 @@
               {{block.heading}}
             </h2>
             <div class="grid" style="grid-template-columns: repeat({{block.column-count}});">
+              {% for link in block.buttons %}
               <div>
-
+                <a href="{{link.url}}" class="button-featured" {%if link.external-link = true %} target="_blank" {% endif %} {%if link.download = true %} download="" {% endif %}>{{link.text}}</a>
               </div>
+              {% endfor %}
             </div>
           </div>
       </div>
