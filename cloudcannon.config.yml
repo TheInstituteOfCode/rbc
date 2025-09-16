@@ -281,7 +281,9 @@ _inputs:
   src:
     type: image
     label: image
-
+  img:
+    type: image
+    label: image
 _structures:
   blocks:
     style: modal
