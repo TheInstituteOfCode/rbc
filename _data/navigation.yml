@@ -3,7 +3,7 @@ logo_alt: Sukhavati Logo
 header_logo_width: 15rem
 header_links:
   - text: OVERVIEW
-    link: #
+    link:
     sub_links:
       - text: Our Story
         link: /our-story
@@ -11,89 +11,91 @@ header_links:
         link: /team
   - text: ROOMS & SUITES
     link: /SUITES-and-VILLAS
-    sub_links: #
+    sub_links:
       - text: Room 1
-        link: #
+        link:
       - text: Room 2
-        link: #
+        link:
   - text: DINNING
-    link: 
+    link:
     sub_links:
       - text: menu
-        link: #
+        link:
       - text: location
-        link: #
+        link:
   - text: WEDDINGS
-    link: #
+    link:
     sub_links:
       - text: What is Ayurveda?
         link: /locations
       - text: Panchakarma
         link: /panchakarma
-  - text: MEETINGS & EVENTS 
-    link: 
+  - text: MEETINGS & EVENTS
+    link:
     sub_links:
       - text: What is MEETINGS?
         link: /about-ayurveda
       - text: What events are around
         link: /panchakarma
   - text: WELLNESS
-    link: 
+    link:
     sub_links:
       - text: What is WELLNESS?
-  - text: EXPERIENCES 
-    link: 
+  - text: EXPERIENCES
+    link:
     sub_links:
       - text: What is EXPERIENCES?
-  - text: DISCOVERY 
-    link: #
+  - text: DISCOVERY
+    link:
   - text: OFFERS
-    link: / 
+    link: /
 footer-logo-image: /uploads/kc-logo.png
 footer-logo-size: 450px
 footer_nav_bar:
   - heading: ABOUT RESORT
     links:
-    - text: Our Program
-      link: /ayurvedic-wellness-retreat 
-    - text: Your Journey
-      link: /your-journey
-    - text: Retreat Experience
-      link: /your-retreat-experience 
-    - text: Wellness Goals
-      link: /explore-benefits 
-    - text: About Ayurveda
-      link: /about-ayurveda  
+      - text: ROOMS & SUITES
+        link: /ayurvedic-wellness-retreat
+      - text: DINING
+        link: /your-journey
+      - text: MEETINGS & EVENTS
+        link: /your-retreat-experience
+      - text: WELLNESS
+        link: /explore-benefits
+      - text: EXPERIENCES
+        link: /about-ayurveda
+      - text: OFFERS
+        link: ''
   - heading: DETAILS
     links:
-    - text: Our Program
-      link: /ayurvedic-wellness-retreat 
-    - text: Your Journey
-      link: /your-journey
-    - text: Retreat Experience
-      link: /your-retreat-experience 
-    - text: Wellness Goals
-      link: /explore-benefits 
-    - text: About Ayurveda
-      link: /about-ayurveda  
+      - text: Our Program
+        link: /ayurvedic-wellness-retreat
+      - text: Your Journey
+        link: /your-journey
+      - text: Retreat Experience
+        link: /your-retreat-experience
+      - text: Wellness Goals
+        link: /explore-benefits
+      - text: About Ayurveda
+        link: /about-ayurveda
   - heading: ABOUT RESORT
     links:
-    - text: Our Program
-      link: /ayurvedic-wellness-retreat 
-    - text: Your Journey
-      link: /your-journey
-    - text: Retreat Experience
-      link: /your-retreat-experience 
-    - text: Wellness Goals
-      link: /explore-benefits 
-    - text: About Ayurveda
-      link: /about-ayurveda
+      - text: Our Program
+        link: /ayurvedic-wellness-retreat
+      - text: Your Journey
+        link: /your-journey
+      - text: Retreat Experience
+        link: /your-retreat-experience
+      - text: Wellness Goals
+        link: /explore-benefits
+      - text: About Ayurveda
+        link: /about-ayurveda
 footer-sub-links:
   - text: PRIVACY POLICY
-    url: #
+    url:
   - text: MAIN WEBSITE
-    url: #
+    url:
   - text: IHG REWARDS
-    url: #
+    url:
   - text: TERMS & CONDITIONS
-    url: #
+    url:
