@@ -727,9 +727,9 @@ _structures:
           cape-width: true
           vertical-padding: true
           color-scheme: base
-      - label: Scrolling grid
+      - label: Scrolling grid - spaces
         picker_preview:
-          text: Scrolling grid
+          text: Scrolling grid - spaces
           subtext:
           icon:
           icon_color:
@@ -742,7 +742,7 @@ _structures:
             fit:
         tags:
         value:
-          _id: horizontal-scroll-basic
+          _id: horizontal-scroll-spaces
           block-content-html: <h3> lorem </h3> <h2>  experiences  </h2>
           image-width: max(25%, 8rem)
           mobile-image-width: 80%
@@ -755,6 +755,11 @@ _structures:
                 corporis obcaecati doloremque optio! Unde accusantium, esse
                 consectetur asperiores voluptates obcaecati nobis libero
                 necessitatibus vero labore quod eaque. Illum, tenetur alias!</p>
+              size: 1458 sqm
+              capacity: 120
+              banquet: 120
+              reception: 150
+              long-table: 100
               link:
             - image: /uploads/screenshot-2024-09-30-at-4-12-25-pm.png
               block-content-html: >-
@@ -762,6 +767,11 @@ _structures:
                 corporis obcaecati doloremque optio! Unde accusantium, esse
                 consectetur asperiores voluptates obcaecati nobis libero
                 necessitatibus vero labore quod eaque. Illum, tenetur alias!</p>
+              size: 1458 sqm
+              capacity: 120
+              banquet: 120
+              reception: 150
+              long-table: 100
               link:
             - image: /uploads/screenshot-2024-09-30-at-4-12-25-pm.png
               block-content-html: >-
@@ -769,6 +779,11 @@ _structures:
                 corporis obcaecati doloremque optio! Unde accusantium, esse
                 consectetur asperiores voluptates obcaecati nobis libero
                 necessitatibus vero labore quod eaque. Illum, tenetur alias!</p>
+              size: 1458 sqm
+              capacity: 120
+              banquet: 120
+              reception: 150
+              long-table: 100
               link:
             - image: /uploads/screenshot-2024-09-30-at-4-12-25-pm.png
               block-content-html: >-
@@ -776,6 +791,11 @@ _structures:
                 corporis obcaecati doloremque optio! Unde accusantium, esse
                 consectetur asperiores voluptates obcaecati nobis libero
                 necessitatibus vero labore quod eaque. Illum, tenetur alias!</p>
+              size: 1458 sqm
+              capacity: 120
+              banquet: 120
+              reception: 150
+              long-table: 100
               link:
           color-scheme: base
       
@@ -982,8 +1002,11 @@ _structures:
             min-height: 50vh
       - label: events grid
         value: 
-            _id: events-block
+            _id: events-block      
             location: Beach House
+            sub-heading: Events
+            heading: Upcoming Events at Beach House
+            description: Enhance your  luxurious stay with exclusive offers and complimentary inclusions.
             events:
                 - 
                     heading: DJ Scott Bruce

@@ -723,6 +723,9 @@ video {
 .max-w-\[40rem\] {
   max-width: 40rem;
 }
+.max-w-\[\] {
+  max-width: ;
+}
 .max-w-full {
   max-width: 100%;
 }

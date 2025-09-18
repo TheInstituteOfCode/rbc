@@ -2,9 +2,9 @@
 <section class="">
       <div class="max-width">
           <div class="mb-16 text-center">
-              <h3 class="sub-heading">Events</h3>
-              <h2 class="large-heading mb-16">Upcoming Events at {{block.location}}</h2>
-              <p> Enhance your  luxurious stay with exclusive offers and complimentary inclusions.</p>
+              <h3 class="sub-heading">{{block.sub-heading}}</h3>
+              <h2 class="large-heading mb-16">{{block.heading}}</h2>
+              <p> {{block.description}}</p>
           </div>
           <div class="grid grid-cols-12 mb-12">
             {% for event in block.events | limit:1 %}
