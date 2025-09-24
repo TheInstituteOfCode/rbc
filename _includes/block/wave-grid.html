@@ -16,7 +16,7 @@
             {% for cell in block.grid %}
             <div class="{% cycle '','mt-16' %}">
               <div class="relative" style="aspect-ratio: 127/139;">
-                <img src="{{cell.image}}" alt="">
+                <img class="h-full w-full object-cover" src="{{cell.image}}" alt="">
               </div>
               <h3 class="heading">{{cell.heading}}</h3>
               <p>

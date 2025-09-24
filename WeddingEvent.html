@@ -1,5 +1,8 @@
 ---
 layout: default
+header:
+    text-color: '#000'
+    background-color-mobile: '#fff'
 blocks:
     -
         _id: banner-video
@@ -65,20 +68,22 @@ blocks:
     -
         _id: horizontal-scroll-spaces
         block-content-html: >-
-            <h3 class="text-center">WEDDINGS &amp; EVENTS</h3><p
-            class="text-center"> </p><h2 class="text-center">Inspiring
-            spaces</h2><p class="text-center">Host with distinction at Regent
+            <h3>WEDDINGS &amp; EVENTS</h3><p
+            > </p><h2 class="large-heading">Inspiring
+            spaces</h2><p">Host with distinction at Regent
             Bali Canggu, where timeless design and thoughtful service set the
             stage for inspired occasions, from intimate boardroom meetings to
             unforgettable weddings.</p>
         image-width: max(40%, 8rem)
         mobile-image-width: 80%
         img_aspect: Square
+        scroll-items-color-scheme: mint-400
+        
         scroll-items:
             -
                 image: /uploads/wedding-scroll1.jpg
                 block-content-html: >-
-                    <h3>Beach House</h3> <p>Lorem ipsum dolor sit amet,
+                    <h3 class="heading">Beach House</h3> <p>Lorem ipsum dolor sit amet,
                     consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut.</p><p></p>
                 size: 1458 sqm
@@ -90,7 +95,7 @@ blocks:
             -
                 image: /uploads/wedding-scroll2.jpg
                 block-content-html: >-
-                    <h3>BEACH LAWN</h3> <p>Lorem ipsum dolor sit amet,
+                    <h3 class="heading">BEACH LAWN</h3> <p>Lorem ipsum dolor sit amet,
                     consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut.</p>
                 size: 1458 sqm
@@ -102,7 +107,7 @@ blocks:
             -
                 image: /uploads/wedding-scroll3.jpg
                 block-content-html: >-
-                    <h3>CHEFS TABLE</h3> <p>Lorem ipsum dolor sit amet,
+                    <h3 class="heading">CHEFS TABLE</h3> <p>Lorem ipsum dolor sit amet,
                     consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut.</p>
                 size: 1458 sqm
@@ -134,7 +139,7 @@ blocks:
         _id: contact
         block-content-html:
         text-alignment: center
-        color-scheme: base
+        color-scheme: mint-400
         max-width: 660px
         form-max-width: 900px
 seo:

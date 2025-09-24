@@ -51,17 +51,9 @@ h3,h4,h5,h6,.small-heading {
   text-wrap: balance;
 }
 
-.large-heading {
-  font-size: 2rem;
-}
 
-.sub-heading {
-font-family: var(--heading-font-sans-family);
-  font-size: 1.2rem;
-  font-weight: bold;
-  letter-spacing: 0.12em; 
-  text-transform: uppercase;
-}
+
+
 
 h1, h2,.heading  {
   font-family: var(--heading-font-serif-family);
@@ -102,6 +94,18 @@ p:last-child{
   margin-bottom:0;
 }
 
+.sub-heading {
+font-family: var(--heading-font-sans-family);
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 0.12em; 
+  text-transform: uppercase;
+}
+
+.large-heading {
+  font-size: 2rem;
+}
+
 
 p,li {
   font-size: 0.9rem;
@@ -114,9 +118,10 @@ body ul{
   margin-left: 1rem;
 }
 
-.bg-base{
+html body .bg-base{
   background-color: var(--bg-color);
   color: var(--text-color);
+  border-color: var(--bg-color);
 }
 
   #animated-text {
@@ -173,7 +178,7 @@ textarea:focus, textarea:focus-within{
 
 .contact-form input, .contact-form textarea {
   border: 2px solid var(--text-color);
-  padding: 2rem 1rem;
+  padding: 2rem 4rem;
   margin-bottom: 0;
 }
 

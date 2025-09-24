@@ -4,7 +4,7 @@
         {% for style in block.room-style %}
         <div class="scheme-base style-set {% unless forloop.first %} mt-vert {% endunless %}">
           <div class="flex justify-between flex-wrap">
-            <h2 class="shrink-0">{{style.heading}}</h2>
+            <h2 class="shrink-0 sub-heading large-heading my-0 relative -top-2">{{style.heading}}</h2>
             <div class="shrink-0 flex justify-end flex-wrap max-w-full">
               {% for room in style.rooms %}
               <span class="button bg-base filter-button {% if forloop.first %} active {% endif %}" data-filter="{{forloop.index0}}">{{room.name}}</span>
@@ -21,19 +21,19 @@
               <div class="filter-target bg-base {% if forloop.first %} active {% endif %} items-center p-8">
                 <div>
                   
-                  <h2>{{room.name}}</h2>
-                  <div class="">
-                    <span class="pr-16">
+                  <h2 class="large-heading">{{room.name}}</h2>
+                  <div class="flex gap-x-8 flex-wrap">
+                    <span class="whitespace-nowrap">
                       {{room.size}} SQ/FT
                     </span>
-                    <span class="pr-16">
+                    <span class="whitespace-nowrap">
                       {{room.bed-size}}
                     </span>
-                    <span>
+                    <span class="whitespace-nowrap">
                       {{room.sleeps}} Guests
                     </span>
                     {% for extra-feature in room.extra-feature %}
-                      <span>{{extra-feature}}</span>
+                      <span class="whitespace-nowrap">{{extra-feature}}</span>
                     {% endfor %}
                   </div>
                   <div>

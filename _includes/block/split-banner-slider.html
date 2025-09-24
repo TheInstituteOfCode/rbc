@@ -27,10 +27,12 @@
           </div>
       </div>
       <div class="col-span-4">
-             {% if block.content.subHeading %}<h3>{{block.content.subHeading}}</h3>{% endif %}
+             {% if block.content.subHeading %}<h3 class="sub-heading">{{block.content.subHeading}}</h3>{% endif %}
             {% if block.content.heading %}<h2 class="heading-lg">{{block.content.heading}}</h2>{% endif %}
             {{block.content.p-text}}
-            <p><a href="#" class="button-featured">View menu</a></p>
+            {% for button in block.content.buttons %}
+            <p class="scheme-{{button.button-color}}"><a href="{{button.url}}" class="button-featured bg-base">{{button.text}}</a></p>
+            {% endfor %}
       </div>
     <style>
      
