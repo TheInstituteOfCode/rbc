@@ -731,6 +731,46 @@ _structures:
           cape-width: true
           vertical-padding: true
           color-scheme: base
+      - label: scrolling grid - basic
+        value:
+              _id: horizontal-scroll-basic
+              block-content-html: >-
+                  <h3 class="text-center">SPA &amp; WELLNESS OFFERINGS</h3><p
+                  class="text-center"> </p><h2 class="text-center">Explore our
+                  treatments</h2><p class="text-center">Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                  labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                  exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                  esse cillum dolore eu fugiat nulla pariatur.</p>
+              image-width: max(36%, 8rem)
+              mobile-image-width: 80%
+              img_aspect: Square
+              col:
+                      color-scheme: mint-300
+              scroll-items:
+                  -
+                      image: /uploads/treatment1.jpg
+                      block-content-html: >-
+                          <h2 class="heading">Signature Sand bed</h3> <p>Lorem ipsum dolor sit amet,
+                          consectetur adipiscing elit, sed do eiusmod tempor
+                          incididunt ut.</p><p></p>
+                      link:
+                  -
+                      image: /uploads/treatment2.jpg
+                      block-content-html: >-
+                          <h3 class="heading">Traditional Massages</h3> <p>Lorem ipsum dolor sit amet,
+                          consectetur adipiscing elit, sed do eiusmod tempor
+                          incididunt ut.</p>
+                      link:
+                  -
+                      image: /uploads/treatment3.jpg
+                      block-content-html: >-
+                          <h3 class="heading">Facial rejuvenation</h3> <p>Lorem ipsum dolor sit amet,
+                          consectetur adipiscing elit, sed do eiusmod tempor
+                          incididunt ut.</p>
+                      link:
+              color-scheme: base
       - label: Scrolling grid - spaces
         picker_preview:
           text: Scrolling grid - spaces

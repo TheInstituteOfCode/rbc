@@ -487,14 +487,17 @@ video {
 .bottom-0 {
   bottom: 0px;
 }
+.bottom-6 {
+  bottom: 1.5rem;
+}
 .bottom-8 {
   bottom: 2rem;
 }
 .left-0 {
   left: 0px;
 }
-.left-\[20vw\] {
-  left: 20vw;
+.left-8 {
+  left: 2rem;
 }
 .left-side {
   left: var(--side-gap);
@@ -504,6 +507,9 @@ video {
 }
 .right-4 {
   right: 1rem;
+}
+.right-8 {
+  right: 2rem;
 }
 .right-side {
   right: var(--side-gap);
@@ -701,8 +707,8 @@ video {
 .w-\[80\%\] {
   width: 80%;
 }
-.w-\[calc\(100vw_-_20vw_-_var\(--side-gap\)\)\] {
-  width: calc(100vw - 20vw - var(--side-gap));
+.w-\[calc\(40vw_-_var\(--side-gap\)\)\] {
+  width: calc(40vw - var(--side-gap));
 }
 .w-\[initial\] {
   width: initial;
@@ -822,9 +828,6 @@ video {
 }
 .gap-4 {
   gap: 1rem;
-}
-.gap-6 {
-  gap: 1.5rem;
 }
 .gap-8 {
   gap: 2rem;
@@ -1899,12 +1902,6 @@ float: right
   }
 }
 @media (min-width: 768px) {
-  .md\:relative {
-    position: relative;
-  }
-  .md\:inset-0 {
-    inset: 0px;
-  }
   .md\:order-1 {
     order: 1;
   }
@@ -1926,20 +1923,14 @@ float: right
   .md\:block {
     display: block;
   }
+  .md\:flex {
+    display: flex;
+  }
   .md\:max-h-\[50vh\] {
     max-height: 50vh;
   }
   .md\:min-h-\[25vw\] {
     min-height: 25vw;
-  }
-  .md\:w-\[120\%\] {
-    width: 120%;
-  }
-  .md\:w-full {
-    width: 100%;
-  }
-  .md\:max-w-\[120\%\] {
-    max-width: 120%;
   }
   .md\:grid-cols-10 {
     grid-template-columns: repeat(10, minmax(0, 1fr));
@@ -1971,6 +1962,12 @@ float: right
   }
 }
 @media (min-width: 1024px) {
+  .lg\:relative {
+    position: relative;
+  }
+  .lg\:order-2 {
+    order: 2;
+  }
   .lg\:flex {
     display: flex;
   }
@@ -1980,6 +1977,18 @@ float: right
   .lg\:hidden {
     display: none;
   }
+  .lg\:w-\[120\%\] {
+    width: 120%;
+  }
+  .lg\:w-full {
+    width: 100%;
+  }
+  .lg\:max-w-\[120\%\] {
+    max-width: 120%;
+  }
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
   .lg\:border-4 {
     border-width: 4px;
   }
@@ -1988,5 +1997,13 @@ float: right
   }
   .lg\:p-32 {
     padding: 8rem;
+  }
+}
+@media (min-width: 1280px) {
+  .xl\:left-side {
+    left: var(--side-gap);
+  }
+  .xl\:right-side {
+    right: var(--side-gap);
   }
 }

@@ -1,8 +1,8 @@
 ---
 layout: default
 header:
-    text-color: '#000'
-    background-color-mobile: '#fff'
+    text-color: '#fff'
+    background-color-mobile: '#000'
 blocks:
     -
         _id: banner-video
@@ -32,6 +32,7 @@ blocks:
             circulation, soothe tension, and awaken the senses. Together, these
             experiences enhance the body's natural recovery and deepen the
             feeling of renewal.</p>
+        bottom-text:
         overlay-color-scheme: dark
         content-max-width:
         text-alignment: center
@@ -47,6 +48,7 @@ blocks:
             elevated. Each step is guided by a clear intent to heal, weaving
             vibrating crystal energy, soothing aromas, and restoring light
             frequency to uplift wellbeing to new personal heights.</p>
+            <p><a class="button-featured" href="">reserve now</a></p>
         background-desktop-image: /uploads/sense-of-harmony.jpg
         background-mobile-image: /uploads/sense-of-harmony.jpg
         videos:
@@ -73,28 +75,30 @@ blocks:
             exercitation ullamco laboris nisi ut aliquip ex ea commodo
             consequat. Duis aute irure dolor in reprehenderit in voluptate velit
             esse cillum dolore eu fugiat nulla pariatur.</p>
-        image-width: max(25%, 8rem)
+        image-width: max(36%, 8rem)
         mobile-image-width: 80%
         img_aspect: Square
+        col:
+                color-scheme: mint-300
         scroll-items:
             -
                 image: /uploads/treatment1.jpg
                 block-content-html: >-
-                    <h3>Signature Sand bed</h3> <p>Lorem ipsum dolor sit amet,
+                    <h3 class="heading">Signature Sand bed</h3> <p>Lorem ipsum dolor sit amet,
                     consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut.</p><p></p>
                 link:
             -
                 image: /uploads/treatment2.jpg
                 block-content-html: >-
-                    <h3>Traditional Massages</h3> <p>Lorem ipsum dolor sit amet,
+                    <h3 class="heading">Traditional Massages</h3> <p>Lorem ipsum dolor sit amet,
                     consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut.</p>
                 link:
             -
                 image: /uploads/treatment3.jpg
                 block-content-html: >-
-                    <h3>Facial rejuvenation</h3> <p>Lorem ipsum dolor sit amet,
+                    <h3 class="heading">Facial rejuvenation</h3> <p>Lorem ipsum dolor sit amet,
                     consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut.</p>
                 link:
@@ -102,8 +106,8 @@ blocks:
     -
         _id: offset-grid
         content-1:
-            subHeading:
-            heading: COLD PLUGE & POOL
+            subHeading: COLD PLUGE & POOL
+            heading: 
             p-text: >-
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                 do eiusmod  tempor incididunt ut labore et dolore magna
@@ -116,8 +120,8 @@ blocks:
             src: /uploads/health-club.jpg
             title: Cold plunge
         content-2:
-            subHeading:
-            heading: SAUNA
+            subHeading: SAUNA
+            heading: 
             p-text: >-
                 <p>On Canggu Beach, surfers are silhouetted in the morning sun,
                 boards  under arms ready to take on Bali's famous reef
@@ -133,13 +137,124 @@ blocks:
             scheme-color: base
             scheme-padding: small-padding
             scheme-max-width: l
-    -
-        _id: text-block
-        block-content-html: ''
-        content-max-width:
+
+    -   _id: grid-simple-2-col-overlap
+        desktop-image-position: left
+        text-column: 
+            block-content-html: <h2>Swimming Pools</h2><p>Discover a calming oasis in the heart of Canggu. Secluded cabanas  surround the resort's six swimming pools, providing nestled personal  havens designed to inspire indulgent moments. These intimate spaces are  programmed to offer relaxing offerings on demand, coupled with that soft sea breeze to rebalance the mind and body.</p>
+            color-scheme: mint-400
+        text-alignment: left
+        image: /uploads/pool-view.jpg
+        image-alt: pool view
+    -   _id: grid-simple-2-col-overlap
+        desktop-image-position: right
+        text-column: 
+            block-content-html: <h2>Health club</h2><p>Begin or end the day in the best possible way. Maintain your fitness regime in the resort's Health Club with dual-functional spaces enabling exercise enthusiasts to stretch, breathe and practice yoga in the mat-based studio, or elevate their heart rate in the spacious gym.</p>
+            color-scheme: mint-400
+        text-alignment: left
+        image: /uploads/health-club-2.jpg
+        image-alt: pool view    
+    -   _id: grid-simple-2-col-overlap
+        desktop-image-position: left
+        text-column: 
+            block-content-html: <h2>Surf at Batu Balong</h2><p>Discover a calming oasis in the heart of Canggu. Secluded cabanas  surround the resort's six swimming pools, providing nestled personal  havens designed to inspire indulgent moments. These intimate spaces are  programmed to offer relaxing offerings on demand, coupled with that soft sea breeze to rebalance the mind and body.</p>
+            color-scheme: mint-400
+        text-alignment: left
+        image: /uploads/surf-between-trees.jpg
+        image-alt: pool view
+    -   _id: grid
+        block-content-html: >-
+            <h3 class="sub-heading">GYM FACILITIES</h3> <h2>Maintain your fitness</h2>
         text-alignment: center
-        color-scheme: base
-        min-height: 50vh
+        grid-desktop-columns: 3
+        grid-mobile-columns: 2
+        grid-gap: 3rem
+        col-internal-padding: false        
+        img-mixed-aspect: false
+        min-height: 0vh
+        gap-between-text-box-and-grid: small
+        columns:          
+            -   col-type: text
+                block-content-html: <h3>FREE WEIGHTS</h3><p>With a strong understanding of both the Regent brand & the resort itself. </p>
+                link:
+                text-alignment: center
+                vert-alignment:
+                icon-path: /uploads/weight.svg
+                icon-alt:
+                img_aspect: Original
+                color-scheme:
+                col-width: 1
+                col-height: 1
+                hide-on-mobile: false
+                mobile-first: false
+            -   col-type: text
+                block-content-html: <h3>MAT STRETCHING AREA</h3><p>With a strong understanding of both the Regent brand & the resort itself. </p>
+                link:
+                text-alignment: center
+                vert-alignment:
+                icon-path: /uploads/weight.svg
+                icon-alt:
+                img_aspect: Original
+                color-scheme:
+                col-width: 1
+                col-height: 1
+                hide-on-mobile: false
+                mobile-first: false
+            -   col-type: text
+                block-content-html: <h3>TREADMILL</h3><p>With a strong understanding of both the Regent brand & the resort itself. </p>
+                link:
+                text-alignment: center
+                vert-alignment:
+                icon-path: /uploads/weight.svg
+                icon-alt:
+                img_aspect: Original
+                color-scheme:
+                col-width: 1
+                col-height: 1
+                hide-on-mobile: false
+                mobile-first: false          
+            -   col-type: text
+                block-content-html: <h3>BARBELLS</h3><p>With a strong understanding of both the Regent brand & the resort itself. </p>
+                link:
+                text-alignment: center
+                vert-alignment:
+                icon-path: /uploads/weight.svg
+                icon-alt:
+                img_aspect: Original
+                color-scheme:
+                col-width: 1
+                col-height: 1
+                hide-on-mobile: false
+                mobile-first: false
+            -   col-type: text
+                block-content-html: <h3>FREE WEIGHTS</h3><p>With a strong understanding of both the Regent brand & the resort itself. </p>
+                link:
+                text-alignment: center
+                vert-alignment:
+                icon-path: /uploads/weight.svg
+                icon-alt:
+                img_aspect: Original
+                color-scheme:
+                col-width: 1
+                col-height: 1
+                hide-on-mobile: false
+                mobile-first: false
+            -   col-type: text
+                block-content-html: <h3>FREE WEIGHTS</h3><p>With a strong understanding of both the Regent brand & the resort itself. </p>
+                link:
+                text-alignment: center
+                vert-alignment:
+                icon-path: /uploads/weight.svg
+                icon-alt:
+                img_aspect: Original
+                color-scheme:
+                col-width: 1
+                col-height: 1
+                hide-on-mobile: false
+                mobile-first: false
+        collapse-top-space: false
+        collapse-bottom-space: false
+        color-scheme: dark
 seo:
     title: Regent Website Proposal | Kelapa Creative
     description: >-
@@ -152,3 +267,4 @@ seo:
     index: true
 permalink:
 ---
+<img src="" alt="">

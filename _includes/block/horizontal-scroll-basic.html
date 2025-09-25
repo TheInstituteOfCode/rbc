@@ -19,12 +19,12 @@
 
 
       {% for col in block.scroll-items %}
-        <div class="shrink-0 scroll-item color-set {% if forloop.first  %} ml-side {% endif %} {% if forloop.last  %} mr-side {% endif %}">
+        <div class="shrink-0 scroll-item color-set {% if forloop.first  %} ml-side {% endif %} {% if forloop.last  %} mr-side {% endif %} scheme-{{ block.col.color-scheme }}">
           {% if col.link %}<a href="{{col.link}}">{% endif%}
             <div class="image-sizer relative">
               <img class="w-full h-full object-cover inset-0 absolute" src="{{col.image}}" alt=""loading="lazy">
             </div>
-            <div class="p-4">
+            <div class="p-4 base-bg">
               {{col.block-content-html}}
               <p class="text-right">
                 <span class="small-heading">reserve</span>

@@ -10,7 +10,7 @@
   {% endcase %}"
    >
    <div class="scheme-{{block.overlay-color-scheme}}">
-      <div class="color-set flex justify-center items-center ">
+      <div class="color-set flex justify-center items-center relative">
         <div {% if block.content-max-width %} style="max-width: {{block.content-max-width}} "{% endif %}>
           {% if noH1 == true %}
           {{block.block-content-html | replace: 'h2','h1'}}
@@ -21,6 +21,9 @@
           {% if block.block-content-html contains "h2" %}
           {% assign noH1 = false %}
           {% endif %}
+        </div>
+        <div class="absolute left-8 right-8 bottom-6 hidden md:flex justify-between bottom-box ">
+          {{block.bottom-text.block-content-html}}
         </div>
       </div>
   </div>
@@ -39,4 +42,9 @@
        #section-{{forloop.index}} section {
         padding-top: 3rem;
       }
+
+      .bottom-box > * {
+        line-height: 1;
+      }
+
 </style>
