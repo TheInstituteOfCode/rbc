@@ -433,6 +433,7 @@ tickerBanners.forEach(banner => {
   addEventListener("load", (event) => {
 
     console.log('pageloaded')
+    let initDot;
     
     {% for block in page.blocks %}
 
@@ -454,8 +455,9 @@ tickerBanners.forEach(banner => {
             variableWidth: true,
           });
           
-          const sectionContainer{{forloop.index}} = document.querySelector('#section-{{forloop.index}}')
-
+          // const sectionContainer{{forloop.index}} = document.querySelector('#section-{{forloop.index}}')
+          initDot = document.querySelector('#section-{{forloop.index}} .slick-dots .slick-active')
+          initDot.click()
 
           {% endif %}
 
@@ -494,21 +496,26 @@ tickerBanners.forEach(banner => {
                 }
               }]
           });
+                    // const sectionContainer{{forloop.index}} = document.querySelector('#section-{{forloop.index}}')
+          initDot = document.querySelector('#section-{{forloop.index}} .slick-dots .slick-active')
+          initDot.click()
           
           {% endif %}
     {% endfor %}
 
-    const sliders = document.querySelectorAll(['[class*=slider]'])
-    console.log(sliders)
 
-    sliders.forEach(slider => {
-      console.log('here',
-        slider.querySelector('.slick-dots button')
+    // dots are out of slider would need to move html or change selector. did different aproch on line 458
+    // const sliders = document.querySelectorAll(['[class*=slider]'])
+    // console.log("all silders on page", sliders)
 
-      )
-        slider.querySelector('.slick-dots button').click()
+    // sliders.forEach(slider => {
+    //   console.log('here',
+    //     slider.querySelector('.slick-dots .slick-active')
 
-    })
+    //   )
+    //     // slider.querySelector('.slick-dots li').click()
+
+    // })
 });
 
 
