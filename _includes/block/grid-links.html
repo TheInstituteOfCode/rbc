@@ -13,11 +13,9 @@
             <h2 class="large-heading  mb-16">
               {{block.heading}}
             </h2>
-            <div class="grid gap-8 text-center" style="grid-template-columns: repeat({{block.column-count}}, 1fr);">
+            <div class="grid gap-4 md:gap-x-16  sm:text-center">
               {% for link in block.buttons %}
-              <div>
                 <a href="{{link.url}}" class="button-featured" {% if link.external-link == true %} target="_blank" {% endif %} {% if link.download == true %} download="" {% endif %}>{{link.text}}</a>
-              </div>
               {% endfor %}
             </div>
           </div>
@@ -29,4 +27,18 @@
        #section-{{forloop.index}} section{
         min-height: {{block.min-height}};
       }
+
+      #section-{{forloop.index}} .grid {
+        grid-template-columns: 1fr;
+      }
+
+      @media (min-width: 640px) {
+        #section-{{forloop.index}} .grid{
+        grid-template-columns: repeat(2, 1fr);
+      }}
+
+            @media (min-width: 764px) {
+        #section-{{forloop.index}} .grid{
+        grid-template-columns: repeat({{block.column-count}}, 1fr);
+      }}
 </style>

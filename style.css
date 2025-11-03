@@ -562,6 +562,7 @@ float: right
   .burger-menu .sub-menu{
     position: fixed;
     top: 5rem;
+    bottom: 0vh;
     padding:6rem 5% 5%;
     left:100vw;
     right: -100vw;

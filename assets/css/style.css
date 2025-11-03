@@ -766,9 +766,6 @@ video {
 .resize {
   resize: both;
 }
-.grid-cols-1 {
-  grid-template-columns: repeat(1, minmax(0, 1fr));
-}
 .grid-cols-12 {
   grid-template-columns: repeat(12, minmax(0, 1fr));
 }
@@ -829,6 +826,9 @@ video {
 .gap-4 {
   gap: 1rem;
 }
+.gap-6 {
+  gap: 1.5rem;
+}
 .gap-8 {
   gap: 2rem;
 }
@@ -845,6 +845,9 @@ video {
 .gap-x-8 {
   -moz-column-gap: 2rem;
        column-gap: 2rem;
+}
+.gap-y-1 {
+  row-gap: 0.25rem;
 }
 .gap-y-12 {
   row-gap: 3rem;
@@ -882,6 +885,10 @@ video {
 .border-solid {
   border-style: solid;
 }
+.\!border-gray-400 {
+  --tw-border-opacity: 1 !important;
+  border-color: rgb(156 163 175 / var(--tw-border-opacity)) !important;
+}
 .border-\[\#87897D\] {
   --tw-border-opacity: 1;
   border-color: rgb(135 137 125 / var(--tw-border-opacity));
@@ -896,10 +903,6 @@ video {
 .border-black {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
-}
-.border-gray-400 {
-  --tw-border-opacity: 1;
-  border-color: rgb(156 163 175 / var(--tw-border-opacity));
 }
 .bg-black {
   --tw-bg-opacity: 1;
@@ -1617,6 +1620,7 @@ float: right
   .burger-menu .sub-menu{
     position: fixed;
     top: 5rem;
+    bottom: 0vh;
     padding:6rem 5% 5%;
     left:100vw;
     right: -100vw;
@@ -1900,6 +1904,9 @@ float: right
   .sm\:p-12 {
     padding: 3rem;
   }
+  .sm\:text-center {
+    text-align: center;
+  }
 }
 @media (min-width: 768px) {
   .md\:order-1 {
@@ -1916,6 +1923,9 @@ float: right
   }
   .md\:order-\[0\] {
     order: 0;
+  }
+  .md\:col-span-4 {
+    grid-column: span 4 / span 4;
   }
   .md\:mb-0 {
     margin-bottom: 0px;
@@ -1947,6 +1957,10 @@ float: right
   .md\:flex-row {
     flex-direction: row;
   }
+  .md\:gap-x-16 {
+    -moz-column-gap: 4rem;
+         column-gap: 4rem;
+  }
   .md\:overflow-auto {
     overflow: auto;
   }
@@ -1968,14 +1982,8 @@ float: right
   .lg\:order-2 {
     order: 2;
   }
-  .lg\:flex {
-    display: flex;
-  }
   .lg\:\!hidden {
     display: none !important;
-  }
-  .lg\:hidden {
-    display: none;
   }
   .lg\:w-\[120\%\] {
     width: 120%;
@@ -1992,9 +2000,6 @@ float: right
   .lg\:border-4 {
     border-width: 4px;
   }
-  .lg\:\!bg-transparent {
-    background-color: transparent !important;
-  }
   .lg\:p-32 {
     padding: 8rem;
   }
@@ -2005,5 +2010,14 @@ float: right
   }
   .xl\:right-side {
     right: var(--side-gap);
+  }
+  .xl\:flex {
+    display: flex;
+  }
+  .xl\:hidden {
+    display: none;
+  }
+  .xl\:\!bg-transparent {
+    background-color: transparent !important;
   }
 }

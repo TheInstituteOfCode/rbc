@@ -85,10 +85,10 @@
 
 <body>
   <div class="absolute w-full top-0 z-50" id="header" style="--text-color: {{page.header.text-color}}; --bg-color: {{page.header.background-color-mobile}}">
-  <header class="bg-base lg:!bg-transparent">
+  <header class="bg-base xl:!bg-transparent">
     <div class="max-width flex justify-center items-center py-4 relative z-[999]">
       
-      <div class="lg:hidden">
+      <div class="xl:hidden">
         <div class="burger-button">
           <span class="burger-top"></span>
           <span class="burger-middle"></span>
@@ -102,11 +102,11 @@
           </div>
       </div>
       
-      <a href="https://bookings.sukhavatibali.com/en/product/panchakarma" class="absolute top-16 right-0 button-featured ml-[15px]">Book Now</a>
+      <a href="https://bookings.sukhavatibali.com/en/product/panchakarma" class="absolute top-16 right-0 button-featured ml-[15px]" style="background-color: {{page.header.button-bg}}; color: {{page.header.button-text-color}}">Book Now</a>
 
 
     </div>
-    <nav class="max-width justify-between hidden lg:flex right-0 top-0 shrink-0">
+    <nav class="max-width justify-between hidden xl:flex right-0 top-0 shrink-0">
 
       {% assign noH1 = true %}
       {% for link in site.data.navigation.header_links %}
