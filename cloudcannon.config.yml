@@ -756,6 +756,10 @@ _structures:
                           consectetur adipiscing elit, sed do eiusmod tempor
                           incididunt ut.</p><p></p>
                       link:
+                      reserve-link:
+                      button:
+                          text: learn more
+                          url: "#"
                   -
                       image: /uploads/treatment2.jpg
                       block-content-html: >-
@@ -763,6 +767,10 @@ _structures:
                           consectetur adipiscing elit, sed do eiusmod tempor
                           incididunt ut.</p>
                       link:
+                      reserve-link:
+                      button:
+                          text: learn more
+                          url: "#"
                   -
                       image: /uploads/treatment3.jpg
                       block-content-html: >-
@@ -770,6 +778,10 @@ _structures:
                           consectetur adipiscing elit, sed do eiusmod tempor
                           incididunt ut.</p>
                       link:
+                      reserve-link:
+                      button:
+                          text: learn more
+                          url: "#"
               color-scheme: base
       - label: Scrolling grid - spaces
         picker_preview:

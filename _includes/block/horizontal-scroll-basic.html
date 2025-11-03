@@ -26,11 +26,19 @@
             </div>
             <div class="p-4 base-bg">
               {{col.block-content-html}}
-              <p class="text-right">
-                <span class="small-heading">reserve</span>
-              </p>
-            </div>
 
+              {% if col.reserve-link %}
+                <p class="text-right">
+                  <a href="{{col.reserve-link}}" class="small-heading">reserve</a>
+                </p>
+              {% endif %}
+
+              {% if col.button.url %}
+              <p class="mt-auto">
+                <a href="{{col.button.url}}" class="button-featured text-center">{{col.button.text | default: "learn more"}}</a>
+              </p>
+              {% endif %}
+            </div>
           {% if col.link %}</a>{% endif%}
         </div>
       {% endfor %}
