@@ -52,3 +52,17 @@ p.float-images-left{
     color: inherit;
     min-height: 15px;
 }
+
+
+
+
+.canela-heading {
+    font-family: 'Canela-heading', serif;
+}
+.canela-text {
+    font-family: 'Canela-text', serif;
+}
+
+.engravers-gothic {
+    font-family: 'Engravers Gothic', sans-serif;
+}

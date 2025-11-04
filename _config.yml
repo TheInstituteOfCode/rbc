@@ -2,4 +2,6 @@ collections:
   posts:
     output: true
     permalink: /:title
-
+  offers:
+    output: false
+    permalink: /offers/:title

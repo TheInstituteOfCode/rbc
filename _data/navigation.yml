@@ -2,92 +2,32 @@ logo_image: /uploads/logo-header-darker.png
 logo_alt: Sukhavati Logo
 header_logo_width: 15rem
 header_links:
-  - text: OVERVIEW
-    link:
+  - text: DINING
+    link: /dinning
     sub_links:
-      - text: Our Story
-        link: /our-story
-      - text: Our Team
-        link: /team
-  - text: ROOMS & SUITES
-    link: /SUITES-and-VILLAS
-    sub_links:
-      - text: Room 1
-        link:
-      - text: Room 2
-        link:
-  - text: DINNING
-    link:
-    sub_links:
-      - text: menu
-        link:
-      - text: location
-        link:
+      - text: Beach house
+        link: /dinning-beach-house
+      - text: Taru
+        link: /dinning-taru
   - text: WEDDINGS
-    link:
-    sub_links:
-      - text: What is Ayurveda?
-        link: /locations
-      - text: Panchakarma
-        link: /panchakarma
-  - text: MEETINGS & EVENTS
-    link:
-    sub_links:
-      - text: What is MEETINGS?
-        link: /about-ayurveda
-      - text: What events are around
-        link: /panchakarma
-  - text: WELLNESS
-    link:
-    sub_links:
-      - text: What is WELLNESS?
+    link: /weddingEvents
   - text: EXPERIENCES
-    link:
-    sub_links:
-      - text: What is EXPERIENCES?
-  - text: DISCOVERY
-    link:
+    link: /Experiences
   - text: OFFERS
-    link: /
+    link: /offers
+  - text: SUITES and VILLAS
+    link: /suites-and-villas
 footer-logo-image: /uploads/kc-logo.png
 footer-logo-size: 450px
 footer_nav_bar:
   - heading: ABOUT RESORT
     links:
-      - text: ROOMS & SUITES
-        link: /ayurvedic-wellness-retreat
-      - text: DINING
-        link: /your-journey
-      - text: MEETINGS & EVENTS
-        link: /your-retreat-experience
-      - text: WELLNESS
-        link: /explore-benefits
-      - text: EXPERIENCES
-        link: /about-ayurveda
-      - text: OFFERS
-        link: ''
-  - heading: DETAILS
-    links:
-      - text: ABOUT US
-        link: /ayurvedic-wellness-retreat
-      - text: MEDIA CENTER
-        link: /your-journey
-      - text: NEED HELP?
-        link: /your-retreat-experience
-      - text: GROUP BOOKINGS
-        link: /explore-benefits
-  - heading: CONNECT
-    links:
-      - text: FACEBOOK
-        link: /ayurvedic-wellness-retreat
-      - text: INSTAGRAM
-        link: /your-journey
-      - text: EMAIL
-        link: /your-retreat-experience
-      - text: CALL
-        link: /explore-benefits
-      - text: CONTACT
-        link: /about-ayurveda
+    - text: DINING
+      link: /dinning
+    - text: WEDDINGS
+      link: /weddingEvents
+    - text: EXPERIENCES
+      link: /Experiences
 footer-sub-links:
   - text: PRIVACY POLICY
     url:

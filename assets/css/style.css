@@ -680,6 +680,9 @@ video {
 .grid {
   display: grid;
 }
+.\!hidden {
+  display: none !important;
+}
 .hidden {
   display: none;
 }
@@ -1933,6 +1936,9 @@ float: right
   .md\:mb-0 {
     margin-bottom: 0px;
   }
+  .md\:\!block {
+    display: block !important;
+  }
   .md\:block {
     display: block;
   }
@@ -2008,6 +2014,9 @@ float: right
   }
 }
 @media (min-width: 1280px) {
+  .xl\:static {
+    position: static;
+  }
   .xl\:left-side {
     left: var(--side-gap);
   }

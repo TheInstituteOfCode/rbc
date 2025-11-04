@@ -97,16 +97,13 @@
       </div>
       
       <div class="text-center pt-8">
-          <div style="width: 16rem;">
+          <div style="width: 16rem; max-width: 35vw;
+  margin: auto;">
             {% include svg/Regent-Logo-SVG.html %}
           </div>
       </div>
-      
-      <a href="https://bookings.sukhavatibali.com/en/product/panchakarma" class="absolute top-16 right-0 button-featured ml-[15px]" style="background-color: {{page.header.button-bg}}; color: {{page.header.button-text-color}}">Book Now</a>
 
-
-    </div>
-    <nav class="max-width justify-between hidden xl:flex right-0 top-0 shrink-0">
+        <nav class="max-width justify-between hidden xl:flex right-0 top-0 shrink-0">
 
       {% assign noH1 = true %}
       {% for link in site.data.navigation.header_links %}
@@ -139,6 +136,12 @@
       {% endfor %}
 
       </nav>
+      
+      <a href="#" class="absolute xl:static top-16 right-0 button-featured ml-[15px] !hidden md:!block" style="background-color: {{page.header.button-bg}}; color: {{page.header.button-text-color}}">Book Now</a>
+
+
+    </div>
+  
       
        <div class="burger-menu color-set lg:!hidden">
 
