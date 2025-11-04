@@ -10,9 +10,9 @@ header_links:
       - text: Taru
         link: /dinning-taru
   - text: WEDDINGS
-    link: /weddingEvents
+    link: //weddingevents
   - text: EXPERIENCES
-    link: /Experiences
+    link: /experiences
   - text: OFFERS
     link: /offers
   - text: SUITES and VILLAS
@@ -25,9 +25,9 @@ footer_nav_bar:
     - text: DINING
       link: /dinning
     - text: WEDDINGS
-      link: /weddingEvents
+      link: //weddingevents
     - text: EXPERIENCES
-      link: /Experiences
+      link: /experiences
 footer-sub-links:
   - text: PRIVACY POLICY
     url:
