@@ -5,7 +5,7 @@
         <div class="scheme-base style-set {% unless forloop.first %} mt-vert {% endunless %}">
           <div class="flex justify-between flex-wrap">
             <h2 class="shrink-0 sub-heading large-heading my-0 relative -top-2">{{style.heading}}</h2>
-            <div class="shrink-0 flex justify-end flex-wrap max-w-full">
+            <div class="shrink-0 flex justify-end flex-wrap max-w-full grow">
               {% for room in style.rooms %}
               <span class="button bg-base filter-button {% if forloop.first %} active {% endif %}" data-filter="{{forloop.index0}}">{{room.name}}</span>
               {% endfor %}

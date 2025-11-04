@@ -97,13 +97,16 @@
       </div>
       
       <div class="text-center pt-8">
-          <div style="width: 16rem; max-width: 35vw;
+          <div style="width: 9rem; max-width: 35vw;
   margin: auto;">
+          <a href="/">
             {% include svg/Regent-Logo-SVG.html %}
-          </div>
+        
+          </a>
+        </div>
       </div>
-
-        <nav class="max-width justify-between hidden xl:flex right-0 top-0 shrink-0">
+      <nav class="max-width justify-between hidden xl:flex right-0 top-0 shrink-0">
+        
 
       {% assign noH1 = true %}
       {% for link in site.data.navigation.header_links %}
@@ -114,9 +117,9 @@
         {% endif %}
         ">
             {% if link.link %}
-            <a href="{{link.link}}">
+            <a class="engravers-gothic uppercase" href="{{link.link}}">
             {% else %}
-            <span class="unlinked">
+            <span class="unlinked engravers-gothic uppercase">
             {% endif %}
               {{link.text}}
             {% unless link.link %}
