@@ -467,11 +467,12 @@ float: right
 
 .burger-button {
   position: absolute;
-  top: 4rem;
+  top: 3rem;
   left: var(--side-gap);
   z-index: 901;
   padding: 8px;
   border: 0px;
+  margin-top: 0;
   }
   /*this is where you can change the color of the buttons*/
   .burger-button span{

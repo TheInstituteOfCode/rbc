@@ -4,17 +4,10 @@ header_logo_width: 15rem
 header_links:
   - text: DINING
     link: /dining
-    sub_links:
-      - text: Beach house
-        link: /dining-beach-house
-      - text: Taru
-        link: /dining-taru
   - text: WEDDINGS
     link: /weddings-and-events
   - text: EXPERIENCES
     link: /experiences
-  - text: OFFERS
-    link: /offers
   - text: SUITES and VILLAS
     link: /suites-and-villas
 footer-logo-image: /uploads/kc-logo.png
@@ -30,8 +23,6 @@ footer_nav_bar:
       link: /weddings-and-events
     - text: EXPERIENCES
       link: /experiences
-    - text: Offers
-      link: /offers
   - heading: DETAILS
     links:
     - text: About Us

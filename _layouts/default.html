@@ -109,7 +109,7 @@
         </div>
       </div>
       
-      <div class="text-center pt-8">
+      <div class="text-center py-4">
           <div style="width: 9rem; max-width: 35vw;
   margin: auto;">
           <a href="/">
@@ -153,7 +153,7 @@
 
       </nav>
       
-      <a href="#" class="absolute xl:static right-0 button-featured ml-[15px] !hidden md:!block" style="background-color: {{page.header.button-bg}}; color: {{page.header.button-text-color}}">Book Now</a>
+      <a href="#" class="absolute xl:static right-0 button-featured ml-[15px] !hidden md:!block !border-0" style="background-color: #D5E3DD; color: #000">Book Now</a>
 
 
     </div>
@@ -221,6 +221,9 @@
         {% assign hasSlider = true %}
         {% endif %}
         {% if block._id == 'horizontal-scroll-basic' %}
+          {% assign hasCSSSlider = true %}
+        {% endif %}
+        {% if block._id == 'horizontal-scroll-spaces' %}
           {% assign hasCSSSlider = true %}
         {% endif %}
     {% endfor %}
@@ -470,13 +473,14 @@ tickerBanners.forEach(banner => {
             slidesToShow: 1,
             appendArrows: $('.slick-nav'),
             appendDots: $('.slick-nav'),
-            centerMode: true,
+            centerMode: false,
             variableWidth: true,
           });
           
           // const sectionContainer{{forloop.index}} = document.querySelector('#section-{{forloop.index}}')
-          initDot = document.querySelector('#section-{{forloop.index}} .slick-dots .slick-active')
-          initDot.click()
+          // initDot = document.querySelector('#section-{{forloop.index}} .slick-dots .slick-active')
+          // initDot.click()
+          // document.querySelector('header').click()
 
           {% endif %}
 
@@ -516,9 +520,10 @@ tickerBanners.forEach(banner => {
               }]
           });
                     // const sectionContainer{{forloop.index}} = document.querySelector('#section-{{forloop.index}}')
-          initDot = document.querySelector('#section-{{forloop.index}} .slick-dots .slick-active')
-          initDot.click()
+          // initDot = document.querySelector('#section-{{forloop.index}} .slick-dots .slick-active')
+          // initDot.click()
           
+          // document.querySelector('header').click()
           {% endif %}
     {% endfor %}
 
