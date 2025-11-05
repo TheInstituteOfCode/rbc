@@ -3,14 +3,14 @@ logo_alt: Sukhavati Logo
 header_logo_width: 15rem
 header_links:
   - text: DINING
-    link: /dinning
+    link: /dining
     sub_links:
       - text: Beach house
-        link: /dinning-beach-house
+        link: /dining-beach-house
       - text: Taru
-        link: /dinning-taru
+        link: /dining-taru
   - text: WEDDINGS
-    link: //weddingevents
+    link: /weddings-and-events
   - text: EXPERIENCES
     link: /experiences
   - text: OFFERS
@@ -22,18 +22,44 @@ footer-logo-size: 450px
 footer_nav_bar:
   - heading: ABOUT RESORT
     links:
+    - text: Rooms & Suites
+      link: /suites-and-villas
     - text: DINING
-      link: /dinning
-    - text: WEDDINGS
-      link: //weddingevents
+      link: /dining
+    - text: Weddings & Events
+      link: /weddings-and-events
     - text: EXPERIENCES
       link: /experiences
+    - text: Offers
+      link: /offers
+  - heading: DETAILS
+    links:
+    - text: About Us
+      link: #
+    - text: Media Center
+      link: #
+    - text: Need Help?
+      link: #
+    - text: Group Bookings
+      link: #
+  - heading: Connect
+    links:
+    - text: Facebook
+      link: #
+    - text: Instagram
+      link: #
+    - text: Email
+      link: #
+    - text: Call
+      link: #
+    - text: Contact
+      link: #
 footer-sub-links:
   - text: PRIVACY POLICY
-    url:
-  - text: MAIN WEBSITE
-    url:
+    url: #
+  - text: CORPORATE WEBSITE
+    url: #
   - text: IHG REWARDS
-    url:
+    url: #
   - text: TERMS & CONDITIONS
-    url:
+    url: #

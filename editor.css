@@ -64,5 +64,5 @@ p.float-images-left{
 }
 
 .engravers-gothic {
-    font-family: 'Engravers Gothic', sans-serif;
+    font-family: var(--heading-font-sans-family);
 }

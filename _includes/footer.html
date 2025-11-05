@@ -1,6 +1,7 @@
 <div class="scheme-footer relative md:text-center" id="footer">
     <footer class="">
-      <div class="flex flex-col md:flex-row">
+      <!-- First row-->
+      <div class="flex flex-col md:flex-row mb-16">
 
        <div class="flex justify-start items-center flex-1">
           <svg  style="width: 12rem" viewBox="0 0 59 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -17,22 +18,23 @@
           <nav class="text-left flex-1 " >
             <h3 class="px-6">{{nav.heading}}</h3>
             {% for link in nav.links %}
-            <a class="block px-6 main-link mb-[.5em]" href="{{link.link}}">{{link.text}}</a>
+            <a class="block px-6 main-link mb-[.5em] engravers-gothic" href="{{link.link}}">{{link.text}}</a>
           {% endfor %}
 
           </nav>
           {% endfor %}
 
         </div>
+
         <div class="pb-12">
           <img class="w-full" src="/uploads/footer-placeholder.png" alt="">
         </div>
         <div class="flex justify-center gap-4">
           {% for sublink in site.data.navigation.footer-sub-links %}
-            <a class="p-4" href="{{sublink.url}}">{{sublink.text}}</a>
+            <a class="p-4 engravers-gothic" href="{{sublink.url}}">{{sublink.text}}</a>
           {% endfor %}
         </div>
-        <div class="text-center">
+        <div class="text-center engravers-gothic">
           <p>
             THIS HOTEL IS OWNED BY AS PART OF IHG HOTEL GROUP, ALL RIGHTS RESERVED.  
           </p>
