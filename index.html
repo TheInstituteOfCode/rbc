@@ -1,12 +1,14 @@
 ---
 layout: default
 header:
-    text-color: '#fff'
+    text-color: '#ffffff'
     background-color-mobile: '#000'
 blocks:
     -
         _id: banner-video
-        block-content-html: <img src="/uploads/bali-canggu.svg" class="w-4/5 sm:w-1/2 mx-auto" style="max-height:70vh;">
+        block-content-html: >-
+            <img src="/uploads/bali-canggu.svg" class="w-4/5 sm:w-1/2 mx-auto"
+            style="max-height:70vh;" />
         videos:
             -
                 video_path: /uploads/test-50k-kbs-wave-hb.mp4
@@ -99,7 +101,11 @@ blocks:
             -
                 image: /uploads/private-beach-villa.jpg
                 block-content-html: >-
-                    <h2>Studio Suite</h2> <p>Gaze across the Indian Ocean from your private balcony. Indoors find a king bed and a serene bathroom with a rain shower and teak bathtub. Enjoy thoughtful moments with a complimentary refreshment gallery.</p>
+                    <h2>Studio Suite</h2> <p>Gaze across the Indian Ocean from
+                    your private balcony. Indoors find a king bed and a serene
+                    bathroom with a rain shower and teak bathtub. Enjoy
+                    thoughtful moments with a complimentary refreshment
+                    gallery.</p>
                 link:
                 reserve-link: /suites-and-villas
                 button:
@@ -107,44 +113,32 @@ blocks:
                     url:
         color-scheme: base
     -
-        _id: offset-grid
-        content-1:
-            subHeading: SENSE OF HARMONY
-            heading:
-            p-text: >-
-                <p>A curated selection of rejuvenating treatments draws from
-                time-honoured rituals and modern sensibilities to restore
-                balance and harmony. Guests can indulge in wet areas including
-                sauna, vitality pool, and ice bath, each crafted to invigorate
-                circulation and soothe tension.</p>
-            button:
-            text: Discover More
-            url: '#'
-            open-in-new-tab: false
-        image-1:
-            src: /uploads/health-club.jpg
-            title: Health Club
-        content-2:
-            subHeading: HEALTH CLUB
-            heading:
-            p-text: >-
-                <p>Begin or end the day in the best possible way. Maintain your
-                fitness regime in the resort's Health Club with dual-functional
-                spaces enabling exercise enthusiasts to stretch, breathe and
-                practice yoga in the mat-based studio, or elevate their heart
-                rate in the spacious gym.</p>
-            button:
-            text: Discover More
-            url: '#'
-            open-in-new-tab: false
-        image-2:
-            src: /uploads/sense-of-harmony.jpg
-            title: Sense of Harmony
-        scheme:
-            scheme-color: base
-            scheme-padding: small-padding
-            scheme-max-width: l
-            color-scheme: base
+        _id: banner-video
+        block-content-html: ''
+        videos:
+            -
+                video_path: /uploads/health-club.jpg
+                video_type: mp4
+        placeholder_image: /uploads/health-club.jpg
+        controls: false
+        autoplay: true
+        text-alignment: center
+        vert-alignment: middle
+        overlay-opacity: 0op
+        min-height: 90vh
+        color-scheme: dark
+    -
+        _id: text-block-top-overlap
+        block-content-html: >-
+            <h2 class="heading-lg">With Complements</h2><p>Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+            ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut.</p>
+        overlay-color-scheme:
+        content-max-width: 35rem
+        text-alignment: center
+        color-scheme: base
+        min-height: 50vh
     -
         _id: slider
         block-content-html: >-
