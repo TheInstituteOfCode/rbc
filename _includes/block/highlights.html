@@ -1,0 +1,108 @@
+
+<section class="highlight-section">
+
+  <div class="text-center mb-8">
+    <h2 class="heading-lg">{{block.heading}}</h2>
+    <div class="highlight-btn text-center">
+      {% for button in block.highlights %}
+        <span class="cursor-pointer mx-4 {% if forloop.first %} active {% endif %}">{{button.nav-heading}}</span>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="highlight-slider relative">
+    {% for highlight in block.highlights %}
+      <div class="highlight-content {% if forloop.first %} active {% endif %} absolute {% if forloop.index0 > 0 %} offRight {% endif %} w-full top-0 left-0">
+        <div class="image-container w-full h-[50vh] relative">
+          <img class="absolute inset-0 h-full w-full object-cover" src="{{highlight.image}}" alt="{{highlight.image_alt}}">
+        </div>
+
+        <div class="mx-auto w-2/3 -top-12 bg-base relative p-8">
+          <h3>{{highlight.heading}}</h3>
+          <p>{{highlight.text}}</p>
+          <a href="{{highlight.link}}">{{highlight.button-text}}</a>
+        </div>
+
+      </div>
+    {% endfor %}
+  </div>
+      
+</section>
+
+
+<style>
+
+.highlight-btn span {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.highlight-btn span::after {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  width: 0%;
+  border-bottom: 1px solid var(--text-color);
+  transition: width 0.3s ease-in-out;
+}
+
+.highlight-btn span.active::after {
+  width: 100%;
+}
+
+
+.highlight-content {
+  transition: all 0.5s ease-in-out;
+}
+
+/* .highlight-content.offRight {
+right: -100vw;
+left: 100vw
+}
+.highlight-content.offLeft {
+right: 100vw;
+left: -100vw
+} */
+
+
+</style>
+
+
+<script>
+const highlightContents = document.querySelectorAll('.highlight-section');
+
+highlightContents.forEach((highlight, index) => {
+  const highlightBtns = highlight.querySelectorAll('.highlight-btn span');
+  const highlightContentItems = highlight.querySelectorAll('.highlight-content');
+  const highlightSlider = highlight.querySelector('.highlight-slider');
+
+  highlightContentItems.forEach((item) => {
+    if (item.clientHeight > highlightSlider.clientHeight) {
+      highlightSlider.style.height = `${item.clientHeight}px`;
+    }
+  });
+
+  function setActiveHighlight(index) {
+    highlightContentItems.forEach((item, i) => {
+
+      item.style.left = `${(i - index) * 100}vw`;
+      item.style.right = `${(index - i) * 100}vw`;
+
+    });
+  }
+  highlightBtns.forEach((btn, btnIndex) => {
+    btn.addEventListener('click', () => {
+  highlightBtns.forEach((btn, btnIndex) => {
+      btn.classList.remove('active');
+  });
+      btn.classList.add('active');
+      setActiveHighlight(btnIndex);
+    });
+  });
+
+  setActiveHighlight(0);
+});
+
+
+</script>

@@ -481,6 +481,9 @@ video {
 .inset-0 {
   inset: 0px;
 }
+.-top-12 {
+  top: -3rem;
+}
 .-top-2 {
   top: -0.5rem;
 }
@@ -575,6 +578,10 @@ video {
 .mx-1 {
   margin-left: 0.25rem;
   margin-right: 0.25rem;
+}
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 .mx-auto {
   margin-left: auto;
@@ -701,6 +708,9 @@ video {
 .w-16 {
   width: 4rem;
 }
+.w-2\/3 {
+  width: 66.666667%;
+}
 .w-32 {
   width: 8rem;
 }
@@ -762,6 +772,9 @@ video {
 }
 .grow {
   flex-grow: 1;
+}
+.cursor-pointer {
+  cursor: pointer;
 }
 .resize-none {
   resize: none;
