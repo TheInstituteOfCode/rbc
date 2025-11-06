@@ -55,14 +55,15 @@ h3,h4,h5,h6,.small-heading {
 
 
 
-h1, h2,.heading  {
+h1, h2,.heading,.h2  {
   font-family: var(--heading-font-serif-family);
   font-weight: 300;
   line-height: 1.2;
   text-wrap: balance;
+  text-transform: none;
 }
 
-h2,.heading {
+h2,.heading,.h2 {
   font-size: 1.5rem;
 }
 
@@ -774,7 +775,9 @@ float: right
     margin-left: -7px;
   }
 
-.slick-nav .slick-dots li button::before {
+
+  
+.slick-nav .slick-dots li button::before  {
   color: transparent;
   background-color: transparent;
   border: 1px solid #fff;

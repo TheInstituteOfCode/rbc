@@ -220,6 +220,7 @@
         {% if block._id == 'slider-blog-loop' %}
         {% assign hasSlider = true %}
         {% endif %}
+
         {% if block._id == 'horizontal-scroll-basic' %}
           {% assign hasCSSSlider = true %}
         {% endif %}
@@ -478,14 +479,10 @@ tickerBanners.forEach(banner => {
             variableWidth: true,
           });
           
-          // const sectionContainer{{forloop.index}} = document.querySelector('#section-{{forloop.index}}')
-          // initDot = document.querySelector('#section-{{forloop.index}} .slick-dots .slick-active')
-          // initDot.click()
-          // document.querySelector('header').click()
 
           {% endif %}
 
-          {% if block._id == 'slider-blog-loop' %}
+      {% if block._id == 'slider-blog-loop' %}
     
          $('#section-{{forloop.index}} .slider').slick({
            dots: true,
@@ -522,12 +519,10 @@ tickerBanners.forEach(banner => {
                 }
               }]
           });
-                    // const sectionContainer{{forloop.index}} = document.querySelector('#section-{{forloop.index}}')
-          // initDot = document.querySelector('#section-{{forloop.index}} .slick-dots .slick-active')
-          // initDot.click()
-          
-          // document.querySelector('header').click()
+
           {% endif %}
+
+          
     {% endfor %}
 
 

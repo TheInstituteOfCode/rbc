@@ -112,33 +112,76 @@ blocks:
                     text: learn more
                     url:
         color-scheme: base
-    -
-        _id: banner-video
-        block-content-html: ''
-        videos:
+    - 
+        _id: highlights
+        heading: The Highlights
+        highlights:
             -
-                video_path: /uploads/health-club.jpg
-                video_type: mp4
-        placeholder_image: /uploads/health-club.jpg
-        controls: false
-        autoplay: true
-        text-alignment: center
-        vert-alignment: middle
-        overlay-opacity: 0op
-        min-height: 90vh
-        color-scheme: dark
-    -
-        _id: text-block-top-overlap
-        block-content-html: >-
-            <h2 class="heading-lg">With Complements</h2><p>Lorem ipsum dolor sit
-            amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-            ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut.</p>
-        overlay-color-scheme:
-        content-max-width: 35rem
-        text-alignment: center
+                nav-heading: Finest Dining
+                heading: Dining Destination
+                image: /uploads/rg-brand-hotel-highlight-dining-2000x863.avif
+                imag-alt:
+                text: At iconic restaurants with magnificent harbourviews, immersive culinary journeys go beyond the excellence of the cuisine itself with sensory encounters inspired by Hong Kong's rich culture and art, married with creativity, innovation and decadence.
+                button-text: 
+                link:      
+            -
+                nav-heading: Distinct Events
+                heading: Events & Celebrations
+                image:  /uploads/rg-brand-hotel-highlight-events-2000x863.avif
+                imag-alt:
+                text: Sophistication and style are hallmarks of glamorous galas, dream weddings and bespoke events that create lasting impressions. A legacy of crafting unforgettable celebrations is now thoughtfully re-envisioned to delight and inspire.
+                button-text: 
+                link: 
+            -
+                nav-heading: UNFORGETTABLE WEDDINGS
+                heading: Regent Weddings
+                image: /uploads/rg-brand-hotel-highlight-wedding-2000x863.webp
+                imag-alt: 
+                text: From show-stopping arrivals at the glistening entrance with its cascading <i>feng shui</i> fountain to the iconic white marble staircase leading to the glamorous Regent Ballroom, your Regent Wedding is crafted for everlasting memories.
+                button-text: 
+                link:
+            -
+                nav-heading: Regent Club
+                heading: Regent Club
+                image: /uploads/Regent_Club-Lounge_Area-cropped.avif
+                imag-alt: 
+                text: Discover Regent Club, an exclusive private sanctuary and luxury residential retreat with bespoke service on your terms. Amidst sweeping harbourviews, delight in moments of decadence each day with immersive breakfast, afternoon tea and evening cocktail experiences. Unwind, recharge and be indulged in this elevated Personal Haven.
+                button-text: 
+                link:
+        
         color-scheme: base
-        min-height: 50vh
+    -
+        _id: slider-split-banner
+
+        block-content-html: >-
+            <h3>RESTAURANTS & DINING</h3><h2 class="heading-lg">An Oasis of Gastronomy</h2><p>Wake up to the soft glow of Balinese sunlight, the sound of the Indian Ocean breaking in the distance, and the scent of tropical flowers in the air from the comfort of your meticulously designed suite or villa.</p>
+        text-alignment: center
+        text-box-max-width: 35rem
+        slider:
+            -
+                background-desktop-image: /uploads/taru1.jpg
+                background-mobile-image: /uploads/taru1.jpg
+                block-content-html: >-
+                    <h3 class="heading-lg h2">TARU</h2><p>The signature culinary destination of the resort, Taru offers an immersive dining experience, through reinvented authentic flavours of essential Indonesian dishes, innovated by touches of modern cooking techniques and ingredients, balanced with contrasting international specialties.</p><p>Open 7am - 10pm everyday. </p>
+                button-link: #
+                button-text: Explore Taru
+
+            -
+                background-desktop-image: /uploads/beach-house-1.jpg
+                background-mobile-image: /uploads/beach-house-1.jpg
+                block-content-html: >-
+                    <h3 class="heading-lg h2">BEACH HOUSE</h2><p>A stunning addition to the Canggu coastline, the Beach House lures with its shimmering pool, and ocean breeze. An ideal setting for craft cocktails and the delicate flavours of the sea.</p><p>Open 8am - 10pm everyday. </p>
+                button-link: #
+                button-text: Explore Beach house
+
+            -
+                background-desktop-image: /uploads/sazon-1.jpg
+                background-mobile-image: /uploads/sazon-1.jpg
+                block-content-html: >-
+                    <h3 class="heading-lg h2">SAZON</h2><p>Led by award-winning Chef Andrew Walsh, experience the neighborhood Spanish hideaway on Batu Bolong, where vibrant atmosphere meets authentic flavours.</p><p>Open 8am - 10pm everyday. </p> <p>Mon - Thurs Open 8am - 9pm<br>Fri - Sat Open Noon - 4am</p>
+                button-link: #
+                button-text: Explore Sazon
+        color-scheme: mint-300
     -
         _id: slider
         block-content-html: >-
@@ -229,34 +272,6 @@ blocks:
                 link:
         color-scheme: dark
         slider-col-padding: 0.5rem
-    -
-        _id: split-banner-slider
-        content:
-            subHeading: TARU
-            heading:
-            p-text: >-
-                <p>Talented chefs craft authentic Indonesian cuisine, using only
-                the freshest, locally sourced ingredients. Experience the rich
-                tapestry of flavours that Bali has to offer<br /><br />Open 7am
-                - 10pm everyday.</p>
-            buttons:
-                -
-                    text: DISCOVER TARU
-                    url: /dining-taru
-                    button-color: mint-400
-        carousel:
-            desktop-image-position: left
-            dots: true
-            slides:
-                -
-                    img: /uploads/taru-2.jpg
-                    alt: Taru
-                -
-                    img: /uploads/taru-1.jpg
-                    alt: Taru
-        color-scheme: base
-        scheme-padding: small-padding
-        scheme-max-width: l
     -
         _id: newsletter-form
         content:

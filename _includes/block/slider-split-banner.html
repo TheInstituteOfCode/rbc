@@ -1,0 +1,171 @@
+
+<section class="px-0 split-banner-slider-section">
+  <div class="px-side">
+
+    <div class="max-width mb-[60px]">
+      <div class="
+      {% case block.text-alignment %}
+      {% when 'left' %}
+      mr-auto
+      {% when 'center' %}
+      mx-auto text-center
+      {% when 'right' %}
+      ml-auto text-right
+      {% endcase %}
+      mb-8
+      " {% if block.text-box-max-width %} style="max-width: min({{block.text-box-max-width}}, 100%) "{% endif %}>
+      {{block.block-content-html}}
+      </div>
+    </div>
+    <div class="split-banner-slider relative mb-4 scheme-base">
+      {% for col in block.slider %}
+      <div class="split-banner-slider-content absolute bg-base">
+        <div class="grid md:grid-cols-2 overflow-hidden " style="gap: {{site.data.style.split_banner_gap}}">
+          
+          <div class="picture relative  min-h-[50vh]">
+            <picture >
+              <source srcset="{{col.background-desktop-image}}" media="(min-width: 750px)" />
+              <img class="{% unless block.img_aspect == 'Original' %} absolute inset-0 h-full w-full object-cover object-center {% endunless %}" src="{{col.background-mobile-image}}" alt="{{col.background-alt}}"loading="lazy" />
+            </picture>
+            
+          </div>
+          <div class="text-block p-8">       
+            {{col.block-content-html}}
+            <a href="{{col.button-link}}" class="button-featured inline-block mb-8">{{col.button-text}}</a>
+          </div>
+        </div>
+      </div>
+      
+        
+            {% endfor %}
+      </div>
+        <div class="text-center mb-8">
+    <div class="split-banner-slider-btn text-center text-[0px]">
+      <button type="button" aria-label="scroll-left" class="btn-prev px-8"><svg width="15px" height="15px" viewBox="0 0 24 24" stroke-width="1.5" fill="none" xmlns="http://www.w3.org/2000/svg" color="var(--text-color)"><path d="M21 12L3 12M3 12L11.5 3.5M3 12L11.5 20.5" stroke="var(--text-color)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+      {% for button in block.slider %}
+        <span class="cursor-pointer slider-split-banner-icon mx-2 uppercase {% if forloop.first %} active {% endif %}" data-dot="{{forloop.index}}"></span>
+      {% endfor %}
+      <button type="button "class="btn-next px-8" aria-label="scroll-right"><svg width="15px" height="15px" viewBox="0 0 24 24" stroke-width="1.5" fill="none" xmlns="http://www.w3.org/2000/svg" color="var(--text-color)"><path d="M3 12L21 12M21 12L12.5 3.5M21 12L12.5 20.5" stroke="var(--text-color)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+    </div>
+  </div>
+    </div>
+        <!-- Custom wrapper to hold arrows and dots -->
+      
+  </section>
+
+
+
+    <style>
+
+
+ .slider-split-banner-icon {
+  color: transparent;
+  background-color: transparent;
+  border: 1px solid var(--text-color);
+  border-radius: 20%;
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  transition: background-color 0.3s ease-in-out;
+}
+ .slider-split-banner-icon.active {
+  background-color: var(--text-color);
+}
+
+.split-banner-slider-content {
+  transition: all 0.5s ease-in-out;
+  left: 100vw;
+  right: -100vw;
+}
+
+  </style>
+
+<script>
+const newSplitBannerSlider = document.querySelectorAll('.split-banner-slider-section');
+
+  newSplitBannerSlider.forEach((highlight, index) => {
+  const splitBannerSliderBtns = highlight.querySelectorAll('.split-banner-slider-btn span');
+  const splitBannerSliderContentItems = highlight.querySelectorAll('.split-banner-slider-content');
+  const splitBannerSliderSlider = highlight.querySelector('.split-banner-slider');
+  const splitBannerSliderPrevBtn = highlight.querySelector('.btn-prev');
+  const splitBannerSliderNextBtn = highlight.querySelector('.btn-next');
+
+
+    console.log('splitBannerSliderSlider', splitBannerSliderSlider, splitBannerSliderContentItems, splitBannerSliderBtns);
+
+  splitBannerSliderContentItems.forEach((item) => {
+    if (item.clientHeight > splitBannerSliderSlider.clientHeight) {
+      splitBannerSliderSlider.style.height = `${item.clientHeight}px`;
+    }
+  });
+
+  window.addEventListener('resize', () => {
+    splitBannerSliderSlider.style.height = `0px`;
+    splitBannerSliderContentItems.forEach((item) => {
+      if (item.clientHeight > splitBannerSliderSlider.clientHeight) {
+        splitBannerSliderSlider.style.height = `${item.clientHeight}px`;
+      }
+    });
+  });
+
+  function setActiveHighlight(index) {
+    splitBannerSliderContentItems.forEach((item, i) => {
+
+      item.style.left = `${(i - index) * 100}vw`;
+      item.style.right = `${(index - i) * 100}vw`;
+
+    });
+  }
+  splitBannerSliderBtns.forEach((btn, btnIndex) => {
+    btn.addEventListener('click', () => {
+  splitBannerSliderBtns.forEach((btn, btnIndex) => {
+      btn.classList.remove('active');
+  });
+      btn.classList.add('active');
+      setActiveHighlight(btnIndex);
+    });
+  });
+  setActiveHighlight(0);
+
+  splitBannerSliderPrevBtn.addEventListener('click', () => {
+    let currentIndex;
+    splitBannerSliderBtns.forEach((btn, btnIndex) => {
+      if (btn.classList.contains('active')) {
+        currentIndex = btnIndex;
+      }
+    });
+    let newIndex = currentIndex - 1;
+    if (newIndex < 0) {
+      newIndex = splitBannerSliderBtns.length - 1;
+    }
+    splitBannerSliderBtns.forEach((btn) => {
+      btn.classList.remove('active');
+    });
+    splitBannerSliderBtns[newIndex].classList.add('active');
+    setActiveHighlight(newIndex);
+  });
+
+  splitBannerSliderNextBtn.addEventListener('click', () => {
+    let currentIndex;
+    splitBannerSliderBtns.forEach((btn, btnIndex) => {
+      if (btn.classList.contains('active')) {
+        currentIndex = btnIndex;
+      }
+    });
+    let newIndex = currentIndex + 1;
+    if (newIndex >= splitBannerSliderBtns.length) {
+      newIndex = 0;
+    }
+    splitBannerSliderBtns.forEach((btn) => {
+      btn.classList.remove('active');
+    });
+    splitBannerSliderBtns[newIndex].classList.add('active');
+    setActiveHighlight(newIndex);
+  });
+  
+});
+
+
+</script>

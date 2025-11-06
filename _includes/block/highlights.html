@@ -5,21 +5,23 @@
     <h2 class="heading-lg">{{block.heading}}</h2>
     <div class="highlight-btn text-center">
       {% for button in block.highlights %}
-        <span class="cursor-pointer mx-4 {% if forloop.first %} active {% endif %}">{{button.nav-heading}}</span>
+        <span class="cursor-pointer mx-4 uppercase {% if forloop.first %} active {% endif %}">{{button.nav-heading}}</span>
       {% endfor %}
     </div>
   </div>
   <div class="highlight-slider relative">
     {% for highlight in block.highlights %}
-      <div class="highlight-content {% if forloop.first %} active {% endif %} absolute {% if forloop.index0 > 0 %} offRight {% endif %} w-full top-0 left-0">
+      <div class="highlight-content absolute w-full top-0 left-0">
         <div class="image-container w-full h-[50vh] relative">
           <img class="absolute inset-0 h-full w-full object-cover" src="{{highlight.image}}" alt="{{highlight.image_alt}}">
         </div>
 
         <div class="mx-auto w-2/3 -top-12 bg-base relative p-8">
-          <h3>{{highlight.heading}}</h3>
+          <h3 class="heading-lg h2">{{highlight.heading}}</h3>
           <p>{{highlight.text}}</p>
+          {% if highlight.button-text and highlight.link %}
           <a href="{{highlight.link}}">{{highlight.button-text}}</a>
+          {% endif %}
         </div>
 
       </div>
@@ -54,6 +56,7 @@
 
 .highlight-content {
   transition: all 0.5s ease-in-out;
+  left: 100vw;
 }
 
 /* .highlight-content.offRight {
@@ -102,7 +105,20 @@ highlightContents.forEach((highlight, index) => {
   });
 
   setActiveHighlight(0);
+
+
+  window.addEventListener('resize', () => {
+    highlightSlider.style.height = `0px`;
+    highlightContentItems.forEach((item) => {
+      if (item.clientHeight > highlightSlider.clientHeight) {
+        highlightSlider.style.height = `${item.clientHeight}px`;
+      }
+    });
+
+
 });
+
+})
 
 
 </script>
