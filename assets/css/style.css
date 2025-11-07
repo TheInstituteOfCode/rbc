@@ -652,6 +652,9 @@ video {
 .mr-side {
   margin-right: var(--side-gap);
 }
+.mt-0 {
+  margin-top: 0px;
+}
 .mt-16 {
   margin-top: 4rem;
 }
@@ -666,9 +669,6 @@ video {
 }
 .mt-vert {
   margin-top: var(--vert-gap);
-}
-.mt-0 {
-  margin-top: 0px;
 }
 .block {
   display: block;
