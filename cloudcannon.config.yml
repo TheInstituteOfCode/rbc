@@ -226,7 +226,6 @@ _inputs:
         - Landscape
         - Wide Landscape
         - Extra Tall
-        - Original
     cascade: true
   video_aspect:
     type: select

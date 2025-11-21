@@ -15,7 +15,7 @@
 
             <div class="grid md:grid-cols-2 gap-4 bg-base">
               <div class="relative">
-                <div style="aspect-ratio: 217/148;">
+                <div style="aspect-ratio: {% include logic/aspect-logic.html aspect = style.img_aspect %}">
                   <img class="h-full w-full inset-0 absolute object-cover object-center" src="{{style.img}}" alt="{{style.heading}}">
                 </div>
 
