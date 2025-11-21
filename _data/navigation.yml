@@ -2,16 +2,16 @@ logo_image: /uploads/logo-header-darker.png
 logo_alt: Sukhavati Logo
 header_logo_width: 15rem
 header_links:
-  - text: DINING
-    link: /dining
-  - text: WEDDINGS
-    link: /weddings-and-events
-  - text: EXPERIENCES
-    link: /experiences
   - text: SUITES and VILLAS
     link: /suites-and-villas
-  - text: WELLNESS
+  - text: DINING
+    link: /dining
+  - text: EXPERIENCES
+    link: /experiences
+  - text: SPA and WELLNESS
     link: /wellness
+  - text: WEDDINGS
+    link: /weddings-and-events
 footer-logo-image: /uploads/kc-logo.png
 footer-logo-size: 450px
 footer_nav_bar:

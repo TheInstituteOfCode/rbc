@@ -499,8 +499,8 @@ video {
 .left-0 {
   left: 0px;
 }
-.left-8 {
-  left: 2rem;
+.left-\[5\%\] {
+  left: 5%;
 }
 .left-side {
   left: var(--side-gap);
@@ -511,8 +511,8 @@ video {
 .right-4 {
   right: 1rem;
 }
-.right-8 {
-  right: 2rem;
+.right-\[5\%\] {
+  right: 5%;
 }
 .right-side {
   right: var(--side-gap);
@@ -1974,8 +1974,8 @@ float: right
   .md\:block {
     display: block;
   }
-  .md\:flex {
-    display: flex;
+  .md\:grid {
+    display: grid;
   }
   .md\:max-h-\[50vh\] {
     max-height: 50vh;
