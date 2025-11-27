@@ -378,21 +378,27 @@ function passHeightUp(target) {
     let images = gallery.querySelectorAll('img')
     console.log('gallery', gallery, images)
     let currentIndex = 0;
+    let buttons = gallery.querySelectorAll('.gallery-switch')
 
     function changeImage() {
       images.forEach(img => {
         img.classList.remove('active')
       })
       images[currentIndex].classList.add('active')
+      buttons.forEach(button => {
+        button.classList.remove('active')
+      })
+      buttons[currentIndex].classList.add('active')
     }
 
-    setInterval( () => {
-      currentIndex++;
-      if (currentIndex >= images.length) {
-        currentIndex = 0;
-      }
-      changeImage()
-    }, 3000)
+
+
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        currentIndex = button.dataset.target
+        changeImage()
+      })
+    })
 
   })
 

@@ -17,8 +17,14 @@
               <div class="relative rooms-gallery">
                 <div style="aspect-ratio: 217/148">
                   {% for image in style.images %}
-                  <img class="h-full w-full inset-0 absolute object-cover object-center gallery-image" src="{{image}}" alt="{{style.heading}}">
+                  <img class="h-full w-full inset-0 absolute object-cover object-center gallery-image {% if forloop.first%}active{% endif %}" src="{{image}}" alt="{{style.heading}}">
                   {% endfor %}
+                  <div class="flex gap-2 absolute z-[500] bottom-4 right-4">
+                    {% for image in style.images %}
+                    <span data-target="{{forloop.index0}}" class=" w-6 h-6 block border rounded-full gallery-switch {% if forloop.first%}active{% endif %}">
+                    </span>
+                    {% endfor %}
+                  </div>
                 </div>
 
               </div>
@@ -47,7 +53,7 @@
                     </p>
                     <p class="scheme-dark">
                       <a href="/" class="button-featured"> Reserve Now</a>
-                      <span class="button button-dialog cursor-pointer">take a tour</span>
+                      <span class="button button-dialog cursor-pointer">View Floorplan</span>
                     </p>
                     <dialog class="outline-none">
                       <span class="dialog-close-X cursor-pointer">X</span>
@@ -106,6 +112,14 @@
   font-size: 1.5rem;
   border: none;
   background: none;
+}
+
+.gallery-switch{
+  transition: all 0.3s ease-in-out;
+}
+
+.gallery-switch.active {
+  background-color: white;
 }
 </style>
 <script>
