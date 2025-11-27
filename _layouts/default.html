@@ -217,6 +217,9 @@
         {% if block._id == 'slider' %}
           {% assign hasSlider = true %}
         {% endif %}
+        {% if block._id == 'rooms' %}
+          {% assign hasRooms = true %}
+        {% endif %}
         {% if block._id == 'slider-blog-loop' %}
         {% assign hasSlider = true %}
         {% endif %}
@@ -362,6 +365,39 @@ function passHeightUp(target) {
   )
 
   {% endif %}
+
+
+  {% if hasRooms == true %}
+
+
+  const roomGallery = document.querySelectorAll('.rooms-gallery')
+  
+  console.log('room galleries', roomGallery)
+
+  roomGallery.forEach(gallery => {
+    let images = gallery.querySelectorAll('img')
+    console.log('gallery', gallery, images)
+    let currentIndex = 0;
+
+    function changeImage() {
+      images.forEach(img => {
+        img.classList.remove('active')
+      })
+      images[currentIndex].classList.add('active')
+    }
+
+    setInterval( () => {
+      currentIndex++;
+      if (currentIndex >= images.length) {
+        currentIndex = 0;
+      }
+      changeImage()
+    }, 3000)
+
+  })
+
+  {% endif %}
+  
 
 
 
@@ -585,6 +621,10 @@ tickerBanners.forEach(banner => {
 
 
     })
+
+
+
+
 
 </script>
 

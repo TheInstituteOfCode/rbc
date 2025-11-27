@@ -14,9 +14,11 @@
           <div>
 
             <div class="grid md:grid-cols-2 gap-4 bg-base">
-              <div class="relative">
-                <div style="aspect-ratio: {% include logic/aspect-logic.html aspect = style.img_aspect %}">
-                  <img class="h-full w-full inset-0 absolute object-cover object-center" src="{{style.img}}" alt="{{style.heading}}">
+              <div class="relative rooms-gallery">
+                <div style="aspect-ratio: 217/148">
+                  {% for image in style.images %}
+                  <img class="h-full w-full inset-0 absolute object-cover object-center gallery-image" src="{{image}}" alt="{{style.heading}}">
+                  {% endfor %}
                 </div>
 
               </div>
@@ -45,7 +47,11 @@
                     </p>
                     <p class="scheme-dark">
                       <a href="/" class="button-featured"> Reserve Now</a>
+                      <span class="button button-dialog">take a tour</span>
                     </p>
+                    <dialog>
+                      <img src="{{room.tour-pic}}" alt="{{room.name}} layout" >
+                    </dialog>
 
                   </div>
                 </div>
@@ -63,6 +69,10 @@
 <style>
        #section-{{forloop.index}} section{
         min-height: {{block.min-height}};
+      }
+
+      .gallery-image.active{
+        z-index: 99;
       }
  
 .filter-tab {
@@ -88,7 +98,18 @@
 
 </style>
 <script>
-  const styles = document.querySelectorAll('.style-set')
+
+const tourButtons = document.querySelectorAll('.button-dialog')
+console.log("tour buttons".tourButtons)
+tourButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const dialog = button.parentElement.nextElementSibling
+    console.log(dialog)
+    dialog.showModal()
+    })
+})
+
+const styles = document.querySelectorAll('.style-set')
 
 styles.forEach(style => {
   let filterButtons = style.querySelectorAll('span[data-filter]')
