@@ -301,6 +301,12 @@ letter-spacing: 0.54px;
     background-color: var(--bg-color);
 }
 
+.color-set.button-featured{
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    border: 0px;
+}
+
 /* extra for editor */
 
 
