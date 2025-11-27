@@ -1921,20 +1921,42 @@ float: right
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
 }
+
+
+/* tour dialog */
+
+
+dialog {
+  margin: auto;
+  border: none;
+  padding: 0;
+  max-width: 90vw;
+  max-height: 90vh;
+}
+
+
 .placeholder\:text-inherit::-moz-placeholder {
   color: inherit;
 }
+
+
 .placeholder\:text-inherit::placeholder {
   color: inherit;
 }
+
+
 .hover\:opacity-80:hover {
   opacity: 0.8;
 }
+
+
 .hover\:shadow-lg:hover {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
+
+
 @media (min-width: 640px) {
   .sm\:w-1\/2 {
     width: 50%;
@@ -1946,6 +1968,8 @@ float: right
     text-align: center;
   }
 }
+
+
 @media (min-width: 768px) {
   .md\:order-1 {
     order: 1;
@@ -2016,6 +2040,8 @@ float: right
     line-height: 1.7;
   }
 }
+
+
 @media (min-width: 1024px) {
   .lg\:relative {
     position: relative;
@@ -2045,6 +2071,8 @@ float: right
     padding: 8rem;
   }
 }
+
+
 @media (min-width: 1280px) {
   .xl\:static {
     position: static;

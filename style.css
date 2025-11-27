@@ -832,3 +832,15 @@ float: right
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
 }
+
+
+/* tour dialog */
+
+
+dialog {
+  margin: auto;
+  border: none;
+  padding: 0;
+  max-width: 90vw;
+  max-height: 90vh;
+}
