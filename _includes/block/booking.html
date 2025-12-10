@@ -1,0 +1,119 @@
+
+<section class="booking-form">
+      <div class="max-width">
+          <div class="mx-auto mb-12">
+            <h2 class="large-heading">Book now</h2>
+          </div>
+            <div class="mx-auto grid grid-cols-6 gap-x-16 gap-y-12">
+              <div class="col-span-3">
+                <label for="question" class="uppercase">check out day</label>
+                <input type="date" 
+                  id="check_in_day"
+                  name="trip-start"
+                  >
+              </div>
+              <div class="text-right col-span-3">
+                <label for="question" class="uppercase">check out day</label>
+                <input type="date" 
+                  id="check_out_day"
+                  name="trip-start"
+                  value="2025-11-09"
+                  >
+              </div>          
+              <div class="col-span-2">
+                 <label for="name" class="uppercase">rooms</label>
+                 <input type="number" id="room-count" value="1" min="1" max="5">
+              </div>
+
+              <div class="col-span-2">
+                <label for="message">adults</label>
+                <input type="number" id="adult-count" value="2" min="1" max="8">
+              </div>
+              <div class="col-span-2">
+                <label for="message">Children</label>
+                <input type="number" id="children-count" value="0" min="0" max="8">
+              </div>
+            
+              <!-- <input type="hidden" name="inbox_key" value="sukhavatibali"> -->
+              <input type="hidden" name="_to" value="#">
+              <input type="text" name="_gotcha" style="display: none;">
+            <div class="text-center scheme-dark col-span-2">
+              <a href="" id="bookingButton" class="border border-[currentcolor] inline-block bg-base border-solid px-4 py-2 w-min" type="submit" value="Send Message">
+              book now
+            </div>
+          </form>
+      </div>
+    </section>
+
+<script>
+
+  const inputs = document.querySelectorAll('.booking-form input');
+  const bookingButton = document.querySelector('#bookingButton');
+  const checkInInput = document.getElementById('check_in_day');
+  const checkOutInput = document.getElementById('check_out_day');
+  
+  checkInInput.min = new Date().toLocaleDateString('fr-ca')
+  checkInInput.value = new Date().toLocaleDateString('fr-ca')
+  
+
+  checkInInput.addEventListener('change', function() {
+    const checkInDate = new Date(this.value);
+    const checkOutDate = new Date(checkInDate);
+    checkOutDate.setDate(checkOutDate.getDate() + 1); // Default to 1 night stay
+
+    const year = checkOutDate.getFullYear();
+    const month = String(checkOutDate.getMonth() + 1).padStart(2, '0');
+    const day = String(checkOutDate.getDate()).padStart(2, '0');
+
+    checkOutInput.value = `${year}-${month}-${day}`;
+  });
+
+
+console.log(bookingButton,inputs,'look here');
+
+inputs.forEach(input => {
+  
+  input.addEventListener('change', function() {
+    console.log(bookingButton,inputs);
+
+    const checkInDate = checkInInput.value.split('-');
+    const checkOutDate = checkOutInput.value.split('-');
+
+    
+    const roomCountInput = document.getElementById('room-count');
+    const roomCount = roomCountInput.value;
+
+    const adultCountInput = document.getElementById('adult-count');
+    const adultCount = adultCountInput.value;
+
+    const childrenCountInput = document.getElementById('children-count');
+    const childrenCount = childrenCountInput.value;
+
+    bookingButton.href = `
+    https://www.ihg.com/regent/hotels/gb/en/find-hotels/select-roomrate?fromRedirect=true&qSrt=sBR&qSlH=DPSCR&qRms=${ roomCount }&qAdlt=${ adultCount }&qChld=${ childrenCount }&qCiD=${ checkInDate[2] }&qCiMy=${ checkInDate[1] }/${ checkInDate[0] }&qCoD=${ checkOutDate[2] }&qCoMy=${ checkOutDate[1] }/${ checkOutDate[0] }&qAAR=6CBARC&qRtP=6CBARC&setPMCookies=true&qSHBrC=RE&qDest=Jl.%20Pantai%20Batu%20Bolong%20B%20No.%2093xx,%20Bali,%20ID&srb_u=1&qRmFltr=`
+
+})
+
+})
+
+
+//     https://www.ihg.com/regent/hotels/gb/en/find-hotels/select-roomrate
+    // ?fromRedirect=true
+    // &qSrt=sBR
+    // &qSlH=DPSCR
+    // &qRms=${ roomCount }
+    // &qAdlt=${ adultCount }
+    // &qChld=${ childrenCount }
+    // &qCiD=${ checkInDate[2] }
+    // &qCiMy=${ checkInDate[1] }/${ checkInDate[0] }
+    // &qCoD=${ checkOutDate[2] }
+    // &qCoMy=${ checkOutDate[1] }/${ checkOutDate[0] }
+    // &qAAR=6CBARC
+    // &qRtP=6CBARC
+    // &setPMCookies=true
+    // &qSHBrC=RE
+    // &qDest=Jl.%20Pantai%20Batu%20Bolong%20B%20No.%2093xx,%20Bali,%20ID
+    // &srb_u=1
+    // &qRmFltr=`
+
+</script>
