@@ -17,7 +17,7 @@
               <div class="relative rooms-gallery">
                 <div style="aspect-ratio: 217/148">
                   {% for image in room.images %}
-                  <img class="h-full w-full inset-0 absolute object-cover object-center gallery-image {% if forloop.first%}active{% endif %}" src="{{image}}" alt="{{style.heading}}">
+                  <img class="h-full w-full inset-0 absolute object-cover object-center gallery-image {% if forloop.first%}active{% endif %}" src="{{image.image}}" alt="{{room.name}}">
                   {% endfor %}
                   <div class="flex gap-2 absolute z-[500] bottom-4 right-4">
                     {% for image in room.images %}

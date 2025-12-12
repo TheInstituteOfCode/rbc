@@ -43,8 +43,6 @@ _inputs:
     type: text
     hidden: true
     cascade: true
-  images:
-    type: images
   col-type:
     type: text
     hidden: true
