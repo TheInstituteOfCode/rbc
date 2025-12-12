@@ -1,5 +1,5 @@
 ---
-heading: "A Club Like \LNo Other"
+heading: "Serene Lagoon Upgrade"
 sub-heading: FEATURED OFFER
 full-description: >-
         Regent Club elevates above the noise, offering more than just a collection of uplifting experiences—it’s an exclusive retreat for the distinguished. 
@@ -34,10 +34,10 @@ blocks:
         color-scheme: dark
     -
         _id: text-block-top-overlap
-        block-content-html: "<h2 class='heading-lg'>Elegance at Year’s End</h2><h3>Offer Summary</h3><p>Mark the final day of the year with an experience composed in taste and stillness. Your stay includes a thoughtfully curated evening at Taru, where a multi-course tasting unfolds in harmony with a hand-selected wine pairing, each element guided by season, place, and purpose. Stay through 31 December 2025 and benefit from exclusive privileges, including daily breakfast, complimentary Refreshment Gallery, unlimited laundry and pressing services, and a New Year's Eve celebrations, a truly effortless retreat.</p><p>Within the quiet elegance of your private sanctuary and the gentle cadence of the shoreline, time moves differently. The atmosphere is unhurried, refined, and quietly celebratory—designed not to overwhelm, but to deepen each moment. Between curated dining and the stillness of the coast, the senses are awakened in subtle, lasting ways.</p><p>A moment to savour, a year to embrace—begin it with grace and quiet splendour.</p><p>Terms & Conditions</p><p>Free cancellation 30 days prior to stay.</p><p>For more information and reservations, please contact us at (+62) 361-201-9999 or email: reservations.regentbali@ihg.com</p><p><a href='https://www.ihg.com/redirect?path=asearch&brandCode=RE&localeCode=en&regionCode=925&hotelCode=DPSCR&checkInDate=30&checkInMonthYear=112025&checkOutDate=01&checkOutMonthYear=002026&numberOfAdults=2&numberOfChildren=0&numberOfRooms=1&rateCode=ISHD1&cn=no' class='button-featured'>Book Now</a></p>"
+        block-content-html: "<h2 class='heading-lg'>Elegance at Year’s End</h2><h3>Offer Summary</h3><p>Escape the ordinary and embrace a haven of serenity with our Serene Lagoon Upgrade. Receive a complimentary upgrade to a luxurious Lagoon Pool Suite, where private tranquility meets exclusive access. Begin your day with an enchanting floating breakfast for two, served amidst the gentle ripples of the pool, a truly unforgettable experience. Unwind further with a rejuvenating 60-minute Balinese massage for two, designed to soothe your senses and restore your balance. Conclude your indulgent escape with an elegant afternoon tea, savouring a sophisticated assortment of delights and a fine selection of teas. Elevate your stay and let the serenity of the lagoon embrace you.</p><p>Complimentary inclusions for two guests:</p><p><ul><li>Upgrade to Lagoon Pool Suite<li>Floating Breakfast for Two in the Lagoon Pool<li>60-Minute Balinese Massages<li>Breakfast and Afternoon Tea<li>Refreshment Gallery, featuring alcoholic, and non-alcoholic beverages and gourmet snacks upon arrival</ul></p><h3>Terms & Conditions</h3><p>Minimum length of stay of 2 nights is required.</p><p>Complimentary upgrade confirmed upon booking. In the event that a Lagoon Pool Suite is unavailable, an in-room private breakfast will be provided and an upgrade to the next higher room category.</p><p>For more information and reservations, please contact us at (+62) 361-201-9999 or email: reservations.regentbali@ihg.com</p><p><a href='https://www.ihg.com/redirect?path=asearch&brandCode=RE&localeCode=en&regionCode=925&hotelCode=DPSCR&checkInDate=30&checkInMonthYear=112025&checkOutDate=01&checkOutMonthYear=002026&numberOfAdults=2&numberOfChildren=0&numberOfRooms=1&rateCode=ISHD1&cn=no' class='button-featured'>Book Now</a></p>"
         overlay-color-scheme: mint-400
         content-max-width: 43rem
-        text-alignment: center
+        text-alignment: left
         color-scheme: dark
         min-height: 50vh
 ---
