@@ -22,16 +22,19 @@
             </div>
             {% endfor %}
           </div>
-          <div class="grid grid-cols-2 gap-4">
+          <div class="grid grid-cols-2 gap-8">
             {% for event in site.offers | offset:1 %}
-            <div>
+            <div class="flex flex-col">
               <div class="relative" style="aspect-ratio: 170/120;">
                 <img src="{{event.featured-image}}" alt="" class="bg-cover-image">
               </div>  
-              <div>
-                <h3>{{event.heading}}</h3>
-                <p>{{event.short-description}}</p>
-                <a href="{{event.button-link}}" class="button-featured">{{event.button-text}}</a>
+              <div class="p-4 scheme-{{block.button.color-scheme}} grow flex flex-col">
+                <h3 class="heading">{{event.heading}}</h3>
+                <p class="grow">{{event.short-description}}</p>
+                <div>
+                  <a href="{{event.button-link}}" class="button-featured color-set ">{{event.button-text}}</a>
+                </div>
+
               </div>
             </div>
             {% endfor  %}

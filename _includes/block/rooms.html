@@ -14,9 +14,17 @@
           <div>
 
             <div class="grid md:grid-cols-2 gap-4 bg-base">
-              <div class="relative">
-                <div style="aspect-ratio: 217/148;">
-                  <img class="h-full w-full inset-0 absolute object-cover object-center" src="{{style.img}}" alt="{{style.heading}}">
+              <div class="relative rooms-gallery">
+                <div style="aspect-ratio: 217/148">
+                  {% for image in style.images %}
+                  <img class="h-full w-full inset-0 absolute object-cover object-center gallery-image {% if forloop.first%}active{% endif %}" src="{{image}}" alt="{{style.heading}}">
+                  {% endfor %}
+                  <div class="flex gap-2 absolute z-[500] bottom-4 right-4">
+                    {% for image in style.images %}
+                    <span data-target="{{forloop.index0}}" class=" w-6 h-6 block border rounded-full gallery-switch {% if forloop.first%}active{% endif %}">
+                    </span>
+                    {% endfor %}
+                  </div>
                 </div>
 
               </div>
@@ -27,7 +35,7 @@
                   <h2 class="">{{room.name}}</h2>
                   <div class="flex gap-x-8 flex-wrap text-sm engravers-gothic mb-4">
                     <span class="whitespace-nowrap">
-                      {{room.size}} SQ/FT
+                      {{room.size}} SQ/FT ({{room.size-m}} SQM)
                     </span>
                     <span class="whitespace-nowrap">
                       {{room.bed-size}}
@@ -45,7 +53,12 @@
                     </p>
                     <p class="scheme-dark">
                       <a href="/" class="button-featured"> Reserve Now</a>
+                      <span class="button button-dialog cursor-pointer">View Floorplan</span>
                     </p>
+                    <dialog class="outline-none">
+                      <span class="dialog-close-X cursor-pointer">X</span>
+                      <img src="{{room.tour-pic}}" alt="{{room.name}} layout" class="max-h-[90vh]" >
+                    </dialog>
 
                   </div>
                 </div>
@@ -63,6 +76,10 @@
 <style>
        #section-{{forloop.index}} section{
         min-height: {{block.min-height}};
+      }
+
+      .gallery-image.active{
+        z-index: 99;
       }
  
 .filter-tab {
@@ -86,9 +103,58 @@
         display: flex;
       }
 
+
+.dialog-close-X {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  border: none;
+  background: none;
+}
+
+.gallery-switch{
+  transition: all 0.3s ease-in-out;
+}
+
+.gallery-switch.active {
+  background-color: white;
+}
 </style>
 <script>
-  const styles = document.querySelectorAll('.style-set')
+
+const tourButtons = document.querySelectorAll('.button-dialog')
+console.log("tour buttons".tourButtons)
+tourButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const dialog = button.parentElement.nextElementSibling
+    console.log(dialog)
+    dialog.showModal()
+  })
+})
+
+const dialogs = document.querySelectorAll('dialog')
+dialogs.forEach(dialog => {
+        dialog.addEventListener('click', (event) => {
+         if (event.target === dialog) {
+             // This code will execute when the backdrop is clicked
+            //  console.log('Backdrop clicked!');
+             // Example: Close the dialog
+            dialog.close();
+         }
+         
+        })
+    })
+
+    const closeButtons = document.querySelectorAll('.dialog-close-X')
+    closeButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        button.parentElement.close()
+      })
+    })
+
+const styles = document.querySelectorAll('.style-set')
 
 styles.forEach(style => {
   let filterButtons = style.querySelectorAll('span[data-filter]')

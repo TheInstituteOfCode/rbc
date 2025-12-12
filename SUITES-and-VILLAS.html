@@ -20,7 +20,7 @@ blocks:
         min-height: 90vh
         color-scheme: dark
     -
-        _id: text-block
+        _id: text-block-top-overlap
         block-content-html: >-
             <h3 class="sub-heading">SUITES &amp; VILLAS</h3><h2
             class="heading-lg">A coastal haven where Bali's spirit
@@ -32,31 +32,37 @@ blocks:
         content-max-width: 700px
         text-alignment: center
         color-scheme: base
+        overlay-color-scheme: mint-400
         min-height: 50vh
+        bottom-text:
+            links:
     -
         _id: rooms
         room-style:
             -
-                heading: STUDIO SUITES
-                img: /uploads/studio-suites.jpg
+                heading: STUDIO SUITE
+                images:
+                    - /uploads/studio-suites.jpg
+                    - /uploads/premium-one-bedroom-suites.jpg
                 rooms:
                     -
                         name: Ocean View King
-                        size: 76
+                        size: 818
+                        size-m: 76
                         bed-size: KING BED
-                        sleeps: 2
+                        sleeps: 3
                         extra-feature:
-                            -
-                            -
                         content: >-
                             Gaze across the Indian Ocean from your private
                             balcony. Indoors find a king bed and a serene
                             bathroom with a rain shower and teak bathtub. Enjoy
                             thoughtful moments with a complimentary refreshment
                             gallery.
+                        tour-pic: /uploads/regentbalicanggu-studiosuite.jpeg
                     -
                         name: Lagoon Access Twin
-                        size: 120
+                        size: 818
+                        size-m: 76
                         bed-size: king bed-size
                         sleeps: 2
                         extra-feature:
@@ -73,9 +79,11 @@ blocks:
                             offers serene comfort, while unlimited laundry,
                             all‑day breakfast, and  assistance from a Regent
                             Experience Agent elevate your stay.&nbsp;
+                        tour-pic: /uploads/studio-ocean-view-king.jpg
                     -
                         name: Studio Suite King
-                        size: 120
+                        size: 818
+                        size-m: 76
                         bed-size: king bed-size
                         sleeps: 2
                         extra-feature:
@@ -92,27 +100,32 @@ blocks:
                             offers serene comfort, while unlimited laundry,
                             all‑day breakfast, and  assistance from a Regent
                             Experience Agent elevate your stay.&nbsp;
+                        tour-pic: /uploads/tour-placeholder.avif
             -
-                heading: ONE BEDROOM SUITES
-                img: /uploads/one-bedroom-suites.jpg
+                heading: ONE BEDROOM SUITE
+                images:
+                    - /uploads/one-bedroom-suites.jpg
+                    - /uploads/one-bedroom-suites.jpg
+                    - /uploads/one-bedroom-suites.jpg
                 rooms:
                     -
                         name: One Bedroom Ocean View King
-                        size: 86
+                        size: 936
+                        size-m: 87 
                         bed-size: KING BED
                         sleeps: 3
                         extra-feature:
-                            -
-                            -
                         content: >-
                             Perched above the coastline, this One Bedroom Suite
                             pairs tranquil seclusion with sweeping ocean views.
                             A spacious living room opens onto a balcony, ideal
                             for soaking in the surroundings. With two nights or
                             more enjoy a 60-minute signature massage for two.
+                        tour-pic: /uploads/floorplan-1br.jpeg
                     -
                         name: Lagoon Access King
-                        size: 120
+                        size: 936
+                        size-m: 87 
                         bed-size: king bed-size
                         sleeps: 2
                         extra-feature:
@@ -129,9 +142,12 @@ blocks:
                             offers serene comfort, while unlimited laundry,
                             all‑day breakfast, and  assistance from a Regent
                             Experience Agent elevate your stay.&nbsp;
+                        tour-pic: >-
+                            /uploads/regentbalicanggu-onebedroomsuite-lagoonaccess.jpeg
                     -
                         name: One Bedroom King
-                        size: 120
+                        size: 936
+                        size-m: 87 
                         bed-size: king bed-size
                         sleeps: 2
                         extra-feature:
@@ -148,13 +164,18 @@ blocks:
                             offers serene comfort, while unlimited laundry,
                             all‑day breakfast, and  assistance from a Regent
                             Experience Agent elevate your stay.&nbsp;
+                        tour-pic: /uploads/tour-placeholder.avif
             -
-                heading: TWO BEDROOM SUITES
-                img: /uploads/two-bedroom-suites.jpg
+                heading: TWO BEDROOM SUITE
+                images:
+                    - /uploads/two-bedroom-suites.jpg
+                    - /uploads/two-bedroom-suites.jpg
+                    - /uploads/two-bedroom-suites.jpg
                 rooms:
                     -
                         name: Two Bedroom Lagoon Access
-                        size: 174
+                        size: 1873   
+                        size-m: 174
                         bed-size: KING BED & TWIN BEDS
                         sleeps: 6
                         extra-feature:
@@ -166,9 +187,11 @@ blocks:
                             lagoon. Indoor and outdoor living blend with
                             generous spaces, private terraces, and bathrooms
                             that reflect Bali’s artisanal heritage.
+                        tour-pic: /uploads/floorplan-2br.jpeg
                     -
                         name: Two Bedroom Suite
-                        size: 120
+                        size: 1873   
+                        size-m: 174
                         bed-size: king bed-size
                         sleeps: 2
                         extra-feature:
@@ -185,13 +208,18 @@ blocks:
                             offers serene comfort, while unlimited laundry,
                             all‑day breakfast, and  assistance from a Regent
                             Experience Agent elevate your stay.&nbsp;
+                        tour-pic: /uploads/floorplan-2br-1.jpeg
             -
-                heading: PREMIUM ONE BEDROOM SUITES
-                img: /uploads/premium-one-bedroom-suites.jpg
+                heading: PREMIUM ONE BEDROOM SUITE
+                images:
+                    - /uploads/premium-one-bedroom-suites.jpg
+                    - /uploads/premium-one-bedroom-suites.jpg
+                    - /uploads/premium-one-bedroom-suites.jpg
                 rooms:
                     -
                         name: Premium One Bedroom Ocean View
-                        size: 108
+                        size: 1163 
+                        size-m:  108
                         bed-size: KING BED
                         sleeps: 4
                         extra-feature:
@@ -204,31 +232,41 @@ blocks:
                             light-filled interiors include a separate lounge,
                             king bed, and a bathroom that pays homage to
                             Balinese craft and detail.
+                        tour-pic: /uploads/premium-floorplan-dpscr.jpeg
                     -
                         name: Lagoon Access King
-                        size: 0
+                        size: 1163 
+                        size-m:  108
                         bed-size: ''
                         sleeps: 0
                         extra-feature:
                             -
                             -
                         content: ''
+                        tour-pic: /uploads/tour-placeholder.avif
                     -
                         name: Garden View King
-                        size: 0
+                        size: 1163 
+                        size-m:  108
                         bed-size: ''
                         sleeps: 0
                         extra-feature:
                             -
                             -
                         content: ''
+                        tour-pic: /uploads/tour-placeholder.avif
             -
-                heading: PRIVATE VILLAS
-                img: /uploads/private-villas.jpg
+                heading: PRIVATE villas
+                images:
+                    - /uploads/private-beach-villa.jpg
+                    - /uploads/private-beach-villa.jpg
+                    - /uploads/private-beach-villa.jpg
+
                 rooms:
                     -
                         name: Beachfront Private Pool Villa
-                        size: 327
+                        size: 3520 
+                        size-m: 327 
                         bed-size: KING BED
                         sleeps: 3
                         extra-feature:
@@ -241,22 +279,27 @@ blocks:
                             rain showers, and a beautiful teak bathtub. Step
                             into your outdoor living space, the rhythm of the
                             waves becomes a backdrop to your peaceful haven.
+                        tour-pic: /uploads/beachvilla-floorplan.jpeg
                     -
                         name: Garden Pool Villa
-                        size: 0
+                        size: 2368 
+                        size-m: 220 
                         bed-size: ''
                         sleeps: 0
                         extra-feature:
                             - ''
                         content: ''
+                        tour-pic: /uploads/regentbalicanggu-gardenvilla-1.jpeg
             -
                 heading: PENTHOUSE
-                img: /uploads/penthouse.jpg
+                images:
+                    - /uploads/penthouse.jpg
                 rooms:
                     -
                         name: Oceanfront Private Pool Penthouse
-                        size: 618
-                        bed-size: 'KING BED & Twin Beds '
+                        size: 6652 
+                        size-m: 618 
+                        bed-size: KING BED & TWIN BEDS
                         sleeps: 6
                         extra-feature:
                             -
@@ -268,6 +311,7 @@ blocks:
                             peaceful retreat with a teak bathtub, rainfall
                             shower, and refined ensuite, while the terrace and
                             cabana set the stage for sunset views.
+                        tour-pic: /uploads/penthouse-floorplan.jpeg
         color-scheme: mint-400
         min-height: 50vh
     -
@@ -365,11 +409,9 @@ blocks:
     -
         _id: wave-grid
         block-content-html: >-
-            <h2 class="heading-lg">Offers &amp; Promotions</h2><p>Lorem ipsum
-            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat.</p>
+            <h2 class="heading-lg">Offers &amp; Promotions</h2><p> Unwind in the
+            idyllic setting of Regent Bali Canggu. Enhance your luxurious stay
+            with exclusive offers and complimentary inclusions.</p>
         grid:
             -
                 heading: Stay Longer & Save
@@ -377,7 +419,7 @@ blocks:
                     Extend your adventure and save more. It’s the perfect chance
                     to settle in and explore everything in Canggu and far
                     beyond.
-                image: /uploads/stay-longer-save.jpg
+                image: /uploads/stay-longer-and-save.jpg
                 button:
                     url: '#'
                     text: reserve
@@ -394,11 +436,11 @@ blocks:
                     url: '#'
                     text: reserve
             -
-                heading: Elegance ay Year’s End
+                heading: Elegance at Year’s End
                 description: >-
                     Celebrate the year’s end with exquisite dining and serene
                     moments, embracing the art of graceful celebration.
-                image: /uploads/elegancy-at-year-s-end.jpg
+                image: /uploads/elegance-at-year-s-end.jpg
                 button:
                     url: '#'
                     text: reserve

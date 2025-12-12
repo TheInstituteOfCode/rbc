@@ -226,7 +226,6 @@ _inputs:
         - Landscape
         - Wide Landscape
         - Extra Tall
-        - Original
     cascade: true
   video_aspect:
     type: select
@@ -278,6 +277,9 @@ _inputs:
   youtube_placeholder:
     type: image
     cascade: true
+  tour-pic:
+    type: image
+    label: Virtual Tour picture
   src:
     type: image
     label: image
@@ -575,7 +577,7 @@ _structures:
               buttons: 
                   -   text: Discover more
                       url:     
-                      button-color: mint-400
+                      color-scheme: mint-400
           carousel:
               desktop-image-position: left
               dots: true
