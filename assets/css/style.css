@@ -712,17 +712,14 @@ video {
 .h-16 {
   height: 4rem;
 }
-.h-6 {
-  height: 1.5rem;
+.h-3 {
+  height: 0.75rem;
 }
 .h-\[50vh\] {
   height: 50vh;
 }
 .h-full {
   height: 100%;
-}
-.h-2 {
-  height: 0.5rem;
 }
 .max-h-\[90vh\] {
   max-height: 90vh;
@@ -736,14 +733,14 @@ video {
 .w-2\/3 {
   width: 66.666667%;
 }
+.w-3 {
+  width: 0.75rem;
+}
 .w-32 {
   width: 8rem;
 }
 .w-4\/5 {
   width: 80%;
-}
-.w-6 {
-  width: 1.5rem;
 }
 .w-\[80\%\] {
   width: 80%;
@@ -766,9 +763,6 @@ video {
 }
 .w-screen {
   width: 100vw;
-}
-.w-2 {
-  width: 0.5rem;
 }
 .min-w-min {
   min-width: -moz-min-content;
@@ -2039,14 +2033,14 @@ dialog {
   .md\:order-\[0\] {
     order: 0;
   }
-  .md\:col-span-4 {
-    grid-column: span 4 / span 4;
-  }
   .md\:col-span-2 {
     grid-column: span 2 / span 2;
   }
   .md\:col-span-3 {
     grid-column: span 3 / span 3;
+  }
+  .md\:col-span-4 {
+    grid-column: span 4 / span 4;
   }
   .md\:mb-0 {
     margin-bottom: 0px;
@@ -2093,6 +2087,10 @@ dialog {
   }
   .md\:bg-fixed {
     background-attachment: fixed;
+  }
+  .md\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
   .md\:text-center {
     text-align: center;

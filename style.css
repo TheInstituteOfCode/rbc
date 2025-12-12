@@ -13,6 +13,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+video::-webkit-media-controls {
+    display: none;
+}
+
 
 img{ max-width: 100%; height:auto;}
 
