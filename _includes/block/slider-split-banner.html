@@ -20,9 +20,9 @@
     <div class="split-banner-slider relative mb-4 scheme-base">
       {% for col in block.slider %}
       <div class="split-banner-slider-content absolute bg-base">
-        <div class="grid md:grid-cols-2 overflow-hidden " style="gap: {{site.data.style.split_banner_gap}}">
+        <div class="grid md:grid-cols-5 overflow-hidden " style="gap: {{site.data.style.split_banner_gap}}">
           
-          <div class="picture relative">
+          <div class="picture relative  md:col-span-3">
             <div style="aspect-ratio: 5/4;">
 
               <picture >
@@ -32,7 +32,7 @@
             </div>
             
           </div>
-          <div class="text-block p-8 flex flex-col justify-center items-center">
+          <div class="text-block p-8 flex flex-col justify-center items-center  md:col-span-2">
             <div>
               {{col.block-content-html}}
               <a href="{{col.button-link}}" class="button-featured inline-block mb-8">{{col.button-text}}</a>

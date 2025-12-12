@@ -721,6 +721,9 @@ video {
 .h-full {
   height: 100%;
 }
+.h-2 {
+  height: 0.5rem;
+}
 .max-h-\[90vh\] {
   max-height: 90vh;
 }
@@ -763,6 +766,9 @@ video {
 }
 .w-screen {
   width: 100vw;
+}
+.w-2 {
+  width: 0.5rem;
 }
 .min-w-min {
   min-width: -moz-min-content;
@@ -2036,6 +2042,12 @@ dialog {
   .md\:col-span-4 {
     grid-column: span 4 / span 4;
   }
+  .md\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+  .md\:col-span-3 {
+    grid-column: span 3 / span 3;
+  }
   .md\:mb-0 {
     margin-bottom: 0px;
   }
@@ -2065,6 +2077,9 @@ dialog {
   }
   .md\:grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .md\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
   .md\:flex-row {
     flex-direction: row;
