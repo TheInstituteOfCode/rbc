@@ -12,15 +12,15 @@
             </div>
           </div>
           <div>
-
-            <div class="grid md:grid-cols-2 gap-4 bg-base">
+            {% for room in style.rooms %}
+            <div class="grid md:grid-cols-2 gap-4 bg-base filter-target {% if forloop.first %} active {% endif %} ">
               <div class="relative rooms-gallery">
                 <div style="aspect-ratio: 217/148">
-                  {% for image in style.images %}
+                  {% for image in room.images %}
                   <img class="h-full w-full inset-0 absolute object-cover object-center gallery-image {% if forloop.first%}active{% endif %}" src="{{image}}" alt="{{style.heading}}">
                   {% endfor %}
                   <div class="flex gap-2 absolute z-[500] bottom-4 right-4">
-                    {% for image in style.images %}
+                    {% for image in room.images %}
                     <span data-target="{{forloop.index0}}" class=" w-6 h-6 block border rounded-full gallery-switch {% if forloop.first%}active{% endif %}">
                     </span>
                     {% endfor %}
@@ -28,8 +28,8 @@
                 </div>
 
               </div>
-              {% for room in style.rooms %}
-              <div class="filter-target bg-base {% if forloop.first %} active {% endif %} items-center p-8">
+              
+              <div class="flex bg-base items-center p-8">
                 <div>
                   
                   <h2 class="">{{room.name}}</h2>
@@ -63,8 +63,8 @@
                   </div>
                 </div>
               </div>
-              {% endfor %}
             </div>
+              {% endfor %}
           </div>
         </div>
         {% endfor %}
@@ -100,7 +100,7 @@
         display: none;
       }
       .filter-target.active{
-        display: flex;
+        display: grid;
       }
 
 
