@@ -5,46 +5,46 @@
             <h2 class="large-heading">Make your reservation</h2>
             <p>Unwind in the idyllic setting of Regent Bali Canggu.  </p>
           </div>
-            <div class="mx-auto grid grid-cols-6 lg:grid-cols-12 gap-x-16 gap-y-12">
-              <div class="col-span-3">
-                <label for="question" class="uppercase">check out day</label>
-                <input type="date" 
-                  id="check_in_day"
-                  name="trip-start"
-                  >
-              </div>
-              <div class="text-right col-span-3">
-                <label for="question" class="uppercase">check out day</label>
-                <input type="date" 
-                  id="check_out_day"
-                  name="trip-start"
-                  value="2025-11-09"
-                  >
-              </div>          
-              <div class="col-span-2">
-                 <label for="name" class="uppercase">rooms</label>
-                 <input type="number" id="room-count" value="1" min="1" max="5">
-              </div>
+          <div class="mx-auto grid grid-cols-6 lg:grid-cols-12 gap-x-16 gap-y-12">
+            <div class="col-span-3">
+              <label for="question" class="uppercase">arrival</label>
+              <input type="date" 
+                id="check_in_day"
+                name="trip-start"
+                >
+            </div>
+            <div class="col-span-3">
+              <label for="question" class="uppercase">departure</label>
+              <input type="date" 
+                id="check_out_day"
+                name="trip-start"
+                value="2025-11-09"
+                >
+            </div>          
+            <div class="col-span-2">
+                <label for="name" class="uppercase">rooms</label>
+                <input type="number" id="room-count" value="1" min="1" max="5">
+            </div>
 
-              <div class="col-span-2">
-                <label for="message">adults</label>
-                <input type="number" id="adult-count" value="2" min="1" max="8">
-              </div>
-              <div class="col-span-2">
-                <label for="message">Children</label>
-                <input type="number" id="children-count" value="0" min="0" max="8">
-              </div>
-            
-              <!-- <input type="hidden" name="inbox_key" value="sukhavatibali"> -->
-              <input type="hidden" name="_to" value="#">
-              <input type="text" name="_gotcha" style="display: none;">
+            <div class="col-span-2">
+              <label for="message">adults</label>
+              <input type="number" id="adult-count" value="2" min="1" max="8">
+            </div>
+            <div class="col-span-2">
+              <label for="message">Children</label>
+              <input type="number" id="children-count" value="0" min="0" max="8">
+            </div>
+          
             <div class="text-center scheme-dark col-span-full">
               <a href="/SUITES-and-VILLAS#booking-section" id="bookingButton" class="border border-[currentcolor] inline-block bg-base border-solid px-4 py-2 button-featured">
-              Check Availability
-            </div>
-          </form>
+                Check Availability
+              </a>
+              <input type="hidden" name="_to" value="#">
+              <input type="text" name="_gotcha" style="display: none;">
+          </div>
       </div>
-    </section>
+    </div>
+  </section>
 
 <script>
 
@@ -96,30 +96,11 @@ console.log(bookingButton,inputs);
 
 inputs.forEach(input => {
   
-  input.addEventListener('change', updatelink);
+  input.addEventListener('change', updatelink());
 
 })
 
 updatelink();
 
-
-//     https://www.ihg.com/regent/hotels/gb/en/find-hotels/select-roomrate
-    // ?fromRedirect=true
-    // &qSrt=sBR
-    // &qSlH=DPSCR
-    // &qRms=${ roomCount }
-    // &qAdlt=${ adultCount }
-    // &qChld=${ childrenCount }
-    // &qCiD=${ checkInDate[2] }
-    // &qCiMy=${ checkInDate[1] }/${ checkInDate[0] }
-    // &qCoD=${ checkOutDate[2] }
-    // &qCoMy=${ checkOutDate[1] }/${ checkOutDate[0] }
-    // &qAAR=6CBARC
-    // &qRtP=6CBARC
-    // &setPMCookies=true
-    // &qSHBrC=RE
-    // &qDest=Jl.%20Pantai%20Batu%20Bolong%20B%20No.%2093xx,%20Bali,%20ID
-    // &srb_u=1
-    // &qRmFltr=`
 
 </script>
