@@ -21,6 +21,21 @@
   }
 
 
+  h3.large-heading-serif {
+    
+  font-size: 2.0rem;
+  font-family: var(--heading-font-serif-family);
+  font-weight: 300;
+  line-height: 1.2;
+  text-wrap: balance;
+  text-transform: none;
+  }
+@media (max-width: 768px) {
+  h3.large-heading-serif {
+    font-size: 1.6rem;
+  }
+}
+
   a.button {
     border: 1px solid;
     font-family: var(--heading-font-sans-family);
