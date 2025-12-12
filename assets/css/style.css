@@ -502,6 +502,9 @@ video {
 .left-0 {
   left: 0px;
 }
+.left-8 {
+  left: 2rem;
+}
 .left-\[5\%\] {
   left: 5%;
 }
@@ -513,6 +516,9 @@ video {
 }
 .right-4 {
   right: 1rem;
+}
+.right-8 {
+  right: 2rem;
 }
 .right-\[5\%\] {
   right: 5%;
@@ -2028,6 +2034,9 @@ dialog {
   }
   .md\:block {
     display: block;
+  }
+  .md\:flex {
+    display: flex;
   }
   .md\:grid {
     display: grid;
