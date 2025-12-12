@@ -565,6 +565,9 @@ video {
 .col-span-7 {
   grid-column: span 7 / span 7;
 }
+.col-span-full {
+  grid-column: 1 / -1;
+}
 .row-span-2 {
   grid-row: span 2 / span 2;
 }
@@ -1142,12 +1145,14 @@ img.bg-cover-image{
 
 html {
   scroll-padding-top: 107px;
+  scroll-behavior: smooth;
 }
 
 body{
   font-family:  var(--body-font-family);
   max-width: 100vw;
   overflow-X: hidden;
+  scroll-behavior: smooth;
   /* Set padding equal to height of fixed header */
   scroll-padding-top: 107px;
   background-color: #f0f0f0;
