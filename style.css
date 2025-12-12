@@ -190,6 +190,17 @@ textarea:focus, textarea:focus-within{
   font-family: var(--heading-font-sans-family);
 }
 
+.booking-form label {
+  margin-bottom: 2rem;
+  font-family: var(--heading-font-sans-family);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.booking-form input::placeholder {
+  font-size: 1.1rem;
+}
+
+
 .heading-lg {
   font-size: 2.0rem;
 }

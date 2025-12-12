@@ -1309,6 +1309,20 @@ textarea:focus, textarea:focus-within{
   font-family: var(--heading-font-sans-family);
 }
 
+.booking-form label {
+  margin-bottom: 2rem;
+  font-family: var(--heading-font-sans-family);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.booking-form input::-moz-placeholder {
+  font-size: 1.1rem;
+}
+.booking-form input::placeholder {
+  font-size: 1.1rem;
+}
+
+
 .heading-lg {
   font-size: 2.0rem;
 }
@@ -2046,6 +2060,9 @@ dialog {
   .md\:grid-cols-10 {
     grid-template-columns: repeat(10, minmax(0, 1fr));
   }
+  .md\:grid-cols-12 {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2099,6 +2116,9 @@ dialog {
   }
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .lg\:grid-cols-12 {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
   }
   .lg\:border-4 {
     border-width: 4px;
