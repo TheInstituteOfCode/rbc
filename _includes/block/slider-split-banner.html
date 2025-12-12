@@ -22,11 +22,14 @@
       <div class="split-banner-slider-content absolute bg-base">
         <div class="grid md:grid-cols-2 overflow-hidden " style="gap: {{site.data.style.split_banner_gap}}">
           
-          <div class="picture relative  min-h-[50vh]">
-            <picture >
-              <source srcset="{{col.background-desktop-image}}" media="(min-width: 750px)" />
-              <img class="{% unless block.img_aspect == 'Original' %} absolute inset-0 h-full w-full object-cover object-center {% endunless %}" src="{{col.background-mobile-image}}" alt="{{col.background-alt}}"loading="lazy" />
-            </picture>
+          <div class="picture relative">
+            <div style="aspect-ratio: 5/4;">
+
+              <picture >
+                <source srcset="{{col.background-desktop-image}}" media="(min-width: 750px)" />
+                <img class="{% unless block.img_aspect == 'Original' %} absolute inset-0 h-full w-full object-cover object-center {% endunless %}" src="{{col.background-mobile-image}}" alt="{{col.background-alt}}"loading="lazy" />
+              </picture>
+            </div>
             
           </div>
           <div class="text-block p-8 flex flex-col justify-center items-center">
