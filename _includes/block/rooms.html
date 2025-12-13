@@ -54,6 +54,9 @@
                     <p class="scheme-dark">
                       <a href="#booking-section" class="button-featured"> Reserve Now</a>
                       <span class="button button-dialog cursor-pointer">View Floorplan</span>
+                      {% for button in room.extra-buttons %}
+                      <a href="{{button.link}}" class="button-featured">{{button.text}}</a>
+                      {% endfor %}
                     </p>
                     <dialog class="outline-none">
                       <span class="dialog-close-X cursor-pointer">X</span>
