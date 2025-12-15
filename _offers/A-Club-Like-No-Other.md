@@ -2,13 +2,14 @@
 heading: "A Club Like \LNo Other"
 sub-heading: FEATURED OFFER
 full-description: >-
+        <p>
         Regent Club elevates above the noise, offering more than just a collection of uplifting experiences—it’s an exclusive retreat for the distinguished. 
-
-
+        </p>
+        <p>
         Discover Regent Club your way, featuring all-day gourmet offerings, premium alcoholic beverages, complimentary champagne, and  more.
+        </p>
 
-
-        As the doors open you are in awe — in front an infinity pool, further away the ocean and blue skies greet you. The Regent Club team echoes  your name as you enter and escorts you to your preferred seating,  whether that may be indoors or outdoors. It’s up to you what you do  next, as everything is on your terms.
+        <p>As the doors open you are in awe — in front an infinity pool, further away the ocean and blue skies greet you. The Regent Club team echoes  your name as you enter and escorts you to your preferred seating,  whether that may be indoors or outdoors. It’s up to you what you do  next, as everything is on your terms.</p>
 short-description:
 featured-image: /uploads/offers2.jpg
 button-link:
