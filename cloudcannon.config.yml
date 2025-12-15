@@ -277,6 +277,9 @@ _inputs:
   youtube_placeholder:
     type: image
     cascade: true
+
+    cascade: true
+
   tour-pic:
     type: image
     label: Virtual Tour picture
@@ -550,10 +553,7 @@ _structures:
           image-2: 
               src: "/uploads/videos/beach-cover.jpg"
               title: "Regent Bali Canggu Pool View"
-          scheme:
-              scheme-color: base
-              scheme-padding: small-padding
-              scheme-max-width: l
+          color-scheme: base
       - label: split banner slider
         picker_preview:
           text: split banner slider
