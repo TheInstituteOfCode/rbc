@@ -87,6 +87,24 @@ _inputs:
       styles: /editor.css
     label: Content
     cascade: true
+  percent-from-left:
+    type: range
+    label: Percent from left
+    min: 0
+    max: 100
+    step: 1
+    unit: '%'
+    default: 50
+    cascade: true
+  percent-from-top:
+    type: range
+    label: Percent from top
+    min: 0
+    max: 100
+    step: 1
+    unit: '%'
+    default: 50
+    cascade: true
   pre-heading-style:
     type: select
     options:

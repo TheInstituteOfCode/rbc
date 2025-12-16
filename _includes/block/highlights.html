@@ -13,7 +13,7 @@
     {% for highlight in block.highlights %}
       <div class="highlight-content absolute w-full top-0 left-0">
         <div class="image-container w-full h-[50vh] relative">
-          <img class="absolute inset-0 h-full w-full object-cover" src="{{highlight.image}}" alt="{{highlight.image_alt}}">
+          <img class="absolute inset-0 h-full w-full object-cover image-{{forloop.index}}" src="{{highlight.image}}" alt="{{highlight.image_alt}}" style="object-position: {{highlight.image-focus-point.percent-from-left}}% {{highlight.image-focus-point.percent-from-top}}%;">
         </div>
 
         <div class="mx-auto w-2/3 -top-12 bg-base relative p-8 text-center">
