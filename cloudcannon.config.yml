@@ -90,18 +90,20 @@ _inputs:
   percent-from-left:
     type: range
     label: Percent from left
-    min: 0
-    max: 100
-    step: 1
+    options:
+      min: 0
+      max: 100
+      step: 1
     unit: '%'
     default: 50
     cascade: true
   percent-from-top:
     type: range
     label: Percent from top
-    min: 0
-    max: 100
-    step: 1
+    options:
+      min: 0
+      max: 100
+      step: 1
     unit: '%'
     default: 50
     cascade: true
