@@ -764,6 +764,9 @@ video {
 .w-screen {
   width: 100vw;
 }
+.w-\[calc\(80vw_-_var\(--side-gap\)\)\] {
+  width: calc(80vw - var(--side-gap));
+}
 .min-w-min {
   min-width: -moz-min-content;
   min-width: min-content;
@@ -2063,6 +2066,9 @@ dialog {
   }
   .md\:min-h-\[25vw\] {
     min-height: 25vw;
+  }
+  .md\:w-\[calc\(40vw_-_var\(--side-gap\)\)\] {
+    width: calc(40vw - var(--side-gap));
   }
   .md\:grid-cols-10 {
     grid-template-columns: repeat(10, minmax(0, 1fr));
