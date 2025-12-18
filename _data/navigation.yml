@@ -49,7 +49,7 @@ footer_nav_bar:
         link:
 footer-sub-links:
   - text: PRIVACY POLICY
-    url:
+    url: https://www.ihg.com/content/us/en/customer-care/privacy-and-cookie-center
   - text: CORPORATE WEBSITE
     url:
   - text: IHG REWARDS
