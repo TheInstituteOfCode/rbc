@@ -11,20 +11,28 @@
           </div>
 
             {% if block.content.heading %}<h2 class="pb-0 my-0 large-heading">{{block.content.heading}}</h2>{% endif %}
-            <form action="" class="grid md:grid-cols-4 gap-y-1 max-w-4xl mx-auto scheme-base">
-              <input type="text" placeholder="First Name" name="first-name" id="first-name" class="p-2 border !border-gray-400 border-r-0 bg-base block">
-              <input type="text"placeholder="Last Name" name="last-name" id="last-name" class="p-2 border bg-base !border-gray-400 border-r-0 block">
+            <script type="text/javascript" src="//contact-api.inguest.com/bundles/revinatecontactapi/js/revinate-form.js?v=1"></script>
+            <form id="revinate_contact_api_form" token="565f3e43-6058-4706-8725-25206bf07019" onsubmit="revFormOnSubmit(); event.preventDefault();" class="grid md:grid-cols-4 gap-y-1 max-w-4xl mx-auto scheme-base">
+              <input type="text" placeholder="First Name" name="firstName" id="first-name" class="p-2 border !border-gray-400 border-r-0 bg-base block">
+              <input type="text"placeholder="Last Name" name="lastName" id="last-name" class="p-2 border bg-base !border-gray-400 border-r-0 block">
               <input type="text" placeholder="Email Address" name="email" id="email" class="p-2 border bg-base !border-gray-400 border-r-0 block">
               <div class="scheme-dark">
-                <input type="submit" value="Stay Connected" class="p-2 border bg-base">
+                <button type="submit" class="p-2 border bg-base w-full">Sign Me Up !</button>
+                <!-- <input type="submit" value="Stay Connected" class="p-2 border bg-base"> -->
               </div>
               <label for="consent" class="md:col-span-4 text-sm flex justify-center gap-2">
-                <input type="checkbox" name="consent" id="consent" class="inline w-auto"> Regent has permission to send me emails.
+                <input type="checkbox" name="consent" id="consent" class="inline w-auto" required> Regent has permission to send me emails.
               </label>
 
             </form>
           </div>
     </section>
+
+     <!-- <form id="revinate_contact_api_form" token="565f3e43-6058-4706-8725-25206bf07019" onsubmit="revFormOnSubmit(); event.preventDefault();"> <fieldset> <legend> Revinate Contact Sign Up Form Sample.</legend>
+       <div>
+       <label>First/ Last Name</label> <input type="text" name="firstName"/><input type="text" name="lastName"/> </div> <div>
+      <label>Email</label> <input class="long" type="email" name="email" required/> </div> <div class="button"> 
+      <button type="submit">Sign Me Up !</button> </div> </fieldset> <style scoped> label { display: inline-block; width: 130px; } label.required:after { content: " *"; color: red; } fieldset { width: 500px; padding: 1em; border: 3px solid #CCC; } input { margin: 1px 5px 1px 5px; width: 145px; padding: 3px; border-width: 2px; } input.long { width: 300px } div.checkbox-group { padding: 10px 0; } div.checkbox-group label { width: 100%; } input[type=checkbox] { width: 15px; height: 15px; margin-left: 0; } div.button { margin-top: 1em; text-align: center; } </style> </form> -->
 
     <style>
      
