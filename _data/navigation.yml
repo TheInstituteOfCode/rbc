@@ -28,7 +28,7 @@ footer_nav_bar:
   - heading: DETAILS
     links:
       - text: Media Center
-        link:
+        link: /media
       - text: Need Help?
         link: mailto:reservations.regentbali@ihg.com
       - text: Group Bookings
