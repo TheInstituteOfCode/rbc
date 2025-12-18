@@ -745,8 +745,8 @@ video {
 .w-\[80\%\] {
   width: 80%;
 }
-.w-\[calc\(40vw_-_var\(--side-gap\)\)\] {
-  width: calc(40vw - var(--side-gap));
+.w-\[calc\(80vw_-_var\(--side-gap\)\)\] {
+  width: calc(80vw - var(--side-gap));
 }
 .w-\[initial\] {
   width: initial;
@@ -763,9 +763,6 @@ video {
 }
 .w-screen {
   width: 100vw;
-}
-.w-\[calc\(80vw_-_var\(--side-gap\)\)\] {
-  width: calc(80vw - var(--side-gap));
 }
 .min-w-min {
   min-width: -moz-min-content;
