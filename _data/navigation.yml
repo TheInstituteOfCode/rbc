@@ -27,14 +27,12 @@ footer_nav_bar:
         link: /experiences
   - heading: DETAILS
     links:
-      - text: About Us
-        link:
       - text: Media Center
         link:
       - text: Need Help?
-        link:
+        link: mailto:reservations.regentbali@ihg.com
       - text: Group Bookings
-        link:
+        link: mailto:reservations.regentbali@ihg.com
   - heading: Connect
     links:
       - text: Facebook
