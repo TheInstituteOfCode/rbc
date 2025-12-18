@@ -43,8 +43,6 @@ footer_nav_bar:
         link: mailto:reservations.regentbali@ihg.com
       - text: Call
         link: tel:+62 361-201-9999
-      - text: Contact
-        link:
 footer-sub-links:
   - text: PRIVACY POLICY
     url: https://www.ihg.com/content/us/en/customer-care/privacy-and-cookie-center
