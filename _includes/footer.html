@@ -32,7 +32,7 @@
 
 
         <div class="pb-12">
-          <div class="grid gap-8 relative border border-white p-8" style="grid-template-columns: repeat(auto-fit, minmax(3rem, 1fr));">
+          <div class="grid gap-8 relative border border-white p-8 footer-logo-grid">
             <div class="absolute -top-8 left-12 color-set p-4">
               <img src="/uploads/footer-logos/logos-6c-horizontalem.svg" alt="IHG hotels and resorts" style="width:12rem">
             </div>
@@ -53,7 +53,7 @@
 
 
 
-        <div class="flex justify-center gap-4">
+        <div class="flex justify-center gap-4 flex-wrap">
           {% for sublink in site.data.navigation.footer-sub-links %}
             <a class="p-4 engravers-gothic" href="{{sublink.url}}">{{sublink.text}}</a>
           {% endfor %}
@@ -66,3 +66,41 @@
       </div>
     </footer>
   </div>
+
+
+  <style>
+    .footer-logo-grid {
+      grid-template-columns: 82px 94px 202px 125px 113px 110px 83px 77px 102px 101px;
+      width: 90.3rem;
+      margin: auto;
+    }
+
+    @media (max-width: 1600px) {
+      .footer-logo-grid {
+        grid-template-columns: 110px 94px 202px 125px 113px;
+      width: 52.3rem;
+      }
+    }
+
+        @media (max-width: 1100px) {
+      .footer-logo-grid {
+grid-template-columns: 106px 115px 202px 123px;
+    width: 44.3rem;
+      }
+    }
+            @media (max-width: 815px) {
+      .footer-logo-grid {
+grid-template-columns: 202px 123px;
+    width: 26.5rem;
+      }
+    }
+    @media (max-width: 500px) {
+      .footer-logo-grid {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+      }
+    }
+
+
+  </style>

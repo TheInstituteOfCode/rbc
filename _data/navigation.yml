@@ -47,83 +47,83 @@ footer-logos:
     -
       image: /uploads/footer-logos/ihg-bb-logo-sx.png
       alt: Six Senses Logo
-      width: 3rem
+      width: 81px
     -
       image: /uploads/footer-logos/ihg-bb-logo-re.png
       alt: Regent Logo
-      width: 3rem
+      width: 93px
     -
       image: /uploads/footer-logos/ihg-bb-logo-ic.png
       alt: Intercontinental Logo
-      width: 3rem
+      width: 202px
     -
       image: /uploads/footer-logos/ihg-bb-logo-lx.png
       alt: Vignette Logo
-      width: 3rem
+      width: 123px
     -
       image: /uploads/footer-logos/ihg-bb-logo-ki.png
       alt: Kimpton Logo
-      width: 3rem
+      width: 106px
     -
       image: /uploads/footer-logos/ihg-bb-logo-in.png
       alt: Hotel Indigo Logo
-      width: 3rem
+      width: 99px
     -
       image: /uploads/footer-logos/ihg-bb-logo-vx.png
       alt: VOCO Logo
-      width: 3rem
+      width: 77px
     -
       image: /uploads/footer-logos/ihg-bb-logo-ge.png
       alt: Ruby Logo
-      width: 3rem
+      width: 63px
     -
       image: /uploads/footer-logos/ihg-bb-logo-ul.png
       alt: Hualuxe Logo
-      width: 3rem
+      width: 81px
     -
       image: /uploads/footer-logos/ihg-bb-logo-sn.png
       alt: Iberostar Logo
-      width: 3rem
+      width: 98px
     -
       image: /uploads/footer-logos/ihg-bb-logo-cp.png
       alt: Crowne plaza Logo
-      width: 3rem
+      width: 80px
     -
       image: /uploads/footer-logos/ihg-bb-logo-cv.png
       alt: Holiday Inn Club Vacation Logo
-      width: 3rem
+      width: 82px
     -
       image: /uploads/footer-logos/ihg-bb-logo-cw.png
       alt: Candlewood suites Logo
-      width: 3rem
+      width: 106px
     -
       image: /uploads/footer-logos/ihg-bb-logo-vn.png
       alt: Even Logo
-      width: 3rem
+      width: 115px
     -
       image: /uploads/footer-logos/ihg-bb-logo-ex.png
       alt: Holiday Inn Express Logo
-      width: 3rem
+      width: 82px
     -
       image: /uploads/footer-logos/ihg-bb-logo-hi.png
       alt: Holiday Inn Logo
-      width: 3rem
+      width: 104px
     -
       image: /uploads/footer-logos/ihg-bb-logo-rn.png
       alt: Garner Logo
-      width: 3rem
+      width: 80px
     -
       image: /uploads/footer-logos/ihg-bb-logo-va.png
       alt: Avid Logo
-      width: 3rem
+      width: 73px
     -
       image: /uploads/footer-logos/ihg-bb-logo-we.png
       alt: Atwell suites Logo
-      width: 3rem
+      width: 100px
     -
       image: /uploads/footer-logos/ihg-bb-logo-sb.png
       alt: Staybridge suites Logo
-      width: 3rem
+      width: 131px
 
 
 footer-sub-links:
