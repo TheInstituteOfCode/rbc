@@ -61,7 +61,20 @@ opacity: .6;
 
 
 </style>
+{% endif %}
 
+
+<div id="cookie-consent-popup" class="cookie-consent-popup fixed -bottom-40 left-0 transform bg-white transition-all border border-black p-6 w-full z-50">
+    <div class="cookie-consent-content mx-side">
+        <div class="cookie-consent-text">
+            <p class="text-center">We use cookies to enhance your experience on our website. By continuing to browse, you agree to our use of cookies.</p>
+            <div class="flex justify-center gap-8">
+                <span class="button accept w-[14rem]">Accept all</span>
+                <a href="/cookie" class="button learn w-[14rem]">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 
@@ -89,22 +102,44 @@ opacity: .6;
         createCookie(name,"",-1);
     }
   
+
+    function doCookies() {
+ 
+//  add cookie code here
+ 
+    }
+
+
+    if (readCookie("AcceptedCookies") == "true") {
+        doCookies()
+    } else {
+        const cookiePopUp = document.querySelector('#cookie-consent-popup');
+        cookiePopUp.style.bottom = '5vw';
+    }
   
+    const acceptButton = document.querySelector('#cookie-consent-popup .accept');
+    acceptButton.addEventListener('click', () => {
+        createCookie("AcceptedCookies", true, 365)
+        doCookies()
+        const cookiePopUp = document.querySelector('#cookie-consent-popup');
+        cookiePopUp.style.bottom = '-10rem';
+    })
+
+    {% if pop-up == true %}
   
-  
-    const cookieBanner = document.querySelector('#popup')
-    const hideButton = cookieBanner.querySelector('.hide-button')
-    const popupOverlay = cookieBanner.querySelector('.popup-overlay')
+    const popUp = document.querySelector('#popup')
+    const hideButton = popUp.querySelector('.hide-button')
+    const popupOverlay = popUp.querySelector('.popup-overlay')
     
   
     hideButton.addEventListener('click', () => {
         createCookie(hidePopUp, true, {{site.data.pop-up.hide-duration-in-days}})
-        cookieBanner.classList.remove('appear')
+        popUp.classList.remove('appear')
     })
 
     popupOverlay.addEventListener('click', () => {
         createCookie(hidePopUp, true, {{site.data.pop-up.hide-duration-in-days}})
-        cookieBanner.classList.remove('appear')
+        popUp.classList.remove('appear')
     })
 
   
@@ -113,11 +148,12 @@ opacity: .6;
       
 } else {
     setTimeout(() => {
-        cookieBanner.classList.add('appear')
+        popUp.classList.add('appear')
       }, "{{site.data.pop-up.hide-duration-in-days | times: 1000 }}")
 }
 
 
+{% endif %}
 
 
  {% if site.data.pop-up.testing-mode == true %}
@@ -132,5 +168,4 @@ document.cookie.split(";").forEach(function(c) { document.cookie = c.replace(/^ 
 
 
   </script>
-{% endif %}
 

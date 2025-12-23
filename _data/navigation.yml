@@ -43,6 +43,89 @@ footer_nav_bar:
         link: mailto:reservations.regentbali@ihg.com
       - text: Call
         link: tel:+62 361-201-9999
+footer-logos:
+    -
+      image: /uploads/footer-logos/ihg-bb-logo-sx.png
+      alt: Six Senses Logo
+      width: 3rem
+    -
+      image: /uploads/footer-logos/ihg-bb-logo-re.png
+      alt: Regent Logo
+      width: 3rem
+    -
+      image: /uploads/footer-logos/ihg-bb-logo-ic.png
+      alt: Intercontinental Logo
+      width: 3rem
+    -
+      image: /uploads/footer-logos/ihg-bb-logo-lx.png
+      alt: Vignette Logo
+      width: 3rem
+    -
+      image: /uploads/footer-logos/ihg-bb-logo-ki.png
+      alt: Kimpton Logo
+      width: 3rem
+    -
+      image: /uploads/footer-logos/ihg-bb-logo-in.png
+      alt: Hotel Indigo Logo
+      width: 3rem
+    -
+      image: /uploads/footer-logos/ihg-bb-logo-vx.png
+      alt: VOCO Logo
+      width: 3rem
+    -
+      image: /uploads/footer-logos/ihg-bb-logo-ge.png
+      alt: Ruby Logo
+      width: 3rem
+    -
+      image: /uploads/footer-logos/ihg-bb-logo-ul.png
+      alt: Hualuxe Logo
+      width: 3rem
+    -
+      image: /uploads/footer-logos/ihg-bb-logo-sn.png
+      alt: Iberostar Logo
+      width: 3rem
+    -
+      image: /uploads/footer-logos/ihg-bb-logo-cp.png
+      alt: Crowne plaza Logo
+      width: 3rem
+    -
+      image: /uploads/footer-logos/ihg-bb-logo-cv.png
+      alt: Holiday Inn Club Vacation Logo
+      width: 3rem
+    -
+      image: /uploads/footer-logos/ihg-bb-logo-cw.png
+      alt: Candlewood suites Logo
+      width: 3rem
+    -
+      image: /uploads/footer-logos/ihg-bb-logo-vn.png
+      alt: Even Logo
+      width: 3rem
+    -
+      image: /uploads/footer-logos/ihg-bb-logo-ex.png
+      alt: Holiday Inn Express Logo
+      width: 3rem
+    -
+      image: /uploads/footer-logos/ihg-bb-logo-hi.png
+      alt: Holiday Inn Logo
+      width: 3rem
+    -
+      image: /uploads/footer-logos/ihg-bb-logo-rn.png
+      alt: Garner Logo
+      width: 3rem
+    -
+      image: /uploads/footer-logos/ihg-bb-logo-va.png
+      alt: Avid Logo
+      width: 3rem
+    -
+      image: /uploads/footer-logos/ihg-bb-logo-we.png
+      alt: Atwell suites Logo
+      width: 3rem
+    -
+      image: /uploads/footer-logos/ihg-bb-logo-sb.png
+      alt: Staybridge suites Logo
+      width: 3rem
+
+
 footer-sub-links:
   - text: PRIVACY POLICY
     url: https://www.ihg.com/content/us/en/customer-care/privacy-and-cookie-center

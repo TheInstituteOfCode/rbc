@@ -27,17 +27,38 @@
 
         </div>
 
+        {% assign biggestLogo = 1 %}
+        {% for logo in site.data.navigation.footer-logos %}
+          {% assign logoWidth = logo.width | remove: 'rem' | plus: 0 %}
+          {% if logoWidth > biggestLogo %}
+            {% assign biggestLogo = logoWidth %}
+          {% endif %}
+        {% endfor %}
+
+
+
         <div class="pb-12">
-          <img class="w-full" src="/uploads/regent-footer.jpg" alt="">
+          <div class="grid gap-8 relative border border-white" style="grid-template-columns: repeat(auto-fit, minmax({{biggestLogo}}rem, 1fr));">
+            {% for logo in site.data.navigation.footer-logos %}
+              <div class="flex justify-center items-center">
+                <img src="{{logo.image}}" alt="{{logo.alt}}" style="width:{{logo.width}}">
+              </div>
+            {% endfor %}
+            
+          </div>
+          <!-- <img class="w-full" src="/uploads/regent-footer.jpg" alt=""> -->
         </div>
+
+
+
         <div class="flex justify-center gap-4">
           {% for sublink in site.data.navigation.footer-sub-links %}
             <a class="p-4 engravers-gothic" href="{{sublink.url}}">{{sublink.text}}</a>
           {% endfor %}
         </div>
         <div class="text-center engravers-gothic">
-          <p>
-            THIS HOTEL IS PART OF IHG HOTELS & RESORTS, ALL RIGHTS RESERVED.
+          <p style="max-width:40rem"class="mx-auto">
+            ©️ 2025 Regent Bali Canggu. All rights reserved. This hotel is owned by PT Canggu International and managed by InterContinental Hotels Group
           </p>
         </div>
       </div>
