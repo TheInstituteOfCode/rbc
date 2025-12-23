@@ -27,24 +27,26 @@
 
         </div>
 
-        {% assign biggestLogo = 1 %}
-        {% for logo in site.data.navigation.footer-logos %}
-          {% assign logoWidth = logo.width | remove: 'rem' | plus: 0 %}
-          {% if logoWidth > biggestLogo %}
-            {% assign biggestLogo = logoWidth %}
-          {% endif %}
-        {% endfor %}
+
 
 
 
         <div class="pb-12">
-          <div class="grid gap-8 relative border border-white" style="grid-template-columns: repeat(auto-fit, minmax({{biggestLogo}}rem, 1fr));">
+          <div class="grid gap-8 relative border border-white p-8" style="grid-template-columns: repeat(auto-fit, minmax(3rem, 1fr));">
+            <div class="absolute -top-8 left-12 color-set p-4">
+              <img src="/uploads/footer-logos/logos-6c-horizontalem.svg" alt="IHG hotels and resorts" style="width:12rem">
+            </div>
             {% for logo in site.data.navigation.footer-logos %}
               <div class="flex justify-center items-center">
                 <img src="{{logo.image}}" alt="{{logo.alt}}" style="width:{{logo.width}}">
               </div>
             {% endfor %}
             
+            <div class="absolute -bottom-8 right-12 color-set p-4">
+              <a href="https://www.ihg.com/onerewards/content/us/en/home">
+                <img src="/uploads/footer-logos/logos-onerewards.svg" alt="IHG hotels and resorts" style="width:12rem">
+              </a>
+            </div>
           </div>
           <!-- <img class="w-full" src="/uploads/regent-footer.jpg" alt=""> -->
         </div>
