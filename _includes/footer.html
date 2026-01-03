@@ -51,6 +51,11 @@
           <!-- <img class="w-full" src="/uploads/regent-footer.jpg" alt=""> -->
         </div>
 
+        <div class="text-center">
+          <a href="[https://www.ihg.com/content/us/en/customer-care/lowest-internet-rate-terms-conditions](https://www.ihg.com/content/us/en/customer-care/lowest-internet-rate-terms-conditions)" target="_blank">
+            <img src="/uploads/best-price-guarantee.png" alt="Best price guarantee" style="width: 100px;" class="mx-auto">
+          </a>
+        </div>
 
 
         <div class="flex justify-center gap-4 flex-wrap">
@@ -60,7 +65,7 @@
         </div>
         <div class="text-center engravers-gothic">
           <p style="max-width:40rem"class="mx-auto">
-            ©️ 2025 Regent Bali Canggu. All rights reserved. This hotel is owned by PT Canggu International and managed by InterContinental Hotels Group
+            &copy; 2025 Regent Bali Canggu. All rights reserved. This hotel is owned by PT Canggu International and managed by InterContinental Hotels Group
           </p>
         </div>
       </div>
@@ -70,6 +75,30 @@
 
   <style>
     .footer-logo-grid {
+     display: grid;
+     grid-template-columns: repeat(10, 1fr);
+     margin: auto;
+    }
+
+    @media (max-width: 1200px) {
+      .footer-logo-grid {
+        grid-template-columns: repeat(5, 1fr);
+      }
+    }
+    @media (max-width: 600px) {
+      .footer-logo-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+        @media (max-width: 400px) {
+      .footer-logo-grid {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+
+
+    /* .footer-logo-grid {
       grid-template-columns: 73px 84px 182px 112px 96px 94px 72px 66px 90px 101px;
       width: 1351px;
       margin: auto;
@@ -100,7 +129,7 @@ grid-template-columns: 202px 123px;
     flex-direction: column;
     width: fit-content;
       }
-    }
+    } */
 
 
   </style>
