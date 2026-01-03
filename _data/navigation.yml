@@ -33,6 +33,8 @@ footer_nav_bar:
         link: mailto:reservations.regentbali@ihg.com
       - text: Group Bookings
         link: mailto:reservations.regentbali@ihg.com
+      - text: Service Mark
+        link: /ihg-service-mark
   - heading: Connect
     links:
       - text: Facebook
