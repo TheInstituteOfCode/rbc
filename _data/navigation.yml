@@ -130,7 +130,7 @@ footer-logos:
 
 footer-sub-links:
   - text: PRIVACY POLICY
-    url: https://www.ihg.com/content/us/en/customer-care/privacy-and-cookie-center
+    url: /privacy-policy
   - text: CORPORATE WEBSITE
     url:
   - text: IHG REWARDS
