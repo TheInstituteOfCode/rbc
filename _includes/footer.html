@@ -27,19 +27,109 @@
 
         </div>
 
+
+
+
+
         <div class="pb-12">
-          <img class="w-full" src="/uploads/regent-footer.jpg" alt="">
+          <div class="grid gap-8 relative border border-white p-8 footer-logo-grid">
+            <div class="absolute -top-8 left-12 color-set p-4">
+              <img src="/uploads/footer-logos/logos-6c-horizontalem.svg" alt="IHG hotels and resorts" style="width:12rem">
+            </div>
+            {% for logo in site.data.navigation.footer-logos %}
+              <div class="flex justify-center items-center">
+                <img src="{{logo.image}}" alt="{{logo.alt}}" style="width:{{logo.width}}">
+              </div>
+            {% endfor %}
+            
+            <div class="absolute -bottom-8 right-12 color-set p-4">
+              <a href="https://www.ihg.com/onerewards/content/us/en/home" target="_blank">
+                <img src="/uploads/footer-logos/logos-onerewards.svg" alt="IHG hotels and resorts" style="width:12rem">
+              </a>
+            </div>
+          </div>
+          <!-- <img class="w-full" src="/uploads/regent-footer.jpg" alt=""> -->
         </div>
-        <div class="flex justify-center gap-4">
+
+        <div class="text-center">
+          <a href="https://www.ihg.com/content/us/en/customer-care/lowest-internet-rate-terms-conditions" target="_blank">
+            <img src="/uploads/best-price-guarantee.png" alt="Best price guarantee" style="width: 100px;" class="mx-auto">
+          </a>
+        </div>
+
+
+        <div class="flex justify-center gap-4 flex-wrap">
           {% for sublink in site.data.navigation.footer-sub-links %}
             <a class="p-4 engravers-gothic" href="{{sublink.url}}">{{sublink.text}}</a>
           {% endfor %}
         </div>
         <div class="text-center engravers-gothic">
-          <p>
-            THIS HOTEL IS PART OF IHG HOTELS & RESORTS, ALL RIGHTS RESERVED.
+          <p style="max-width:40rem"class="mx-auto">
+            &copy; 2025 Regent Bali Canggu. All rights reserved. This hotel is owned by PT Canggu International and managed by InterContinental Hotels Group
           </p>
         </div>
       </div>
     </footer>
   </div>
+
+
+  <style>
+    .footer-logo-grid {
+     display: grid;
+     grid-template-columns: repeat(10, 1fr);
+     margin: auto;
+    }
+
+    @media (max-width: 1200px) {
+      .footer-logo-grid {
+        grid-template-columns: repeat(5, 1fr);
+      }
+    }
+    @media (max-width: 600px) {
+      .footer-logo-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+        @media (max-width: 400px) {
+      .footer-logo-grid {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+
+
+    /* .footer-logo-grid {
+      grid-template-columns: 73px 84px 182px 112px 96px 94px 72px 66px 90px 101px;
+      width: 1351px;
+      margin: auto;
+    }
+
+    @media (max-width: 1499px) {
+      .footer-logo-grid {
+        grid-template-columns: 110px 94px 202px 125px 113px;
+      width: 52.3rem;
+      }
+    }
+
+        @media (max-width: 1100px) {
+      .footer-logo-grid {
+grid-template-columns: 106px 115px 202px 123px;
+    width: 44.3rem;
+      }
+    }
+            @media (max-width: 815px) {
+      .footer-logo-grid {
+grid-template-columns: 202px 123px;
+    width: 26.5rem;
+      }
+    }
+    @media (max-width: 500px) {
+      .footer-logo-grid {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+      }
+    } */
+
+
+  </style>
