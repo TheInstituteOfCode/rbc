@@ -2148,9 +2148,6 @@ dialog {
   .lg\:order-2 {
     order: 2;
   }
-  .lg\:\!hidden {
-    display: none !important;
-  }
   .lg\:w-\[120\%\] {
     width: 120%;
   }
@@ -2187,6 +2184,9 @@ dialog {
   }
   .xl\:flex {
     display: flex;
+  }
+  .xl\:\!hidden {
+    display: none !important;
   }
   .xl\:hidden {
     display: none;
