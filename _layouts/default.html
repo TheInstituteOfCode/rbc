@@ -29,8 +29,18 @@
     {% if site.data.seo.google-site-verification %}
       {{site.data.seo.google-site-verification}}
     {% endif %}
-    
-    
+
+  <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-TJJ6LK28QK"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-TJJ6LK28QK'); </script>
+  
+
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TK8GFKB2');</script>
+<!-- End Google Tag Manager -->
+  
     {% if page.seo.index == true %}
       <meta name="robots" content="all">
     {% else %}
@@ -97,6 +107,13 @@
 </head>
 
 <body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TK8GFKB2"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+  
   <div class="absolute w-full top-0 z-50" id="header" style="--text-color: {{page.header.text-color}}; --bg-color: {{page.header.background-color-mobile}}">
   <header class="bg-base xl:!bg-transparent">
     <div class="max-width flex justify-center items-center py-4 relative z-[999]">
