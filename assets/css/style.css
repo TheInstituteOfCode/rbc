@@ -595,6 +595,9 @@ video {
 .m-\[6px\] {
   margin: 6px;
 }
+.m-\[\.5rem\] {
+  margin: .5rem;
+}
 .-mx-small {
   margin-left: calc(var(--small-padding) * -1);
   margin-right: calc(var(--small-padding) * -1);
@@ -697,6 +700,9 @@ video {
 }
 .mt-vert {
   margin-top: var(--vert-gap);
+}
+.mt-\[\.5rem\] {
+  margin-top: .5rem;
 }
 .block {
   display: block;
@@ -1026,6 +1032,9 @@ video {
 .p-small {
   padding: var(--small-padding);
 }
+.p-\[\.5rem\] {
+  padding: .5rem;
+}
 .px-0 {
   padding-left: 0px;
   padding-right: 0px;
@@ -1095,6 +1104,9 @@ video {
 }
 .pt-0 {
   padding-top: 0px;
+}
+.pt-2 {
+  padding-top: 0.5rem;
 }
 .text-left {
   text-align: left;
