@@ -1078,6 +1078,7 @@ _structures:
             text-alignment: center
             color-scheme: base
             min-height: 50vh
+            wave-height: 4rem
       - label: events grid
         value: 
             _id: events-block      

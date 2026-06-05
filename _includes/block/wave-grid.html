@@ -14,7 +14,7 @@
           </div>
           <div class="grid md:grid-cols-3 gap-8 mt-8">
             {% for cell in block.grid %}
-            <div class="{% cycle '','mt-16' %}">
+            <div style="margin-top: {% cycle '0px',{{block.wave-height | default: 4rem}} %}">
               <div class="relative" style="aspect-ratio: 127/139;">
                 <img class="h-full w-full object-cover" src="{{cell.image}}" alt="">
               </div>
