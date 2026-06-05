@@ -6,6 +6,6 @@ source "https://rubygems.org"
 gem "jekyll", "4.2.2"
 gem "webrick"
 gem 'jekyll-sitemap'
-gem 'bigdecimal'
-gem 'base64'
 gem "csv"
+gem "base64"
+gem "bigdecimal"

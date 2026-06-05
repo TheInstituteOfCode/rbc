@@ -38,7 +38,14 @@
             </div>
             {% for logo in site.data.navigation.footer-logos %}
               <div class="flex justify-center items-center">
+
+                {% if logo.link %}
+                <a href="{{logo.link}}">
+                {% endif %}
                 <img src="{{logo.image}}" alt="{{logo.alt}}" style="width:{{logo.width}}">
+                {% if logo.link %}
+                </a>
+                {% endif %}
               </div>
             {% endfor %}
             
@@ -65,7 +72,7 @@
         </div>
         <div class="text-center engravers-gothic">
           <p style="max-width:40rem"class="mx-auto">
-            &copy; 2025 Regent Bali Canggu. All rights reserved. This hotel is owned by PT Canggu International and managed by InterContinental Hotels Group
+            &copy; 2025 Regent Bali Canggu. All rights reserved. This hotel is owned by PT Canggu International and managed by <a href=" https://www.ihg.com/hotels/id/in/reservation">InterContinental Hotels Group</a>
           </p>
         </div>
       </div>

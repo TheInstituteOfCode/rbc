@@ -30,12 +30,22 @@
         <div class="slider mb-vert schem flex gap-[{{block.slider-col-padding | default: '6px'}}]">
           {% for col in block.slider %}
 
-              {% if col.video_path %}
+
+              {% if col.mux_id %}
+                <div class="p-2">
+                  <mux-player style="height:50vh; aspect-ratio: {{col.video_aspect_ratio}};"
+                    playback-id="{{col.mux_id}}"
+                    autoplay
+                  ></mux-player>
+
+                </div>
+
+              {% elsif col.video_path %}
               <div class="">
                 <div class="relative video-parent h-[50vh] flex-0 m-[{{block.slider-col-gap | default: '6px'}}]" style="aspect-ratio: {{col.video_aspect_ratio}};">
                   <img class="absolute h-full w-full inset-0 object-cover" src="{{col.image}}" alt="" loading="lazy">
                   <video class="absolute inset-0 h-full w-full object-cover lazy-vid" autoplay muted loop playsinline>
-                     <source data-src="{{col.video_path}}" type="video/{{col.video_type}}">
+                     <source data-src="{{col.video_path}}" type="{{col.video_type}}">
                   </video>
                 </div>
 
