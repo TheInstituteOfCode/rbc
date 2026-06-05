@@ -35,7 +35,8 @@
                 <div class="p-2">
                   <mux-player style="height:50vh; aspect-ratio: {{col.video_aspect_ratio}};"
                     playback-id="{{col.mux_id}}"
-                    autoplay
+                    autoplay="muted"
+                    loop
                   ></mux-player>
 
                 </div>
@@ -66,6 +67,10 @@
 
 
     <style>
+
+#section-{{forloop.index}} mux-player {
+  --controls: none;
+}
 
 
 

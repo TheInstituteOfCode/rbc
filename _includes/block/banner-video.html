@@ -1,10 +1,18 @@
 
 <section class="py-0" style="text-align: {{block.text-alignment}};">
+    {% if block.mux_id %}
+        <mux-player class="absolute inset-0"
+            playback-id="{{block.mux_id}}"
+            autoplay="muted"
+            loop
+          ></mux-player>
+    {% else %}
     <video width="320" height="240" class="absolute inset-0 h-full w-full object-cover object-center lazy-vid" {% if block.controls == true %} controls {% endif %} {% if block.autoplay == true %}autoplay="" muted {% endif %}playsinline  loop>
       {% for video in block.videos %}
       <source data-src="{{video.video_path}}" type="video/{{video.video_type}}">
       {% endfor %}
     </video>
+    {% endif %}
       <div class="max-width {% if block.overlay-opacity != 0p %}relative z-10{% endif %}
         flex         
         {% case block.vert-alignment %}
@@ -44,6 +52,12 @@
       #section-{{forloop.index}} .max-width{
         min-height: {{block.min-height}};
       }
+      
+      #section-{{forloop.index}} mux-player {
+       --media-object-fit: cover;
+       --media-object-position: center;
+       --controls: none;
+     }
 
       {% if block.overlay-opacity != 0p %}
       #section-{{forloop.index}} section::after {
