@@ -2090,6 +2090,9 @@ dialog {
   .md\:min-h-\[25vw\] {
     min-height: 25vw;
   }
+  .md\:min-h-\[25vh\] {
+    min-height: 25vh;
+  }
   .md\:w-\[calc\(40vw_-_var\(--side-gap\)\)\] {
     width: calc(40vw - var(--side-gap));
   }
