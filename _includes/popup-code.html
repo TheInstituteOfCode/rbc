@@ -64,7 +64,7 @@ opacity: .6;
 {% endif %}
 
 
-<div id="cookie-consent-popup" class="cookie-consent-popup fixed -bottom-40 left-0 transform bg-white transition-all border border-black p-6 w-full z-50">
+<div id="cookie-consent-popup" class="cookie-consent-popup fixed -bottom-[100vh] left-0 transform bg-white transition-all border border-black p-6 w-full z-50">
     <div class="cookie-consent-content mx-side">
         <div class="cookie-consent-text">
             <p class="text-center">We use cookies to enhance your browsing experience, personalize content, and measure the effectiveness of our advertising. By clicking “Allow All,” you consent to our use of cookies.</p>
@@ -106,6 +106,8 @@ opacity: .6;
     function doCookies() {
  
 //  add cookie code here
+
+console.log('did cookies',document.cookie)
  
     }
 
@@ -122,7 +124,7 @@ opacity: .6;
         createCookie("AcceptedCookies", true, 365)
         doCookies()
         const cookiePopUp = document.querySelector('#cookie-consent-popup');
-        cookiePopUp.style.bottom = '-10rem';
+        cookiePopUp.style.bottom = '-100vw';
     })
 
     {% if pop-up == true %}

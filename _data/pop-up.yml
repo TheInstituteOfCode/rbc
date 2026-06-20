@@ -7,5 +7,5 @@ pop-up-width: 750px
 hide-duration-in-days: 1
 popup-delay-in-seconds: 1
 pop-up.color-scheme: base
-testing-mode: false
+testing-mode: true
 shown: false
