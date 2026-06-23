@@ -632,6 +632,9 @@ video {
 .mb-16 {
   margin-bottom: 4rem;
 }
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
 .mb-32 {
   margin-bottom: 8rem;
 }
@@ -691,9 +694,6 @@ video {
 }
 .mt-vert {
   margin-top: var(--vert-gap);
-}
-.mb-2 {
-  margin-bottom: 0.5rem;
 }
 .block {
   display: block;
@@ -2096,9 +2096,6 @@ dialog {
   }
   .md\:block {
     display: block;
-  }
-  .md\:flex {
-    display: flex;
   }
   .md\:grid {
     display: grid;

@@ -14,13 +14,16 @@
               {{block.heading}}
             </h2>
             <div class="grid gap-4 md:gap-x-16  sm:text-center">
-              {% for link in block.buttons %}
-                <a href="{{link.url}}" class="button-featured" {% if link.external-link == true %} target="_blank" {% endif %} {% if link.download == true %} download="" {% endif %}>{{link.text}}</a>
+              {% for link in block.menu-buttons %}
+                <a href="{{link.file}}" class="button-featured" download="">{{link.text}}</a>
               {% endfor %}
             </div>
           </div>
       </div>
     </section>
+
+    
+<img src="/uploads/menus/" alt="">
 
 
 <style>
