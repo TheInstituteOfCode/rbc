@@ -30,7 +30,9 @@
              {% if block.content.subHeading %}<h3 class="sub-heading">{{block.content.subHeading}}</h3>{% endif %}
             {% if block.content.heading %}<h2 class="heading-lg">{{block.content.heading}}</h2>{% endif %}
             {{block.content.p-text}}
-            <div class="flex">
+
+          {% unless block.content.buttons.size == 0 %}
+            <div class="flex test{{block.content.buttons.size}}">
               <div>
             {% for button in block.content.buttons %}
               <p class="scheme-{{button.color-scheme}}"><a href="{{button.url}}" class="button-featured bg-base w-full text-center">{{button.text}}</a></p>
@@ -38,6 +40,7 @@
             {% endfor %}
           </div>
         </div>
+        {% endunless %}
       </div>
     <style>
      

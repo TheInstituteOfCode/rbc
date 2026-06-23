@@ -4,10 +4,10 @@
         {% for style in block.room-style %}
         <div class="scheme-base style-set {% unless forloop.first %} mt-vert {% endunless %} pb-16">
           <div class="flex justify-between flex-wrap">
-            <h2 class="shrink-0 sub-heading my-0 relative -top-2">{{style.heading}}</h2>
-            <div class="shrink-0 flex justify-end flex-wrap max-w-full grow">
+            <h2 class="shrink-0 sub-heading my-0 relative -top-2 max-w-full">{{style.heading}}</h2>
+            <div class="shrink-0 flex justify-end flex-wrap max-w-full mb-2 md:mb-0 grow">
               {% for room in style.rooms %}
-              <span class="bg-base filter-tab {% if forloop.first %} active {% endif %}" data-filter="{{forloop.index0}}">{{room.name}}</span>
+              <span class="bg-base grow md:grow-0 filter-tab {% if forloop.first %} active {% endif %}" data-filter="{{forloop.index0}}">{{room.name}}</span>
               {% endfor %}
             </div>
           </div>
