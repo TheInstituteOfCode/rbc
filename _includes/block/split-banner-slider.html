@@ -9,7 +9,7 @@
         <div class="aspect-square relative">
           
           {% for slide in block.carousel.slides %}
-              <img src="{{slide.img}}" alt="{{slide.alt-text}}" class="inset-0 slide absolute object-cover object-center {% if forloop.first %} active {% endif %}" />
+              <img src="{{slide.img}}" alt="{{slide.alt}}" class="inset-0 slide absolute object-cover object-center {% if forloop.first %} active {% endif %}" />
           {% endfor %}
         </div>
           

@@ -829,6 +829,7 @@ _structures:
           img_aspect: Square
           scroll-items:
             - image: /uploads/screenshot-2024-09-30-at-4-12-25-pm.png
+              image-alt:
               block-content-html: >-
                 <h3>Lorem ipsum dolor</h3> <p> sit amet consectetur adipisicing elit. Ab
                 corporis obcaecati doloremque optio! Unde accusantium, esse
@@ -841,6 +842,7 @@ _structures:
               long-table: 100
               link:
             - image: /uploads/screenshot-2024-09-30-at-4-12-25-pm.png
+              image-alt:
               block-content-html: >-
                 <h3>Lorem ipsum dolor</h3> <p> sit amet consectetur adipisicing elit. Ab
                 corporis obcaecati doloremque optio! Unde accusantium, esse
@@ -853,6 +855,7 @@ _structures:
               long-table: 100
               link:
             - image: /uploads/screenshot-2024-09-30-at-4-12-25-pm.png
+              image-alt:
               block-content-html: >-
                 <h3>Lorem ipsum dolor</h3> <p> sit amet consectetur adipisicing elit. Ab
                 corporis obcaecati doloremque optio! Unde accusantium, esse
@@ -865,6 +868,7 @@ _structures:
               long-table: 100
               link:
             - image: /uploads/screenshot-2024-09-30-at-4-12-25-pm.png
+              image-alt:
               block-content-html: >-
                 <h3>Lorem ipsum dolor</h3> <p> sit amet consectetur adipisicing elit. Ab
                 corporis obcaecati doloremque optio! Unde accusantium, esse
@@ -1058,20 +1062,21 @@ _structures:
                     - heading: Weekend Escape
                       description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua.
                       image: /uploads/KC-Regent-slider-11.jpg
+                      image-alt:
                       button:
                         url: "#"
                         text: reserve
                     - heading: Weekend Escape   
                       description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. 
                       image: /uploads/KC-Regent-slider-11.jpg
-
+                      image-alt:
                       button:
                         url: "#"
                         text: reserve
                     - heading: Weekend Escape   
                       description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. 
                       image: /uploads/KC-Regent-slider-11.jpg
-
+                      image-alt:
                       button:
                         url: "#"
                         text: reserve
