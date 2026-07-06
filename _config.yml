@@ -5,3 +5,9 @@ collections:
   offers:
     output: true
     permalink: /offers/:title
+
+
+url: "https://balicanggu.regenthotels.com/"
+
+plugins:
+  - jekyll-sitemap
