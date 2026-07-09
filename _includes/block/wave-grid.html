@@ -16,7 +16,7 @@
             {% for cell in block.grid %}
             <div style="margin-top: {% cycle '0px',{{block.wave-height | default: 4rem}} %}">
               <div class="relative" style="aspect-ratio: 127/139;">
-                <img class="h-full w-full object-cover" src="{{cell.image}}" alt="">
+                <img class="h-full w-full object-cover" src="{{cell.image}}" alt="{{cell.image-alt}}">
               </div>
               <h3 class="heading">{{cell.heading}}</h3>
               <p>

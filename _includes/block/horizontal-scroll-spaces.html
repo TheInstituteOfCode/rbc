@@ -22,7 +22,7 @@
         <div class="shrink-0 scroll-item color-set {% if forloop.first  %} ml-side {% endif %} {% if forloop.last  %} mr-side {% endif %}">
           {% if col.link %}<a href="{{col.link}}">{% endif%}
             <div class="image-sizer relative">
-              <img class="w-full h-full object-cover inset-0 absolute" src="{{col.image}}" alt=""loading="lazy">
+              <img class="w-full h-full object-cover inset-0 absolute" src="{{col.image}}" alt="{{col.image-alt}}" loading="lazy">
             </div>
             <div class="p-4">
               {{col.block-content-html}}

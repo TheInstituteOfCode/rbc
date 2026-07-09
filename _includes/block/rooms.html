@@ -17,7 +17,7 @@
               <div class="relative rooms-gallery">
                 <div style="aspect-ratio: 217/148">
                   {% for image in room.images %}
-                  <img class="h-full w-full inset-0 absolute object-cover object-center gallery-image {% if forloop.first%}active{% endif %}" src="{{image.image}}" alt="{{room.name}}">
+                  <img class="h-full w-full inset-0 absolute object-cover object-center gallery-image {% if forloop.first%}active{% endif %}" src="{{image.image}}" alt="{{image.alt}}">
                   {% endfor %}
                   <div class="flex gap-2 absolute z-[500] w-full bottom-4 justify-center">
                     {% for image in room.images %}
@@ -60,7 +60,7 @@
                     </p>
                     <dialog class="outline-none">
                       <span class="dialog-close-X cursor-pointer">X</span>
-                      <img src="{{room.tour-pic}}" alt="{{room.name}} layout" class="max-h-[90vh]" >
+                      <img src="{{room.tour-pic}}" alt="{{room.tour-pic-alt}}" class="max-h-[90vh]" >
                     </dialog>
 
                   </div>
