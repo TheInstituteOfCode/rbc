@@ -695,6 +695,9 @@ video {
 .mt-vert {
   margin-top: var(--vert-gap);
 }
+.-mb-12 {
+  margin-bottom: -3rem;
+}
 .block {
   display: block;
 }
