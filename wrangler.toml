@@ -1,4 +1,5 @@
 name = "regent"
-pages_build_output_dir = "_site"
 compatibility_date = "2026-08-25"
-main = "src/index.ts"
+
+[assets]
+directory = "./_site"
