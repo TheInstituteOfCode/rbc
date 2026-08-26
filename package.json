@@ -11,8 +11,8 @@
     "css:build": "NODE_ENV=production postcss style.css --output assets/css/style.css",
     "dev": "concurrently --kill-others \"npm run jekyll:dev\" \"npm run css:dev\"",
     "build": "npm run css:build && npm run jekyll:build",
-    "deploy": "npx bundle exec jekyll build && wrangler deploy",
-    "preview": "npx bundle exec jekyll build && wrangler dev"
+    "deploy": "npm run build && wrangler deploy",
+    "preview": "npm run build && wrangler dev"
   },
   "repository": {
     "type": "git",
