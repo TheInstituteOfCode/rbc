@@ -10,7 +10,9 @@
     "css:dev": "postcss style.css --output assets/css/style.css --watch",
     "css:build": "NODE_ENV=production postcss style.css --output assets/css/style.css",
     "dev": "concurrently --kill-others \"npm run jekyll:dev\" \"npm run css:dev\"",
-    "build": "npm run css:build && npm run jekyll:build"
+    "build": "npm run css:build && npm run jekyll:build",
+    "deploy": "npm run build && wrangler deploy",
+    "preview": "npm run build && wrangler dev"
   },
   "repository": {
     "type": "git",
@@ -36,6 +38,7 @@
     "glob": "^10.4.1",
     "libvips": "^0.0.2",
     "playground-elements": "^0.17.1",
-    "static-browser-server": "^1.0.5"
+    "static-browser-server": "^1.0.5",
+    "wrangler": "^4.126.0"
   }
 }
