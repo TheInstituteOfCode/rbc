@@ -1,0 +1,48 @@
+
+<section class="">
+      <div class="max-width">
+          <div class="mb-16 text-center">
+              <h3 class="sub-heading">{{block.sub-heading}}</h3>
+              <h2 class="large-heading mb-16">{{block.heading}}</h2>
+              <p> {{block.description}}</p>
+          </div>
+          <div class="grid grid-cols-12 mb-12">
+            {% for event in site.press | limit:1 %}
+            <div class="col-span-7 relative" style="aspect-ratio: 216/263;">
+              <img src="{{event.featured-image}}" alt="" class="bg-cover-image">
+            </div>
+            <div class="col-span-5 flex justify-center items-center p-8 scheme-base bg-base">
+              <div>
+                <h3 class="sub-heading">{{event.sub-heading}}</h3>
+                <h3 class="large-heading heading">{{event.heading}}</h3>
+                
+                {{event.full-description}}
+                
+                <p>
+                  <a href="{{event.url}}" class="button-featured">{{event.button-text}}</a>
+                </p>
+
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+          <div class="grid grid-cols-2 gap-8">
+            {% for event in site.press | offset:1 %}
+            <div class="flex flex-col">
+              <div class="relative" style="aspect-ratio: 170/120;">
+                <img src="{{event.featured-image}}" alt="" class="bg-cover-image">
+              </div>  
+              <div class="p-4 scheme-{{block.button.color-scheme}} grow flex flex-col">
+                <h3 class="heading">{{event.heading}}</h3>
+                <p class="grow">{{event.short-description}}</p>
+                <div>
+                  <a href="{{event.url}}" class="button-featured color-set ">{{event.button-text}}</a>
+                </div>
+
+              </div>
+            </div>
+            {% endfor  %}
+          </div>
+      </div>
+    </section>
+

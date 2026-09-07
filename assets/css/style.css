@@ -1190,15 +1190,12 @@ video {
 .text-\[0px\] {
   font-size: 0px;
 }
+.text-\[12px\] {
+  font-size: 12px;
+}
 .text-sm {
   font-size: 0.875rem;;
   line-height: 1.2;
-}
-.text-\[16px\] {
-  font-size: 16px;
-}
-.text-\[12px\] {
-  font-size: 12px;
 }
 .uppercase {
   text-transform: uppercase;
@@ -2138,18 +2135,11 @@ dialog {
   .sm\:p-12 {
     padding: 3rem;
   }
-  .sm\:px-\[10\%\] {
-    padding-left: 10%;
-    padding-right: 10%;
-  }
   .sm\:text-center {
     text-align: center;
   }
   .sm\:text-\[16px\] {
     font-size: 16px;
-  }
-  .sm\:text-\[inherit\] {
-    color: inherit;
   }
 }
 
