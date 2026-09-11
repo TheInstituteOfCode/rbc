@@ -29,6 +29,11 @@ schemes:
     text-color: '#D5E3DD'
     colored-button-bg-color: '#D5E3DD'
     colored-button-text-color: '#003B49'
+  - scheme_name: base-light
+    bg-color: '#F6f6f6'
+    text-color: '#003B49'
+    colored-button-bg-color: '#003B49'
+    colored-button-text-color: '#ffffff'
   - scheme_name: header
     bg-color: '#000'
     text-color: '#fff'
