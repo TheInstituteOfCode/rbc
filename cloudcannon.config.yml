@@ -187,7 +187,24 @@ _inputs:
       resize_style: contain
       snippet: true
       styles: /editor.css
-    label: Content
+    label: full description
+    cascade: true
+  short-description:
+    type: markdown
+    options:
+      allow_resize: true
+      allow_custom_markup: false
+      remove_custom_markup: false
+      initial_height: 320
+      format: p h2 h3 a img
+      horizontalrule: true
+      image: true
+      image_size_attributes: true
+      link: true
+      resize_style: contain
+      snippet: true
+      styles: /editor.css
+    label: short description
     cascade: true
   post_content:
     type: markdown

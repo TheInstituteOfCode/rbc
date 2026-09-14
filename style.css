@@ -26,6 +26,8 @@ img.bg-cover-image{
   width: 100%;
   top: 0;
   left: 0;
+  object-fit: cover;
+  object-position: center;
 }
 
 html {
