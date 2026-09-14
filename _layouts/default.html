@@ -265,19 +265,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <script>
 
-addEventListener("load", (event) => {
-  const lazyVideos = document.querySelectorAll('.lazy-vid');
-  lazyVideos.forEach(vid => {
-    let sources = vid.querySelectorAll('source');
-    console.log(sources)
-    sources.forEach(source => {
-      source.src = source.dataset.src
-    })
-    
-    vid.load()
-  })
 
-})
+document.querySelectorAll('.lazy-vid').forEach(vid => videoObserver.observe(vid));
+
+$('.slider').on('init afterChange', function(event, slick, currentSlide) {
+  const current = currentSlide || 0;
+  // only load current slide's video, unload everything else
+  $('.slick-slide', this).each(function(i, el) {
+    const vid = el.querySelector('.lazy-vid');
+    if (!vid) return;
+    const index = $(el).data('slick-index');
+    if (Math.abs(index - current) <= 1) {
+      if (!vid.dataset.loaded) {
+        vid.querySelectorAll('source').forEach(s => s.src = s.dataset.src);
+        vid.load();
+        vid.dataset.loaded = "true";
+      }
+      vid.play().catch(() => {});
+    } else if (vid.dataset.loaded) {
+      vid.pause();
+    }
+  });
+});
 </script>
 
 {% endif %}
