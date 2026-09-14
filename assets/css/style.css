@@ -556,6 +556,9 @@ video {
 .relative {
   position: relative;
 }
+.sticky {
+  position: sticky;
+}
 .inset-0 {
   inset: 0px;
 }
@@ -1257,6 +1260,10 @@ img.bg-cover-image{
   width: 100%;
   top: 0;
   left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 html {

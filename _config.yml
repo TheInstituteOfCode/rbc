@@ -7,7 +7,7 @@ collections:
     permalink: /offers/:title
   press:
     output: true
-    permalink: /offers/:title
+    permalink: /press/:title
 
 
 url: "https://balicanggu.regenthotels.com/"
