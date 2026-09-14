@@ -5,6 +5,9 @@ sub-heading: FEATURED OFFER
 full-description:
 short-description:
 featured-image: /uploads/offers2.jpg
+image-focus-point:
+        percent-from-left: 50
+        percent-from-top: 24
 button-link:
 button-text: DISCOVER MORE
 layout: default
