@@ -925,6 +925,13 @@ _structures:
             - button-text: a question that you might have
               block-content-html: <p>answer to that question </p>
           color-scheme: 
+      - label: content
+        value:
+          _id: content
+          overlay-color-scheme: mint-400
+          text-alignment: left
+          color-scheme: dark
+          min-height: 50vh
       - label: Timeline
         tags:
         value:
