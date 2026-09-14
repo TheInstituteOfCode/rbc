@@ -125,6 +125,7 @@ _inputs:
         - mint-300
         - mint-400
         - mint-500
+        - base-light
         - dark
     cascade: true
   slider_col_color_scheme:
