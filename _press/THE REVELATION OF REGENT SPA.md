@@ -18,7 +18,7 @@ full-description: >-
   ancient impact with grace and decadence to craft mystical, sensorial and
   emotionally resonant spa journeys, which begin quite simply with the ringing
   of a bell.
-short-description: '**WINDSOR, LONDON – JANUARY 2026** — IHG is continuing its
+short-description: 'WINDSOR, LONDON – JANUARY 2026 — IHG is continuing its
   reimagining of the Regent brand with the introduction of Regent Spa – a new
   global concept guided by the clear intention to elevate guests above the
   noise. Exhibited at selected Regent hotels and resorts, this new global
