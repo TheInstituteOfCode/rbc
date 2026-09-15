@@ -18,6 +18,9 @@ short-description: CANGGU, BALI – APRIL 2026 — Sazón continues its evolutio
     clarity and intent, shaped by flavour, craft, and a natural sense of
     conviviality.
 featured-image: /uploads/sazon-bali-press-release-image.jpg
+image-focus-point:
+        percent-from-left: 50
+        percent-from-top: 50
 button-link:
 button-text: discover more
 layout: default
