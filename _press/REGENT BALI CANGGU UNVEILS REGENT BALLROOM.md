@@ -33,7 +33,7 @@ full-description: >-
   the venue has been thoughtfully designed to bring people together with
   effortless refinement.
 short-description: >-
-  **CANGGU, BALI, JULY 2026 –** Regent Bali Canggu proudly introduces Regent
+  CANGGU, BALI, JULY 2026 – Regent Bali Canggu proudly introduces Regent
   Ballroom, the only
 
 
