@@ -1,5 +1,5 @@
 ---
-heading: A Club Like  No Other
+heading: A Club Like No Other
 sub-heading: FEATURED OFFER
 full-description: >-
     <p> Regent Club elevates above the noise, offering more than just a
