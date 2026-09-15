@@ -29,10 +29,10 @@ short-description: CANGGU, BALI – APRIL 2026 — A new culinary destination
     Andrew Walsh, the restaurant introduces a dining experience where modern
     European technique meets the depth and vibrancy of Asian flavours, shaped by
     Bali’s coastal setting and spirit of hospitality.
-featured-image: /uploads/two-bedroom-suites.jpg
+featured-image: /uploads/cure-bali-press-release-image.jpg
 image-focus-point:
-        percent-from-left: 50
-        percent-from-top: 50
+    percent-from-left: 50
+    percent-from-top: 50
 button-link:
 button-text: discover more
 layout: default
