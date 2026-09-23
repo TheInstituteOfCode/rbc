@@ -59,7 +59,7 @@ blocks:
 
 | Coastal haven | Idyllic a resort where spirits drift offshore of Bali’s scuttler influenced Southwest Coast |
 
-\[Image: \]
+\[Image: /uploads/regent-bali-canggu-press-release-image.jpg \]
 
 In a place of layered luxury and dramatic natural beauty, Regent Bali Canggu rises as the island’s most anticipated resort opening. Nestled between the Indian Ocean and the emerald of Indonesia’s Hindu heartland, the resort commands an unrivalled stretch of white sand and coastline.
 
