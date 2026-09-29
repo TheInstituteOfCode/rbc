@@ -41,12 +41,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-TK8GFKB2');</script>
 <!-- End Google Tag Manager -->
   
-    {% if page.seo.index == true %}
-      <meta name="robots" content="all">
-    {% else %}
-      <meta name="robots" content="none">
-    {% endif %}
+  {% if site.data.staging-settings.hide == true %}
+
+          <meta name="robots" content="none">
+
+
+  {% else %}
+
+        {% if page.seo.index == true %}
+          <meta name="robots" content="all">
+        {% else %}
+          <meta name="robots" content="none">
+        {% endif %}
     
+    {% endif %}
 
 <style>
 
