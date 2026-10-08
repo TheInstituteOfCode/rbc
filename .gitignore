@@ -8,3 +8,4 @@ _site/
 vendor/
 node_modules/
 _tools
+_data/staging-settings
