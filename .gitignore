@@ -8,4 +8,4 @@ _site/
 vendor/
 node_modules/
 _tools
-_data/staging-settings
+_data/staging-settings.yml
