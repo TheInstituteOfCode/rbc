@@ -332,18 +332,44 @@ _inputs:
   youtube_placeholder:
     type: image
     cascade: true
-
-    cascade: true
+    options:
+      max_file_size: 500
 
   tour-pic:
     type: image
     label: Virtual Tour picture
+    options:
+      max_file_size: 500
   src:
     type: image
     label: image
+    options:
+      max_file_size: 500
   img:
     type: image
     label: image
+    options:
+      max_file_size: 500
+  image:
+    type: image
+    label: image
+    options:
+      max_file_size: 500
+  background-desktop-image:
+    type: image
+    label: image
+    options:
+      max_file_size: 500
+  background-mobile-image: 
+    type: image
+    label: image
+    options:
+      max_file_size: 500
+  featured-image: 
+    type: image
+    label: image
+    options:
+      max_file_size: 500
 _structures:
   blocks:
     style: modal
