@@ -345,6 +345,11 @@ _inputs:
     label: image
     options:
       max_file_size: 500
+  placeholder_image: 
+    type: image
+    label: image
+    options:
+      max_file_size: 500
   img:
     type: image
     label: image
