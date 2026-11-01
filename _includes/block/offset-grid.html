@@ -13,7 +13,7 @@
         </div>
       </div>
       <div class="relative aspect-square row-span-2 md:order-1">
-        <img class="inset-0 h-full w-full" src="{{block.image-1.src}}" alt="{{block.image-1.title}}">
+        <img class="inset-0 h-full w-full" src="{% include redirect-image-logic.html%}{{block.image-1.src}}" alt="{{block.image-1.title}}">
       </div>
       <div class="flex flex-col justify-start md:min-h-[25vw] md:max-h-[50vh] md:order-4">
         <div>
@@ -23,7 +23,7 @@
         </div>
       </div>
         <div class="relative aspect-square row-span-2 md:order-3">
-          <img class="inset-0 h-full w-full" src="{{block.image-2.src}}" alt="{{block.image-2.title}}">
+          <img class="inset-0 h-full w-full" src="{% include redirect-image-logic.html%}{{block.image-2.src}}" alt="{{block.image-2.title}}">
         </div>
       </div>  
     </section>

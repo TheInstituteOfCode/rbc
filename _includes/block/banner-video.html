@@ -74,7 +74,7 @@
 
         #section-{{forloop.index}} section {
           
-          background-image: url( {{block.placeholder_image}} );
+          background-image: url( {% include redirect-image-logic.html%}{{block.placeholder_image}} );
         }
       
 
