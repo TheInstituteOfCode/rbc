@@ -36,7 +36,7 @@
 
     <style>
       #section-{{forloop.index}} section {
-        background-image: url({% if block.background-mobile-image %} {{block.background-mobile-image}} {% else %} {{block.background-desktop-image}} {% endif %});
+        background-image: url({% if block.background-mobile-image %} {% include redirect-image-logic.html%}{{block.background-mobile-image}} {% else %} {% include redirect-image-logic.html%}{{block.background-desktop-image}} {% endif %});
       }
       #section-{{forloop.index}} .max-width{
         min-height: {{block.min-height}};
@@ -59,7 +59,7 @@
       @media (min-width: 765px) {
         #section-{{forloop.index}} section {
           
-          background-image: url( {{block.background-desktop-image}} );
+          background-image: url( {% include redirect-image-logic.html%}{{block.background-desktop-image}} );
         }
       }
       {% endif %} {% endif %}

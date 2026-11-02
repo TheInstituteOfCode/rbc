@@ -26,8 +26,8 @@
             <div style="aspect-ratio: 5/4;">
 
               <picture >
-                <source srcset="{{col.background-desktop-image}}" media="(min-width: 750px)" />
-                <img class="{% unless block.img_aspect == 'Original' %} absolute inset-0 h-full w-full object-cover {% endunless %}" src="{{col.background-mobile-image}}" style="object-position: {{col.image-focus-point.percent-from-left}}% {{col.image-focus-point.percent-from-top}}%;" alt="{{col.background-alt}}"loading="lazy" />
+                <source srcset="{% include redirect-image-logic.html%}{{col.background-desktop-image}}" media="(min-width: 750px)" />
+                <img class="{% unless block.img_aspect == 'Original' %} absolute inset-0 h-full w-full object-cover {% endunless %}" src="{% include redirect-image-logic.html%}{{col.background-mobile-image}}" style="object-position: {{col.image-focus-point.percent-from-left}}% {{col.image-focus-point.percent-from-top}}%;" alt="{{col.background-alt}}"loading="lazy" />
               </picture>
             </div>
             

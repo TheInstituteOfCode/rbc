@@ -44,7 +44,7 @@
               {% elsif col.video_path %}
               <div class="">
                 <div class="relative video-parent h-[50vh] flex-0 m-[{{block.slider-col-gap | default: '6px'}}]" style="aspect-ratio: {{col.video_aspect_ratio}};">
-                  <img class="absolute h-full w-full inset-0 object-cover" src="{{col.image}}" alt="" loading="lazy">
+                  <img class="absolute h-full w-full inset-0 object-cover" src="{% include redirect-image-logic.html%}{{col.image}}" alt="" loading="lazy">
                   <video class="absolute inset-0 h-full w-full object-cover lazy-vid" autoplay muted loop playsinline>
                      <source data-src="{{col.video_path}}" type="{{col.video_type}}">
                   </video>
@@ -53,7 +53,7 @@
               </div>
                 {% else %}
                 <div class="">
-                  <img class="h-[50vh] width-auto flex-0 m-[{{block.slider-col-padding | default: '6px'}}]" src="{{col.image}}" alt="{{col.image-alt}}" loading="lazy">
+                  <img class="h-[50vh] width-auto flex-0 m-[{{block.slider-col-padding | default: '6px'}}]" src="{% include redirect-image-logic.html%}{{col.image}}" alt="{{col.image-alt}}" loading="lazy">
                 </div>
                 {% endif %}
               
